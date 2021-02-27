@@ -30,7 +30,7 @@ function App() {
   const CurrentStage = stages[stageIndex];
 
   return (
-    <div className="App">
+    <div className="app">
       <CurrentStage />
   
     </div>

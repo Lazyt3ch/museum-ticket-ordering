@@ -1,0 +1,16 @@
+.select-tickets {
+  position: absolute;
+  width: 360px;
+  height: 166px;
+  left: 380px;
+  top: 398px;
+
+  border: 1px solid #AFB3BF;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.select-tickets-header {
+  display: flex;
+  flex-direction: row;
+}
