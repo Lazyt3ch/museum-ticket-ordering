@@ -2,13 +2,20 @@ import React from 'react';
 import "./index.css";
 
 function DatePicker(props) {
+  const {
+    priceInfo = "Стоимость билета в праздничные дни рассчитывается по тарифу выходного дня",
+  } = props;
 
   return (
-    <div className="date-and-tickets">
-      <div date-and-tickets__tickets>
-        SelectDate
+    <div className="date-picker">
+      SelectDate
+      <div className="date-picker__description">
+
       </div>
-      
+      <div className="date-picker__price-info">
+        {priceInfo}
+      </div>
+
     </div>
   )
 }
