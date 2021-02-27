@@ -8,7 +8,7 @@ function Tickets(props) {
     ticketDescription = "2 взрослых 1 ребёнок",
     isInfoButton = false,
     infoPopupText = "",
-    contactPhone = "",
+    importantText = "",
     isAddButton = false,
   } = props;
 
@@ -24,9 +24,9 @@ function Tickets(props) {
       </div> 
       
       { ticketDescription.length && <div>{ticketDescription}</div> }
+      { importantText.length && <div className="tickets__contact-phone">{importantText}</div> }
 
       { isAddButton && <button className="tickets__add-button">Добавить</button> }
-      { contactPhone.length && <div className="tickets__contact-phone">{contactPhone}</div> }
 
       { isInfoButton && isInfoButtonHovered 
           && <div className="tickets__info-popup tickets__info-popup_active">{infoPopupText}</div> 
