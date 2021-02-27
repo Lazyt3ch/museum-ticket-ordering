@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 
 import SelectDateAndTickets from "./components/10-SelectDateAndTickets";
@@ -12,8 +12,20 @@ function App() {
     ShowSuccess,
   ];
 
+
   // eslint-disable-next-line
   const [stageIndex, setStageIndex] = useState(0);
+
+  // /* Test components 20 and 30 */
+  // useEffect( () => {
+  //   for (let i = 0; i < 3; i++) {
+  //     setTimeout(() => {
+  //       setStageIndex((prev) => prev < 2 ? prev + 1 : 0);
+  //     }, 2000 * (i + 1) );
+  //   }
+  // }, 
+  // []);
+
 
   const CurrentStage = stages[stageIndex];
 
