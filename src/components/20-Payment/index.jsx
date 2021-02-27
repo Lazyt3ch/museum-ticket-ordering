@@ -1,6 +1,6 @@
 import React from 'react';
 
-function PayForTickets(props) {
+function Payment(props) {
 
   return (
     <div className="pay-for-tickets">
@@ -9,4 +9,4 @@ function PayForTickets(props) {
   )
 }
 
-export default PayForTickets;
+export default Payment;
