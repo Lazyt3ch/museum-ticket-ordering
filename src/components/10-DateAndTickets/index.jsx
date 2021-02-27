@@ -6,60 +6,60 @@ import DatePicker from "../DatePicker";
 
 function DateAndTickets(props) {
   const ticketsData = [ // TODO: Implement data fetching
-  {
-    ticketTitle: "Взрослый",
-    ticketPrice: "1 150 ₽",
-    ordinaryText: "",
-    importantText: "",
-    isInfoButton: false,
-    infoPopupText: "",
-    isAddButton: true,    
-  },
-  {
-    ticketTitle: "Семейный", // #1
-    ticketPrice: "2 800 ₽",
-    ordinaryText: "2 взрослых 1 ребёнок",
-    importantText: "",
-    isInfoButton: false,
-    infoPopupText: "",
-    isAddButton: true,    
-  },
-  {
-    ticketTitle: "Семейный", // #2
-    ticketPrice: "3 600 ₽",
-    ordinaryText: "2 взрослых 2 ребёнка",
-    importantText: "",
-    isInfoButton: false,
-    infoPopupText: "",
-    isAddButton: true,    
-  },
-  {
-    ticketTitle: "Групповой взрослый",
-    ticketPrice: "850 ₽",
-    ordinaryText: "от 10 человек",
-    importantText: "",
-    isInfoButton: false,
-    infoPopupText: "",
-    isAddButton: true,    
-  },
-  {
-    ticketTitle: "Групповой школьный 12+",
-    ticketPrice: "650 ₽",
-    ordinaryText: "От 10 человек Покупка билетов осуществляется только по предварительной записи.+7 (499) 643-82-38",
-    importantText: "",
-    isInfoButton: false,
-    infoPopupText: "",
-    isAddButton: false,    
-  },
-  {
-    ticketTitle: "Семейный",
-    ticketPrice: "2 800 ₽",
-    ticketDescription: "2 взрослых 1 ребёнок",
-    isInfoButton: false,
-    infoPopupText: "",
-    contactPhone: "",
-    isAddButton: false,    
-  },
+    {
+      ticketTitle: "Взрослый",
+      ticketPrice: "1 150 ₽",
+      ordinaryText: "",
+      importantText: "",
+      isInfoButton: false,
+      infoPopupText: "",
+      isAddButton: true,    
+    },
+    {
+      ticketTitle: "Семейный", // #1
+      ticketPrice: "2 800 ₽",
+      ordinaryText: "2 взрослых 1 ребёнок",
+      importantText: "",
+      isInfoButton: false,
+      infoPopupText: "",
+      isAddButton: true,    
+    },
+    {
+      ticketTitle: "Семейный", // #2
+      ticketPrice: "3 600 ₽",
+      ordinaryText: "2 взрослых 2 ребёнка",
+      importantText: "",
+      isInfoButton: false,
+      infoPopupText: "",
+      isAddButton: true,    
+    },
+    {
+      ticketTitle: "Групповой взрослый",
+      ticketPrice: "850 ₽",
+      ordinaryText: "от 10 человек",
+      importantText: "",
+      isInfoButton: false,
+      infoPopupText: "",
+      isAddButton: true,    
+    },
+    {
+      ticketTitle: "Групповой школьный 12+",
+      ticketPrice: "650 ₽",
+      ordinaryText: "От 10 человек Покупка билетов осуществляется только по предварительной записи.+7 (499) 643-82-38",
+      importantText: "",
+      isInfoButton: false,
+      infoPopupText: "",
+      isAddButton: false,    
+    },
+    {
+      ticketTitle: "Льготный",
+      ticketPrice: "800 ₽",
+      ordinaryText: "(Дети до 18 лет, студенты, пенсионеры, члены многодетных семей)",
+      importantText: "",
+      isInfoButton: false,
+      infoPopupText: "",
+      isAddButton: false,    
+    },
 
   ];
   
