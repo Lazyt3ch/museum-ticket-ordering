@@ -28,3 +28,36 @@
 
 }
 
+.date-and-tickets__footer {
+  height: 93px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date-and-tickets__total {
+  /* float: left; */
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.date-and-tickets__go-to-payment {
+  /* float: right; */
+
+  height: 61px;
+  width: 312px;
+  left: 1228px;
+
+  border-radius: 9px;
+  padding: 10px;
+
+  background: #777C8B;
+} 
+
