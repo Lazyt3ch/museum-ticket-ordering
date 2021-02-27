@@ -1,4 +1,4 @@
-.select-tickets {
+.tickets {
   position: absolute;
   width: 360px;
   height: 166px;
@@ -10,7 +10,7 @@
   border-radius: 15px;
 }
 
-.select-tickets-header {
+.tickets__header {
   display: flex;
   flex-direction: row;
 }
