@@ -2,9 +2,9 @@ import React from 'react';
 import "./index.css";
 
 function SelectTicketsOfType(props) {
-  const {
-    ticketTitle,
-    ticketPrice,
+  const { // TODO: Remove dummy values!!!
+    ticketTitle = "Взрослый",
+    ticketPrice = "1 150 ₽",
     ticketDescription = "",
     infoButton = null,
     contactPhone = "",
@@ -14,8 +14,9 @@ function SelectTicketsOfType(props) {
 
   return (
     <div className="select-tickets">
-      <div select-tickets select-tickets-header>
-        
+      <div className="select-tickets select-tickets-header">
+        <span className="ticket-title">ticketTitle</span>
+        <span className="ticket-price">ticketPrice</span>
       </div> 
     </div>
   )
