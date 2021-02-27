@@ -61,8 +61,7 @@ function DateAndTickets(props) {
       isAddButton: false,    
     },
 
-  ];
-  
+  ];  
 
   return (
     <>
@@ -74,10 +73,12 @@ function DateAndTickets(props) {
         <div className="date-and-tickets">
           <DatePicker />
 
-          <Tickets ticketsData={ticketsData} />
-
-
-          SelectDateAndTickets
+          <div className="date-and-tickets__tickets">
+            { ticketsData.map((data) => 
+                <Tickets data={data} /> 
+              )
+            }         
+          </div>
         </div>
       </div>
     </>
