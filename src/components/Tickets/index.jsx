@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import "./index.css";
 
-function TicketsOfType(props) {
+function Tickets(props) {
   const { // TODO: Remove dummy values!!!
     ticketTitle = "Семейный",
     ticketPrice = "2 800 ₽",
@@ -35,4 +35,4 @@ function TicketsOfType(props) {
   )
 }
 
-export default TicketsOfType;
+export default Tickets;

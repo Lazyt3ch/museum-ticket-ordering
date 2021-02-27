@@ -1,19 +1,31 @@
 import React from 'react';
 import "./index.css";
 
-import TicketsOfType from "../TicketsOfType";
+import Tickets from "../Tickets";
 import DatePicker from "../DatePicker";
 
 function DateAndTickets(props) {
 
   return (
-    <div className="date-and-tickets">
-      <div date-and-tickets__tickets>
-        <TicketsOfType />
+    <>
+      <div className="date-and-tickets__logo">
+        LOGO
       </div>
-      SelectDateAndTickets
-    </div>
-  )
+
+      <div className="date-and-tickets__header">
+        <span>Покупка билета</span>
+      </div>    
+
+      <div className="date-and-tickets">
+        <DatePicker />
+
+        <Tickets />
+
+
+        SelectDateAndTickets
+      </div>
+    </>
+  );
 }
 
 export default DateAndTickets;
