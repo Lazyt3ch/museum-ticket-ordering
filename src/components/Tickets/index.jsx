@@ -5,8 +5,8 @@ function Tickets(props) {
   const { // TODO: Remove dummy values!!!
     ticketTitle = "Семейный",
     ticketPrice = "2 800 ₽",
-    ordinaryDescription = "2 взрослых 1 ребёнок",
-    importantDescription = "",
+    ordinaryText = "2 взрослых 1 ребёнок",
+    importantText = "",
     isInfoButton = false,
     infoPopupText = "",
     isAddButton = false,
@@ -23,12 +23,12 @@ function Tickets(props) {
         <div className="tickets__price">{ticketPrice}</div>
       </div> 
       
-      { (ordinaryDescription.trim().length > 0) && <div className="tickets__ordinary-description">
-        {ordinaryDescription}
+      { (ordinaryText.trim().length > 0) && <div className="tickets__ordinary-text">
+        {ordinaryText}
       </div> }
-      
-      { (importantDescription.trim().length > 0) && <div className="tickets__important-description">
-        {importantDescription}
+
+      { (importantText.trim().length > 0) && <div className="tickets__important-text">
+        {importantText}
       </div> }
 
       { isAddButton && <button className="tickets__add-button">Добавить</button> }
