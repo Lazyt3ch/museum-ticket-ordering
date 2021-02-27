@@ -12,11 +12,14 @@ function App() {
     ShowSuccess,
   ];
 
+  // eslint-disable-next-line
   const [stageIndex, setStageIndex] = useState(0);
+
+  const CurrentStage = stages[stageIndex];
 
   return (
     <div className="App">
-      < {stages[stageIndex]} />
+      <CurrentStage />
   
     </div>
   );

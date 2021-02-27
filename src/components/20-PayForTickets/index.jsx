@@ -4,7 +4,7 @@ function PayForTickets(props) {
 
   return (
     <div className="pay-for-tickets">
-      
+      PayForTickets
     </div>
   )
 }
