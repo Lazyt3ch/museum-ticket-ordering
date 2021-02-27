@@ -5,6 +5,8 @@
 
   width: 360px;
   height: 166px;
+  /* margin-top: 40px; */
+  margin-bottom: 40px;
 
   border: 1px solid #AFB3BF;
   box-sizing: border-box;
