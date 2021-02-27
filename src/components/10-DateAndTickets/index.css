@@ -1,3 +1,6 @@
-.select-date-and-tickets {
+.date-and-tickets {
   position: relative;
+
+  max-width: 1160px; /* To be adjusted */
+  max-height: 800px; /* To be adjusted */
 }
