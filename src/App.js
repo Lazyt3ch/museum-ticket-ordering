@@ -32,9 +32,9 @@ function App() {
   return (
     <div className="app">
       { (stageIndex < stages.length - 1) && 
-        <div className="app__main-logo">
+        (<div className="app__main-logo">
           ! BODY WORLDS !
-        </div>      
+        </div>)     
       }
 
       <CurrentStage />

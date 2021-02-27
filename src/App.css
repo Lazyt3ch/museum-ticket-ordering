@@ -14,7 +14,7 @@
 
 .app__main-logo {
   position: absolute;
-  left: 50%;
   top: 47px;
+  left: 50%;
   transform: translateX(-50%);
 }
