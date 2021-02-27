@@ -1,0 +1,22 @@
+.date-picker {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; 
+  align-items: center; 
+
+  height: 145px;
+  background-color: aqua;
+
+  border-top: 1px solid #C9C9C9;
+  border-bottom: 1px solid #C9C9C9;
+}
+
+.date-picker__calendar_control {
+  width: 360px;
+}
+
+.date-picker__price-info {
+  margin-left: 20px;
+
+  width: 470px;
+}

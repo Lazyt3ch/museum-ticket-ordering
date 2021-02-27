@@ -9,9 +9,10 @@ function DatePicker(props) {
   return (
     <div className="date-picker">
       SelectDate
-      <div className="date-picker__description">
-
+      <div className="date-picker__calendar_control">
+        SelectDate
       </div>
+      
       <div className="date-picker__price-info">
         {priceInfo}
       </div>
