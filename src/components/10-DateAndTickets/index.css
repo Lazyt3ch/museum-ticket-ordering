@@ -1,6 +1,13 @@
 .date-and-tickets {
   position: relative;
 
-  max-width: 1160px; /* To be adjusted */
-  max-height: 800px; /* To be adjusted */
+  width: 1160px; /* To be adjusted */
+  height: 800px; /* To be adjusted */
+
+  border: 1px solid black; /* To be removed */
+}
+
+.date-and-tickets__header {
+  height: 100px; /* To be adjusted */
+  width: 100%;
 }

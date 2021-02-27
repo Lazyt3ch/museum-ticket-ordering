@@ -1,9 +1,10 @@
 .tickets {
-  position: absolute;
+  /* position: absolute;
+  left: 380px;
+  top: 398px; */
+
   width: 360px;
   height: 166px;
-  left: 380px;
-  top: 398px;
 
   border: 1px solid #AFB3BF;
   box-sizing: border-box;
