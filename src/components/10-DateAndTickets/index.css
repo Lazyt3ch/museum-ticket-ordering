@@ -15,5 +15,14 @@
   width: 100%;
 }
 
+.date-and-tickets__tickets {
+  background-color: aquamarine; /* To be removed; */
 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* align-content: space-around; */
+
+}
 
