@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
 import './App.css';
 
+import SelectDateAndTickets from "./components/10-SelectDateAndTickets";
+
 function App() {
   const stages = [
-    'Select Date and Tickets',
+    SelectDateAndTickets, // Select Date and Tickets
     'Pay',
     'Success'
   ];
@@ -12,6 +14,10 @@ function App() {
 
   return (
     <div className="App">
+      { stageIndex
+        
+
+      }
   
     </div>
   );

@@ -8,3 +8,5 @@ function SelectDateAndTickets(props) {
     </div>
   )
 }
+
+export default SelectDateAndTickets;
