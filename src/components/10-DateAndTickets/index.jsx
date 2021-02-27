@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./index.css";
 
 import Tickets from "../Tickets";
@@ -60,8 +60,9 @@ function DateAndTickets(props) {
       infoPopupText: "",
       isAddButton: false,    
     },
-
   ];  
+
+  const [total, setTotal] = useState(0);
 
   return (
     <>
@@ -80,6 +81,17 @@ function DateAndTickets(props) {
             }         
           </div>
         </div>
+
+        <div className="date-and-tickets__footer">
+          <div className="date-and-tickets__total">
+            Итого: {total} ₽ 
+          </div>
+
+          <button className="date-and-tickets__go-to-payment">
+            Перейти к оплате
+          </button>
+        </div>   
+
       </div>
     </>
   );
