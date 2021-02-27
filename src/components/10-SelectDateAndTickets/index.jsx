@@ -6,7 +6,9 @@ function SelectDateAndTickets(props) {
 
   return (
     <div className="select-date-and-tickets">
-      <SelectTicketsOfType />
+      <div ticket-types-container>
+        <SelectTicketsOfType />
+      </div>
       SelectDateAndTickets
     </div>
   )
