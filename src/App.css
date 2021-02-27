@@ -6,8 +6,15 @@
 
 .app {
   position: relative;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
+  justify-content: center;
+  align-items: center; */
+}
+
+.app__main-logo {
+  position: absolute;
+  left: 50%;
+  top: 47px;
+  transform: translateX(-50%);
 }

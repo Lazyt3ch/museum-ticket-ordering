@@ -8,21 +8,19 @@ function DateAndTickets(props) {
 
   return (
     <>
-      <div className="date-and-tickets__logo">
-        LOGO
-      </div>
+      <div className="date-and-tickets__container">
+        <div className="date-and-tickets__header">
+          <span>Покупка билета</span>
+        </div>    
 
-      <div className="date-and-tickets__header">
-        <span>Покупка билета</span>
-      </div>    
+        <div className="date-and-tickets">
+          <DatePicker />
 
-      <div className="date-and-tickets">
-        <DatePicker />
-
-        <Tickets />
+          <Tickets />
 
 
-        SelectDateAndTickets
+          SelectDateAndTickets
+        </div>
       </div>
     </>
   );

@@ -1,5 +1,6 @@
-.date-and-tickets {
+.date-and-tickets__container {
   position: relative;
+  margin: 170px auto 0 auto;
 
   width: 1160px; /* To be adjusted */
   height: 800px; /* To be adjusted */
