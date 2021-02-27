@@ -1,5 +1,7 @@
 import React from 'react';
 
+import SelectTicketsOfType from "./SelectTicketsOfType";
+
 function SelectDateAndTickets(props) {
 
   return (

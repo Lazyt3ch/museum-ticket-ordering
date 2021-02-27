@@ -8,3 +8,5 @@ function SelectTicketsOfType(props) {
     </div>
   )
 }
+
+export default SelectTicketsOfType;
