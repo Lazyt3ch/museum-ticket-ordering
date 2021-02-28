@@ -69,7 +69,7 @@ function DateAndTickets(props) {
     <>
       <div className="date-and-tickets__container">
         <div className="date-and-tickets__header">
-          <span>Покупка билета</span>
+          <div date-and-tickets__header-text>Покупка билета</div>
         </div>    
 
         <div className="date-and-tickets">
