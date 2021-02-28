@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import "./index.css";
+
 import DayPicker from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
+import DayPickerInput from "react-day-picker/DayPickerInput";
 
 function DatePicker(props) {
   const {
@@ -16,16 +18,20 @@ function DatePicker(props) {
   return (
     <div className="date-picker">
       <div className="date-picker__calendar_control">
+        <div className="date-picker__hidden_input"></div>
+
         <div className="date-picker__opener">
           <div className="date-picker__opener-text">
             Выберите дату
           </div>
+
           <button className="date-picker__opener-button"
                         
-          >
-            
+          >            
           </button>
         </div>
+
+
         <DayPicker 
           month={new Date()}
 
