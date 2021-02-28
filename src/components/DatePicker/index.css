@@ -15,9 +15,9 @@
   width: 360px;
 }
 
-.date-picker__hidden_input {
+/* .date-picker__hidden_input {
   display: none;
-}
+} */
 
 .date-picker__opener {
   top: 32px;
@@ -47,3 +47,8 @@
 
   width: 470px;
 }
+
+/* .DayPickerInput {
+  width: 360px;
+  border-radius: 17px;  
+} */
