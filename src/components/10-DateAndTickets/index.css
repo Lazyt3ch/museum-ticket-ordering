@@ -16,6 +16,8 @@
 }
 
 .date-and-tickets__tickets {
+  position: relative;
+  
   background-color: aquamarine; /* To be removed; */
 
   display: flex;
