@@ -23,8 +23,10 @@
 }
 
 .tickets__title {
+  float: left;
+
   margin-left: 24px;
-  margin-right: 0;
+  margin-right: 10px;
   /* margin-top: 26px; */
 
   font-family: Roboto;

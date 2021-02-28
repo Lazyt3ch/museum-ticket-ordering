@@ -21,10 +21,10 @@ function Popup(props) {
   return (
     <>
       <div className="tickets__info-popup-container">
-        <div className="tickets__info-button"
+        <span className="tickets__info-button"
           onClick={togglePopup}
         >
-        </div>
+        </span>
         
         <div class={`tickets__info-popup-text ${isInfoPopupVisible ? "tickets__info-popup_show" : ""}`}>
           {infoPopupText}

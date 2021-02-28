@@ -22,10 +22,11 @@ function Tickets(props) {
   return (
     <div className="tickets">
       <div className="tickets__header">
-        <div className="tickets__title">{ticketTitle}</div>
-
-        { isInfoButton && infoPopupText.trim().length 
+        <div className="tickets__title-and-popup-button">
+          <div className="tickets__title">{ticketTitle}</div>
+          { isInfoButton && infoPopupText.trim().length 
             && <Popup infoPopupText={infoPopupText} /> }
+        </div>        
         
         <div className="tickets__price">{ticketPrice}</div>
       </div> 
