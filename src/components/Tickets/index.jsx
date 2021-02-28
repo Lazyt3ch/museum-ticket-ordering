@@ -21,8 +21,8 @@ function Tickets(props) {
   // eslint-disable-next-line
   const [isInfoButtonHovered, setIsInfoButtonHovered] = useState(false);  
 
-  console.log("isInfoButton =", isInfoButton);
-  console.log("infoPopupText =", infoPopupText);
+  // console.log("isInfoButton =", isInfoButton);
+  // console.log("infoPopupText =", infoPopupText);
 
   return (
     <div className="tickets">

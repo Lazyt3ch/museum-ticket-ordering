@@ -14,7 +14,7 @@ function Popup(props) {
   return (
     <>
       <div className="tickets__info-popup">
-        <div class={`tickets__info-popup-text ${isInfoPopupVisible 
+        <div className={`tickets__info-popup-text ${isInfoPopupVisible 
             ? "tickets__info-popup-text_show" : ""}`}>
           {infoPopupText}
         </div>         
