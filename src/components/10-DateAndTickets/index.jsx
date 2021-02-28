@@ -5,6 +5,8 @@ import Tickets from "../Tickets";
 import DatePicker from "../DatePicker";
 
 function DateAndTickets(props) {
+  const priceInfo = "Стоимость билета в праздничные дни рассчитывается по тарифу выходного дня";
+  
   const ticketsData = [ // TODO: Implement data fetching
     {
       ticketTitle: "Взрослый",
@@ -74,7 +76,11 @@ function DateAndTickets(props) {
         </div>    
 
         <div className="date-and-tickets">
-          <DatePicker />
+          <DatePicker 
+            priceInfo={priceInfo}
+            isDateSelected={isDateSelected}
+            setIsDateSelected={setIsDateSelected}
+          />
 
           <div className="date-and-tickets__tickets">
             { ticketsData.map((data, idx) => 

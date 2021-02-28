@@ -8,7 +8,10 @@ import DayPickerInput from "react-day-picker/DayPickerInput";
 
 function DatePicker(props) {
   const {
-    priceInfo = "Стоимость билета в праздничные дни рассчитывается по тарифу выходного дня",
+    priceInfo, 
+
+    isDateSelected,
+    setIsDateSelected    
   } = props;
 
   const formatDate = (dateStr) => {
@@ -17,20 +20,20 @@ function DatePicker(props) {
     return `${getPadded(date.getDate())}.${getPadded(date.getMonth() + 1)}.${date.getFullYear()}`;
   }
 
-  const MONTHS = [
-    'Gennaio',
-    'Febbraio',
-    'Marzo',
-    'Aprile',
-    'Maggio',
-    'Giugno',
-    'Luglio',
-    'Agosto',
-    'Settembre',
-    'Ottobre',
-    'Novembre',
-    'Dicembre',
-  ];
+  // const MONTHS = [
+  //   'Gennaio',
+  //   'Febbraio',
+  //   'Marzo',
+  //   'Aprile',
+  //   'Maggio',
+  //   'Giugno',
+  //   'Luglio',
+  //   'Agosto',
+  //   'Settembre',
+  //   'Ottobre',
+  //   'Novembre',
+  //   'Dicembre',
+  // ];
 
   // eslint-disable-next-line
   function CustomOverlay({ classNames, selectedDay, children, ...props }) {
@@ -78,6 +81,10 @@ function DatePicker(props) {
 
   };
 
+  const handleDayChange = () => {
+
+  };
+
   return (
     <div className="date-picker" >
       <div className="date-picker__calendar_control">
@@ -86,7 +93,8 @@ function DatePicker(props) {
             format="DD.MM.YYYY"
             formatDate={formatDate}
             inputProps={{ style: datePickerStyles }}
-            months={MONTHS}
+            // months={MONTHS}
+            onDayChange={handleDayChange}
         />
       </div>
       
