@@ -6,13 +6,15 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  z-index: 10;
 
   /* reencoded using https://yoksel.github.io/url-encoder/ */
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.99988 0.750214C15.1089 0.750214 19.2499 4.89221 19.2499 10.0002C19.2499 15.1082 15.1089 19.2502 9.99988 19.2502C4.89188 19.2502 0.749878 15.1082 0.749878 10.0002C0.749878 4.89221 4.89188 0.750214 9.99988 0.750214Z' stroke='%23AFB3BF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9.995 6.20432V10.6233' stroke='%23AFB3BF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9.995 13.7961H10.005' stroke='%23AFB3BF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
 }
 
 /* The actual popup */
-.tickets__info-popup .tickets__info-popup-text {
+.tickets__info-popup-text {
   visibility: hidden;
   width: 160px;
   background-color: #555;
@@ -28,7 +30,7 @@
 }
 
 /* Popup arrow */
-.tickets__info-popup .tickets__info-popup-text::after {
+.tickets__info-popup-text::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -40,7 +42,7 @@
 }
 
 /* Toggle this class - hide and show the popup */
-.tickets__info-popup .tickets__info-popup_show {
+.tickets__info-popup_show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
