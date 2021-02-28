@@ -2,6 +2,19 @@
   float: left;
 }
 
+/* .tickets__info-popup-container {
+  position: absolute;
+
+  height: 148px;
+  width: 384px;
+
+  transform: translate(-24px, calc(-100% + 16px));
+
+  left: 0;
+  top: 0;
+
+} */
+
 
 .tickets__info-button {
   position: relative;
@@ -28,12 +41,17 @@
 
   height: 148px;
   width: 384px;
-  left: 1149px;
-  top: 467px;
+
+  left: 0;
+  top: 0;  
+  transform: translate(-32px, calc(-100% + 8px));
+
   border-radius: 15px;
   padding: 24px;
 
-  background: #000000 75%;
+  background: #000000;
+  opacity: .75;
+  color: white;
 
   font-family: Roboto;
   font-size: 18px;
@@ -42,22 +60,6 @@
   line-height: 25px;
   letter-spacing: 0em;
   text-align: left;
-
-  left: 50%;
-
-
-  
-  /* width: 384px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px; */
 }
 
 /* Popup arrow */
@@ -66,10 +68,10 @@
   position: absolute;
   top: 100%;
   left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
+  margin-left: -10px;
+  border-width: 10px;
   border-style: solid;
-  border-color: #555 transparent transparent transparent;
+  border-color: #000000 transparent transparent transparent;
 }
 
 /* Toggle this class - hide and show the popup */
