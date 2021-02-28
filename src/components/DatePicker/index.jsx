@@ -28,6 +28,14 @@ function DatePicker(props) {
 
   };
 
+  const formatDate = (dateStr) => {
+    const date = new Date(dateStr);
+    const getPadded = (num) => num.toString().padStart(2, "0");
+    return `${getPadded(date.getDate())}.${getPadded(date.getMonth() + 1)}.${date.getFullYear()}`;
+  }
+
+  
+
   // const toggleCalendar = () => {
   //   setIsCalendarOpen((prev) => !prev);
   // };
@@ -45,7 +53,9 @@ function DatePicker(props) {
     <div className="date-picker" >
       <div className="date-picker__calendar_control">
         <DayPickerInput 
-            placeholder="Выберите дату" format="DD.MM.YYYY"
+            placeholder="Выберите дату" 
+            format="DD.MM.YYYY"
+            formatDate={formatDate}
             // ref={hiddenInput} 
         />
 
