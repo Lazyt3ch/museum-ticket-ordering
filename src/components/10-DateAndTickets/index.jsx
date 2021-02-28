@@ -6,7 +6,7 @@ import DatePicker from "../DatePicker";
 
 function DateAndTickets(props) {
   const priceInfo = "Стоимость билета в праздничные дни рассчитывается по тарифу выходного дня";
-  
+
   const ticketsData = [ // TODO: Implement data fetching
     {
       ticketTitle: "Взрослый",
@@ -66,7 +66,8 @@ function DateAndTickets(props) {
 
    // eslint-disable-next-line
   const [total, setTotal] = useState(0);
-  const [isDateSelected, setIsDateSelected] = useState(false);
+  // const [isDateSelected, setIsDateSelected] = useState(false);
+  const [selectedDate, setSelectedDate] = useState(null);
 
   return (
     <>
@@ -78,8 +79,10 @@ function DateAndTickets(props) {
         <div className="date-and-tickets">
           <DatePicker 
             priceInfo={priceInfo}
-            isDateSelected={isDateSelected}
-            setIsDateSelected={setIsDateSelected}
+            // isDateSelected={isDateSelected}
+            // setIsDateSelected={setIsDateSelected}
+            selectedDate={selectedDate}
+            setSelectedDate={setSelectedDate}
           />
 
           <div className="date-and-tickets__tickets">

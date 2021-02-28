@@ -10,11 +10,15 @@ function DatePicker(props) {
   const {
     priceInfo, 
 
-    isDateSelected,
-    setIsDateSelected    
+    // isDateSelected,
+    // setIsDateSelected    
+
+    selectedDate, 
+    setSelectedDate,
   } = props;
 
   const formatDate = (dateStr) => {
+    console.log("dateStr =", dateStr);
     const date = new Date(dateStr);
     const getPadded = (num) => num.toString().padStart(2, "0");
     return `${getPadded(date.getDate())}.${getPadded(date.getMonth() + 1)}.${date.getFullYear()}`;
@@ -81,9 +85,23 @@ function DatePicker(props) {
 
   };
 
-  const handleDayChange = () => {
+  const handleDateChange = (dateStr) => {
+    // console.log("date changed");
+    // console.log("day =", day);
 
+    const date = new Date(dateStr);
+
+    if (date === undefined) { // Invalid date
+      return;
+    }
+
+    if (date < new Date()) { // Date in the past
+      return;
+    }
+
+    setSelectedDate(date);
   };
+
 
   return (
     <div className="date-picker" >
@@ -94,7 +112,7 @@ function DatePicker(props) {
             formatDate={formatDate}
             inputProps={{ style: datePickerStyles }}
             // months={MONTHS}
-            onDayChange={handleDayChange}
+            onDayChange={(day) => handleDateChange(day)}
         />
       </div>
       
