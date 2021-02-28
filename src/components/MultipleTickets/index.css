@@ -1,5 +1,61 @@
+.multiple-tickets__remove-button {
+  height: 37px;
+  width: 107px;
+
+  border: 1px solid #777C8B 27%;
+  border-radius: 9px;
+  padding: 10px;
+
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  color: #BE005A;
+
+  
+}
+
 .multiple-tickets, .multiple-tickets__increment-decrement-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.multiple-tickets__subtotal {
+  font-family: Roboto;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  margin: 0 20px;
+
+}
+
+
+.multiple-tickets__decrement-button,
+.multiple-tickets__increment-button {
+  height: 29px;
+  width: 29px;
+  border-radius: 6px;
+  padding: 10px;
+
+  background: #BE005A;
+
+  text-align: center;
+  vertical-align: center;
+
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: #FFFFFF;
+
+  
+
 }

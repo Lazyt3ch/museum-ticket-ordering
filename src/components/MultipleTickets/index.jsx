@@ -25,11 +25,11 @@ function MultipleTickets(props) {
           disabled={numTickets < 1}
           onClick={() => setNumTickets((prev) => prev - 1)}
         >
-          +
+          &ndash;
         </button>      
 
         <div className="multiple-tickets__subtotal">
-          numTickets
+          {numTickets}
         </div>
 
         <button 
