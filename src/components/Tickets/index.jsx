@@ -27,7 +27,7 @@ function Tickets(props) {
         {ordinaryText}
       </div> }
 
-      { (importantText.trim().length > 0) && <div className="tickets__important-text">
+      { (importantText.trim().length > 0) && <div className="tickets__ordinary-text_important">
         {importantText}
       </div> }
 

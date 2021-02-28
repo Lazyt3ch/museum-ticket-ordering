@@ -62,3 +62,19 @@
 
   background: #EFEFEF;
 }
+
+.tickets__ordinary-text {
+  margin: 0 24px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+
+  color: #AFB3BF;
+}
+
+.tickets__text_important {
+  color: red;
+}
