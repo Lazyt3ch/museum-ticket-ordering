@@ -21,6 +21,7 @@ function Tickets(props) {
 
   // eslint-disable-next-line
   const [isInfoButtonHovered, setIsInfoButtonHovered] = useState(false);  
+  const [numTickets, setNumTickets] = useState(0);
 
   // console.log("isInfoButton =", isInfoButton);
   // console.log("infoPopupText =", infoPopupText);
@@ -45,7 +46,7 @@ function Tickets(props) {
         {importantText}
       </div> }
 
-      { isAddButton && 
+      { isAddButton && !numTickets &&
           <button 
             className={`tickets__add-button ${selectedDate ? "tickets__add-button_enabled" : ""}`} 
             disabled={!selectedDate}
@@ -53,6 +54,10 @@ function Tickets(props) {
             Добавить
           </button> 
       }
+
+      { isAddButton && numTickets &&
+          <MultipleTickets /> 
+      }      
 
       { isInfoButton && isInfoButtonHovered 
           && <div className="tickets__info-popup tickets__info-popup_active">{infoPopupText}</div> 
