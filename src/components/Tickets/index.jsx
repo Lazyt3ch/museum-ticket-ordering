@@ -11,11 +11,12 @@ function Tickets(props) {
     isInfoButton = false,
     infoPopupText = "",
     isAddButton = false,
+    isDateSelected = false,
   } = props.data;
 
-  const {
-    isDateSelected
-  } = props;
+  // const {
+  //   isDateSelected
+  // } = props;
 
   // eslint-disable-next-line
   const [isInfoButtonHovered, setIsInfoButtonHovered] = useState(false);  
