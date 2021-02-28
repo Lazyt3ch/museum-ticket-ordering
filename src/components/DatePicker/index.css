@@ -52,3 +52,22 @@
   width: 360px;
   border-radius: 17px;  
 } */
+
+.DayPicker {
+  width: 360px;
+  height: 374px;
+}
+
+.DayPicker-Day {
+  padding: 0.8em;
+
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.2199999988079071px;
+  text-align: center;
+
+
+}
