@@ -13,7 +13,7 @@ function DatePicker(props) {
     // isDateSelected,
     // setIsDateSelected    
 
-    selectedDate, 
+    // selectedDate, 
     setSelectedDate,
   } = props;
 
@@ -87,21 +87,33 @@ function DatePicker(props) {
 
   const handleDateChange = (dateStr) => {
     // console.log("date changed");
-    // console.log("day =", day);
+    console.log("dateStr =", dateStr);
 
-    const date = new Date(dateStr);
 
-    if (date === undefined) { // Invalid date
+
+    if (dateStr === undefined) { // Invalid date
       setSelectedDate(null);
+      console.log("invalid date");
       return;
     }
 
+    const date = new Date(dateStr);
+    console.log("date =", date);
+
+    // if (date === undefined || date === "Invalid Date") { // Invalid date
+    //   setSelectedDate(null);
+    //   console.log("invalid date");
+    //   return;
+    // }
+
     if (date < new Date()) { // Date in the past
       setSelectedDate(null);
+      console.log("date in the past");
       return;
     }
 
     setSelectedDate(date);
+    console.log("valid date");
   };
 
 
