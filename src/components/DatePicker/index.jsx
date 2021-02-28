@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import "./index.css";
 
 import DayPicker from 'react-day-picker';
@@ -10,17 +10,40 @@ function DatePicker(props) {
     priceInfo = "Стоимость билета в праздничные дни рассчитывается по тарифу выходного дня",
   } = props;
 
+  const [isCalendarOpen, setIsCalendarOpen] = useState(false);
+
+  const hiddenInput = useRef(null);
+  // HiddenInput.current.showDayPicker(); // .hideDayPicker();
+  const calendarOpener = hiddenInput.current;
+
   const datePickerStyles = {
 
 
   }
 
-  return (
-    <div className="date-picker">
-      <div className="date-picker__calendar_control">
-        <div className="date-picker__hidden_input"></div>
+  const toggleCalendar = () => {
+    setIsCalendarOpen((prev) => !prev);
+  };
 
-        <div className="date-picker__opener">
+  useEffect(
+    () => {
+      isCalendarOpen
+        ? calendarOpener.showDayPicker()
+        : calendarOpener.hideDayPicker()
+    }, 
+    [isCalendarOpen, calendarOpener]
+  );
+
+  return (
+    <div className="date-picker" >
+      <div className="date-picker__calendar_control">
+        <div className="date-picker__hidden_input" >
+          <DayPickerInput ref={hiddenInput}></DayPickerInput>
+        </div>
+
+        <div className="date-picker__opener"
+          onClick={toggleCalendar}
+        >
           <div className="date-picker__opener-text">
             Выберите дату
           </div>
