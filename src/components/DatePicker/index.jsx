@@ -17,6 +17,21 @@ function DatePicker(props) {
     return `${getPadded(date.getDate())}.${getPadded(date.getMonth() + 1)}.${date.getFullYear()}`;
   }
 
+  const MONTHS = [
+    'Gennaio',
+    'Febbraio',
+    'Marzo',
+    'Aprile',
+    'Maggio',
+    'Giugno',
+    'Luglio',
+    'Agosto',
+    'Settembre',
+    'Ottobre',
+    'Novembre',
+    'Dicembre',
+  ];
+
   // eslint-disable-next-line
   function CustomOverlay({ classNames, selectedDay, children, ...props }) {
     return (
@@ -53,6 +68,14 @@ function DatePicker(props) {
     backgroundPosition: "calc(100% - 24px) center",
     outline: "none",
 
+    fontFamily: "Roboto",
+    fontSize: "18px",
+    fontStyle: "normal",
+    fontWeight: 400,
+    lineHeight: "21px",
+    letterSpacing: "0em",
+    textAlign: "left",
+
   };
 
   return (
@@ -63,6 +86,7 @@ function DatePicker(props) {
             format="DD.MM.YYYY"
             formatDate={formatDate}
             inputProps={{ style: datePickerStyles }}
+            months={MONTHS}
         />
       </div>
       
