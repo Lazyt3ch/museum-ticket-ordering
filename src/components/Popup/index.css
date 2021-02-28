@@ -44,7 +44,7 @@
 
   left: 0;
   top: 0;  
-  transform: translate(-32px, calc(-100% + 8px));
+  transform: translate(-32px, calc(-100% + 2px));
 
   border-radius: 15px;
   padding: 24px;
