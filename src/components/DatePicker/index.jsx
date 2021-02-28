@@ -34,6 +34,31 @@ function DatePicker(props) {
     return `${getPadded(date.getDate())}.${getPadded(date.getMonth() + 1)}.${date.getFullYear()}`;
   }
 
+
+  function CustomOverlay({ classNames, selectedDay, children, ...props }) {
+    return (
+      <div
+        className={classNames.overlayWrapper}
+        style={{ marginLeft: -100 }}
+        {...props}
+      >
+        <div className={classNames.overlay}>
+          <h3>Hello day picker!</h3>
+          <p>
+            <input />
+            <button onClick={() => console.log('clicked!')}>button</button>
+          </p>
+          <p>
+            {selectedDay
+              ? `You picked: ${selectedDay.toLocaleDateString()}`
+              : 'Please pick a day'}
+          </p>
+          {children}
+        </div>
+      </div>
+    );
+  }  
+
   
 
   // const toggleCalendar = () => {
@@ -56,6 +81,7 @@ function DatePicker(props) {
             placeholder="Выберите дату" 
             format="DD.MM.YYYY"
             formatDate={formatDate}
+            // overlayComponent={CustomOverlay}
             // ref={hiddenInput} 
         />
 
