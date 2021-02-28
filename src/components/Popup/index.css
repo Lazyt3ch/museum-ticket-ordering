@@ -1,6 +1,6 @@
-.tickets__info-popup {
+.tickets__info-button {
   position: relative;
-  display: inline-block;
+  display: block;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;

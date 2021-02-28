@@ -3,7 +3,7 @@ import "./index.css";
 // Reference: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup
 
 function Popup(props) {
-  const { infoPopupText } = props.data;
+  const { infoPopupText } = props;
 
   /*
 <div class="popup" onclick="myFunction()">Click me to toggle the popup!
@@ -13,11 +13,11 @@ function Popup(props) {
   */
 
   return (
-    <div className="tickets__info-popup"
+    <div className="tickets__info-button"
     
     >
 
-      
+
     </div>
   )
 }

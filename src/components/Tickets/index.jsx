@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import "./index.css";
+import Popup from "../Popup";
 
 function Tickets(props) {
   const { // TODO: Remove dummy values!!!
@@ -15,11 +16,17 @@ function Tickets(props) {
   // eslint-disable-next-line
   const [isInfoButtonHovered, setIsInfoButtonHovered] = useState(false);  
 
+  console.log("isInfoButton =", isInfoButton);
+  console.log("infoPopupText =", infoPopupText);
+
   return (
     <div className="tickets">
       <div className="tickets__header">
         <div className="tickets__title">{ticketTitle}</div>
-        { isInfoButton && <button className="tickets__info-button">info</button> }
+
+        { isInfoButton && infoPopupText.trim().length 
+            && <Popup infoPopupText={infoPopupText} /> }
+        
         <div className="tickets__price">{ticketPrice}</div>
       </div> 
       
