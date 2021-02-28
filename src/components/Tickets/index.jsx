@@ -10,7 +10,7 @@ function Tickets(props) {
     isInfoButton = false,
     infoPopupText = "",
     isAddButton = false,
-  } = props;
+  } = props.data;
 
   // eslint-disable-next-line
   const [isInfoButtonHovered, setIsInfoButtonHovered] = useState(false);  

@@ -34,7 +34,7 @@ function DatePicker(props) {
     return `${getPadded(date.getDate())}.${getPadded(date.getMonth() + 1)}.${date.getFullYear()}`;
   }
 
-
+  // eslint-disable-next-line
   function CustomOverlay({ classNames, selectedDay, children, ...props }) {
     return (
       <div
