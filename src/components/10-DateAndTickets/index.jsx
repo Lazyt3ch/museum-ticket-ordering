@@ -64,6 +64,7 @@ function DateAndTickets(props) {
 
    // eslint-disable-next-line
   const [total, setTotal] = useState(0);
+  const [isDateSelected, setIsDateSelected] = useState(false);
 
   return (
     <>
@@ -77,7 +78,11 @@ function DateAndTickets(props) {
 
           <div className="date-and-tickets__tickets">
             { ticketsData.map((data, idx) => 
-                <Tickets key={idx} data={data} /> 
+                <Tickets 
+                  key={idx} 
+                  data={data} 
+
+                /> 
               )
             }         
           </div>

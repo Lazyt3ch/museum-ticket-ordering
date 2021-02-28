@@ -14,7 +14,7 @@ function Tickets(props) {
   } = props.data;
 
   const {
-    isAddButtonEnabled
+    isDateSelected
   } = props;
 
   // eslint-disable-next-line
@@ -45,8 +45,8 @@ function Tickets(props) {
 
       { isAddButton && 
           <button 
-            className={`tickets__add-button ${isAddButtonEnabled ? "tickets__add-button_enabled" : ""}`} 
-            disabled={!isAddButtonEnabled}
+            className={`tickets__add-button ${isDateSelected ? "tickets__add-button_enabled" : ""}`} 
+            disabled={!isDateSelected}
           >
             Добавить
           </button> 
