@@ -47,22 +47,24 @@ function Tickets(props) {
         {importantText}
       </div> }
 
-      { isAddButton && !numTickets &&
-          <button 
-            className={`tickets__add-button ${selectedDate ? "tickets__add-button_enabled" : ""}`} 
-            disabled={!selectedDate}
-            onClick={() => setNumTickets(1)}
-          >
-            Добавить
-          </button> 
-      }
+      <div className="tickets__handlers">
+        { isAddButton && !numTickets &&
+            <button 
+              className={`tickets__add-button ${selectedDate ? "tickets__add-button_enabled" : ""}`} 
+              disabled={!selectedDate}
+              onClick={() => setNumTickets(1)}
+            >
+              Добавить
+            </button> 
+        }
 
-      { isAddButton && numTickets > 0 &&
-          <MultipleTickets 
-            numTickets={numTickets}
-            setNumTickets={setNumTickets}
-          /> 
-      }      
+        { isAddButton && numTickets > 0 &&
+            <MultipleTickets 
+              numTickets={numTickets}
+              setNumTickets={setNumTickets}
+            /> 
+        }      
+      </div>
 
       { isInfoButton && isInfoButtonHovered 
           && <div className="tickets__info-popup tickets__info-popup_active">{infoPopupText}</div> 
