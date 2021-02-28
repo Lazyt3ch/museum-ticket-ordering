@@ -56,8 +56,8 @@ function DateAndTickets(props) {
       ticketPrice: "800 ₽",
       ordinaryText: "(Дети до 18 лет, студенты, пенсионеры, члены многодетных семей)",
       importantText: "",
-      isInfoButton: false,
-      infoPopupText: "",
+      isInfoButton: true,
+      infoPopupText: "Покупка льготных билетов осуществляется только в кассе выставки при предъявлении документа, подтверждающего льготу",
       isAddButton: false,    
     },
   ];  
