@@ -12,7 +12,7 @@
 }
 
 /* The actual popup */
-.popup .popuptext {
+.tickets__info-popup .tickets__info-popup-text {
   visibility: hidden;
   width: 160px;
   background-color: #555;
@@ -28,7 +28,7 @@
 }
 
 /* Popup arrow */
-.popup .popuptext::after {
+.tickets__info-popup .tickets__info-popup-text::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -40,7 +40,7 @@
 }
 
 /* Toggle this class - hide and show the popup */
-.popup .show {
+.tickets__info-popup .tickets__info-popup_show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;

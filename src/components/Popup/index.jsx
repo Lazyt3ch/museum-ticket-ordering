@@ -3,6 +3,7 @@ import "./index.css";
 // Reference: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup
 
 function Popup(props) {
+  // eslint-disable-next-line
   const { infoPopupText } = props;
 
   /*
@@ -14,7 +15,7 @@ function Popup(props) {
 
   return (
     <div className="tickets__info-button"
-    
+      
     >
 
 
