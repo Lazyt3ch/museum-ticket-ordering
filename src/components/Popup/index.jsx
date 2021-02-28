@@ -20,15 +20,15 @@ function Popup(props) {
 
   return (
     <>
-      <div className="tickets__info-popup-container">
-        <span className="tickets__info-button"
-          onClick={togglePopup}
-        >
-        </span>
-        
-        <div class={`tickets__info-popup-text ${isInfoPopupVisible ? "tickets__info-popup_show" : ""}`}>
-          {infoPopupText}
-        </div>         
+      <div className="tickets__info-popup">
+        <div className="tickets__info-popup-container">
+          <div class={`tickets__info-popup-text ${isInfoPopupVisible 
+              ? "tickets__info-popup-text_show" : ""}`}>
+            {infoPopupText}
+          </div>         
+        </div>
+
+        <div className="tickets__info-button" onClick={togglePopup}></div>
       </div>
 
    
