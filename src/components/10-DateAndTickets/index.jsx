@@ -45,8 +45,8 @@ function DateAndTickets(props) {
     {
       ticketTitle: "Групповой школьный 12+",
       ticketPrice: "650 ₽",
-      ordinaryText: "От 10 человек Покупка билетов осуществляется только по предварительной записи.+7 (499) 643-82-38",
-      importantText: "",
+      ordinaryText: "От 10 человек Покупка билетов осуществляется только по предварительной записи.",
+      importantText: "+7 (499) 643-82-38",
       isInfoButton: false,
       infoPopupText: "",
       isAddButton: false,    
