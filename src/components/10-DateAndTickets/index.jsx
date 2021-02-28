@@ -90,7 +90,6 @@ function DateAndTickets(props) {
                 <Tickets 
                   key={idx} 
                   data={{...data, selectedDate}} 
-
                 /> 
               )
             }         

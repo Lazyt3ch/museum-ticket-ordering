@@ -4,8 +4,8 @@ import "./index.css";
 function MultipleTickets(props) {
 
   return (
-    <div className="pay-for-tickets">
-      PayForTickets
+    <div className="multiple-tickets">
+      Multiple Tickets
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import "./index.css";
 import Popup from "../Popup";
+import MultipleTickets from "../MultipleTickets";
 
 function Tickets(props) {
   const { // TODO: Remove dummy values!!!
@@ -50,13 +51,17 @@ function Tickets(props) {
           <button 
             className={`tickets__add-button ${selectedDate ? "tickets__add-button_enabled" : ""}`} 
             disabled={!selectedDate}
+            onClick={() => setNumTickets(1)}
           >
             Добавить
           </button> 
       }
 
-      { isAddButton && numTickets &&
-          <MultipleTickets /> 
+      { isAddButton && numTickets > 0 &&
+          <MultipleTickets 
+            numTickets={numTickets}
+            setNumTickets={setNumTickets}
+          /> 
       }      
 
       { isInfoButton && isInfoButtonHovered 
