@@ -23,11 +23,11 @@ function Tickets(props) {
         <div className="tickets__price">{ticketPrice}</div>
       </div> 
       
-      { (ordinaryText.trim().length > 0) && <div className="tickets__ordinary-text">
+      { (ordinaryText.trim().length > 0) && <div className="tickets__text">
         {ordinaryText}
       </div> }
 
-      { (importantText.trim().length > 0) && <div className="tickets__ordinary-text_important">
+      { (importantText.trim().length > 0) && <div className="tickets__text_important">
         {importantText}
       </div> }
 
