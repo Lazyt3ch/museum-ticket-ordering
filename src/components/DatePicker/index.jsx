@@ -92,10 +92,12 @@ function DatePicker(props) {
     const date = new Date(dateStr);
 
     if (date === undefined) { // Invalid date
+      setSelectedDate(null);
       return;
     }
 
     if (date < new Date()) { // Date in the past
+      setSelectedDate(null);
       return;
     }
 

@@ -11,7 +11,8 @@ function Tickets(props) {
     isInfoButton = false,
     infoPopupText = "",
     isAddButton = false,
-    isDateSelected = false,
+    // isDateSelected = false,
+    selectedDate = null,
   } = props.data;
 
   // const {
@@ -46,8 +47,8 @@ function Tickets(props) {
 
       { isAddButton && 
           <button 
-            className={`tickets__add-button ${isDateSelected ? "tickets__add-button_enabled" : ""}`} 
-            disabled={!isDateSelected}
+            className={`tickets__add-button ${selectedDate ? "tickets__add-button_enabled" : ""}`} 
+            disabled={!selectedDate}
           >
             Добавить
           </button> 
