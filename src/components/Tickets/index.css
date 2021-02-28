@@ -67,6 +67,11 @@
   background: #EFEFEF;
 }
 
+.tickets__add-button_enabled {
+  background-color: #BE005A;
+  color: #FFFFFF;
+}
+
 .tickets__text {
   margin: 0 24px;
   
