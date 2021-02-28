@@ -14,12 +14,14 @@ function DatePicker(props) {
 
   const hiddenInput = useRef(null);
   // HiddenInput.current.showDayPicker(); // .hideDayPicker();
-  const calendarOpener = hiddenInput.current;
+  const calendarOpener = hiddenInput;
+  console.dir("calendarOpener =", calendarOpener);
 
+   // eslint-disable-next-line
   const datePickerStyles = {
 
 
-  }
+  };
 
   const toggleCalendar = () => {
     setIsCalendarOpen((prev) => !prev);
@@ -29,7 +31,7 @@ function DatePicker(props) {
     () => {
       isCalendarOpen
         ? calendarOpener.showDayPicker()
-        : calendarOpener.hideDayPicker()
+        : calendarOpener.hideDayPicker();
     }, 
     [isCalendarOpen, calendarOpener]
   );

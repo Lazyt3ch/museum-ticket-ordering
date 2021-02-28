@@ -62,6 +62,7 @@ function DateAndTickets(props) {
     },
   ];  
 
+   // eslint-disable-next-line
   const [total, setTotal] = useState(0);
 
   return (
@@ -75,8 +76,8 @@ function DateAndTickets(props) {
           <DatePicker />
 
           <div className="date-and-tickets__tickets">
-            { ticketsData.map((data) => 
-                <Tickets data={data} /> 
+            { ticketsData.map((data, idx) => 
+                <Tickets key={idx} data={data} /> 
               )
             }         
           </div>
