@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import "./index.css";
 import Popup from "../Popup";
 import MultipleTickets from "../MultipleTickets";
@@ -12,11 +12,22 @@ function Tickets(props) {
     importantText = "",
     isInfoButton = false,
     infoPopupText = "",
-    isAddButton = false,
-    selectedDate = null,
+    isAddButton = false,    
   } = props.data;
 
+  const {
+    selectedDate = null,
+    setTotal
+  } = props;
+
   const [numTickets, setNumTickets] = useState(0);
+
+  useEffect(
+    () => {
+      setTotal((prev) => prev + numTickets * price);
+    },
+    [numTickets, price, setTotal]
+  );
 
   const getFormatedPrice = (price, currencySign, thousandSeparator = " ", decimalSeparator = ",") => {
     const wholePart = Math.floor(price);

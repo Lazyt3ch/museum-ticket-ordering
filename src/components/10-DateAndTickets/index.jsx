@@ -97,7 +97,9 @@ function DateAndTickets(props) {
             { ticketsData.map((data, idx) => 
                 <Tickets 
                   key={idx} 
-                  data={{...data, selectedDate}} 
+                  data={data} 
+                  selectedDate={selectedDate}
+                  setTotal={setTotal}
                 /> 
               )
             }         
