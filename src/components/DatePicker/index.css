@@ -43,7 +43,9 @@
 }
 
 .DayPicker-Month {
-  z-index: -10; /* Otherwise cannot click on "previous month" or "next month" */
+  /* Otherwise cannot click on "previous month" or "next month" */
+  /* z-index: -10;  */
+
   position: relative;
 
   margin-bottom: 45px;
