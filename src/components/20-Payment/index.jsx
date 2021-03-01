@@ -4,7 +4,7 @@ function Payment(props) {
 
   return (
     <div className="pay-for-tickets">
-      PayForTickets
+      PayForTickets (Stage 1)
     </div>
   )
 }

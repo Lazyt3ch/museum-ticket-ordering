@@ -5,6 +5,7 @@ import Tickets from "../Tickets";
 import DatePicker from "../DatePicker";
 
 function DateAndTickets(props) {
+  const {setStageIndex} = props;
   const priceInfo = "Стоимость билета в праздничные дни рассчитывается по тарифу выходного дня";
 
   const ticketsData = [ // TODO: Implement data fetching
@@ -121,6 +122,7 @@ function DateAndTickets(props) {
             className={`date-and-tickets__go-to-payment ${
               total ? "date-and-tickets__go-to-payment_enabled" : ""}`}
             disabled={!total}
+            onClick={() => setStageIndex((prev) => prev + 1)}
           >
             Перейти к оплате
           </button>

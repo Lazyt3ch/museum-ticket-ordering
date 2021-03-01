@@ -37,7 +37,9 @@ function App() {
         </div>)     
       }
 
-      <CurrentStage />
+      <CurrentStage 
+        setStageIndex={setStageIndex}
+      />
   
     </div>
   );

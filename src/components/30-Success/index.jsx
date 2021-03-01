@@ -4,7 +4,7 @@ function Success(props) {
 
   return (
     <div className="success">
-      Success
+      Success (Stage 2)
     </div>
   )
 }
