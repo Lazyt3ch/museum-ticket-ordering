@@ -33,10 +33,10 @@
 
 
 .DayPicker {
-  /* position: relative;
+  position: relative;
   display: block;
 
-  box-shadow: 0px 0px 15px 0px #000000 25%;
+  /* box-shadow: 0px 0px 15px 0px #000000 25%;
 
   border-radius: 20px; */
   /* padding: 16px;   */
@@ -63,6 +63,11 @@
 
 }
 
+.DayPicker-Body {
+  table-layout: fixed;
+  width: 100%;
+}
+
 .DayPicker-Weekdays {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -75,13 +80,14 @@
 
 
 .DayPicker-Day {
-  padding: 0 .9em; /* Adjusted */
+  /* padding: 0 50px;  */
+  /* Adjusted */
 
   font-family: IBM Plex Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 14px;
+  line-height: 22px;
   letter-spacing: 0.22px;
   text-align: center;
 

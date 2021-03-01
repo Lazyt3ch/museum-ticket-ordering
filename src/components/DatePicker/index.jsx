@@ -2,7 +2,7 @@
 import React from 'react';
 import "./index.css";
 
-import DayPicker from 'react-day-picker';
+// import DayPicker from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
 import DayPickerInput from "react-day-picker/DayPickerInput";
 
@@ -199,7 +199,7 @@ function DatePicker(props) {
         {priceInfo}
       </div>
 
-      <DayPicker />
+      {/* <DayPicker /> */}
 
     </div>
   )
