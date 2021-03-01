@@ -2,16 +2,13 @@
 import React from 'react';
 import "./index.css";
 
-// import DayPicker from 'react-day-picker';
+import DayPicker from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
 import DayPickerInput from "react-day-picker/DayPickerInput";
 
 function DatePicker(props) {
   const {
     priceInfo, 
-
-    // isDateSelected,
-    // setIsDateSelected    
 
     // selectedDate, 
     setSelectedDate,
@@ -24,20 +21,6 @@ function DatePicker(props) {
     return `${getPadded(date.getDate())}.${getPadded(date.getMonth() + 1)}.${date.getFullYear()}`;
   }
 
-  // const MONTHS = [
-  //   'Gennaio',
-  //   'Febbraio',
-  //   'Marzo',
-  //   'Aprile',
-  //   'Maggio',
-  //   'Giugno',
-  //   'Luglio',
-  //   'Agosto',
-  //   'Settembre',
-  //   'Ottobre',
-  //   'Novembre',
-  //   'Dicembre',
-  // ];
 
   // eslint-disable-next-line
   function CustomOverlay({ classNames, selectedDay, children, ...props }) {
@@ -89,8 +72,6 @@ function DatePicker(props) {
     // console.log("date changed");
     console.log("dateStr =", dateStr);
 
-
-
     if (dateStr === undefined) { // Invalid date
       setSelectedDate(null);
       console.log("invalid date");
@@ -99,12 +80,6 @@ function DatePicker(props) {
 
     const date = new Date(dateStr);
     console.log("date =", date);
-
-    // if (date === undefined || date === "Invalid Date") { // Invalid date
-    //   setSelectedDate(null);
-    //   console.log("invalid date");
-    //   return;
-    // }
 
     if (date < new Date()) { // Date in the past
       setSelectedDate(null);
@@ -150,9 +125,6 @@ function DatePicker(props) {
   const inputProps = {
     style: datePickerStyles, 
     readOnly: true, 
-    // firstDayOfWeek: firstDayOfWeek['ru-ru'],
-    // weekdaysShort: weekdaysShort['ru-ru'],
-    // weekdaysLong: weekdaysLong['ru-ru'],
 
   };
 
@@ -166,7 +138,7 @@ function DatePicker(props) {
   }) {
     const styleLeft = {
       float: 'left',
-      marginLeft: "50px",
+      marginLeft: "40px",
       marginTop: "20px",
       height: "18px",
       width: "18px",
@@ -177,7 +149,7 @@ function DatePicker(props) {
 
     const styleRight = {
       float: 'right',
-      marginRight: "50px",
+      marginRight: "40px",
       marginTop: "20px",
       height: "18px",
       width: "18px",
@@ -187,9 +159,16 @@ function DatePicker(props) {
     };
 
     return (
-      <div className={className}>
-        <div style={styleLeft} onClick={() => {onPreviousClick(); console.log("prev month");}}></div>
-        <div style={styleRight} onClick={() => {onNextClick(); console.log("next month");}}></div>
+      <div className={className} >
+        <div style={styleLeft} 
+          onClick={() => {onPreviousClick(); console.log("prev month");}}
+        >           
+        </div>
+
+        <div style={styleRight} 
+          onClick={() => {onNextClick(); console.log("next month");}}
+        >          
+        </div>
       </div>
     );
   }
@@ -218,6 +197,8 @@ function DatePicker(props) {
       <div className="date-picker__price-info">
         {priceInfo}
       </div>
+
+      <DayPicker />
 
     </div>
   )

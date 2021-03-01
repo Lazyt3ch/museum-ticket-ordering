@@ -68,53 +68,47 @@
 }
 
 .DayPicker-Month {
-  margin-top: 20px;
+  z-index: -10; /* Otherwise cannot click on "previous month" or "next month" */
+  position: relative;
 
+  margin-bottom: 45px;
 }
 
+
+
 .DayPicker-Caption {
-  
-  /* position: absolute; */
-
-  /* top: -20px; */
-  
-  /* margin-left: auto;
-  margin-right: auto; */
-
-  /* margin-top: -20px;
-  margin-bottom: 45px;
-  margin: -20px auto 45px auto; */
-
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.12px;
+
   text-align: center;
 
 }
 
 .DayPicker-Weekdays {
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 32px; /* Adjusted */
   letter-spacing: 1.5px;
   text-align: center;
 }
 
 
 .DayPicker-Day {
-  padding: 0.8em;
+  padding-left: .9em; /* Adjusted */
+  padding-right: .9em; /* Adjusted */
 
   font-family: IBM Plex Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 32px;
-  letter-spacing: 0.2199999988079071px;
+  line-height: 14px;
+  letter-spacing: 0.22px;
   text-align: center;
 
 
