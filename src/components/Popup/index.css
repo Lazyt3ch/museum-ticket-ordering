@@ -2,20 +2,6 @@
   float: left;
 }
 
-/* .tickets__info-popup-container {
-  position: absolute;
-
-  height: 148px;
-  width: 384px;
-
-  transform: translate(-24px, calc(-100% + 16px));
-
-  left: 0;
-  top: 0;
-
-} */
-
-
 .tickets__info-button {
   position: relative;
   display: block;
@@ -25,7 +11,6 @@
   -ms-user-select: none;
   user-select: none;
   
-  z-index: 10;
   height: 20px;
   width: 20px;
 
@@ -63,19 +48,24 @@
 }
 
 /* Popup arrow */
-.tickets__info-popup-text::after {
-  content: "";
+.tickets__info-popup-arrow {
+  visibility: hidden;
+
   position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -10px;
-  border-width: 10px;
+  top: 0;  
+  transform: translateX(10px);
+
+  opacity: .75;  
+
+  margin-left: -12px;
+  border-width: 12px;
   border-style: solid;
-  border-color: #000000 transparent transparent transparent;
+  border-color: #000000 transparent transparent transparent;  
 }
 
-/* Toggle this class - hide and show the popup */
-.tickets__info-popup-text_show {
+/* Toggle this class - hide and show the popup and the popup arrow */
+.tickets__info-popup-text_show,
+.tickets__info-popup-arrow_show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;

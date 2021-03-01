@@ -15,14 +15,17 @@ function Popup(props) {
     <>
       <div className="tickets__info-popup">
         <div className={`tickets__info-popup-text ${isInfoPopupVisible 
-            ? "tickets__info-popup-text_show" : ""}`}>
+            ? "tickets__info-popup-text_show" : ""}`}
+          onClick={togglePopup}    
+        >
           {infoPopupText}
         </div>         
-
+        <div className={`tickets__info-popup-arrow ${isInfoPopupVisible 
+            ? "tickets__info-popup-arrow_show" : ""}`}
+        >
+        </div>     
         <div className="tickets__info-button" onClick={togglePopup}></div>
-      </div>
-
-   
+      </div>   
     </>
   )
 }
