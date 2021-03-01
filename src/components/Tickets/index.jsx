@@ -6,7 +6,8 @@ import MultipleTickets from "../MultipleTickets";
 function Tickets(props) {
   const { // TODO: Remove dummy values!!!
     ticketTitle = "Семейный",
-    ticketPrice = "2 800 ₽",
+    price,
+    currency = "₽",
     ordinaryText = "2 взрослых 1 ребёнок",
     importantText = "",
     isInfoButton = false,
@@ -16,16 +17,35 @@ function Tickets(props) {
     selectedDate = null,
   } = props.data;
 
-  // const {
-  //   isDateSelected
-  // } = props;
-
   // eslint-disable-next-line
   const [isInfoButtonHovered, setIsInfoButtonHovered] = useState(false);  
   const [numTickets, setNumTickets] = useState(0);
 
-  // console.log("isInfoButton =", isInfoButton);
-  // console.log("infoPopupText =", infoPopupText);
+  const getFormatedPrice = (price, currencySign, thousandSeparator = " ", decimalSeparator = ",") => {
+    const wholePart = Math.floor(price);
+    const decimalPart = price - wholePart;
+    const thousandRegExp = /(-?[0-9]+)([0-9]{3})/;
+
+    let priceStr = "";
+    let wholeStr = wholePart.toString();
+
+    if (wholePart >= 1000) {
+      while(thousandRegExp.test(wholeStr)) {
+        wholeStr = wholeStr.replace(thousandRegExp, '$1' + thousandSeparator + '$2');
+      }
+    }
+
+    priceStr += wholeStr;
+
+    if (decimalPart) {
+      priceStr += decimalSeparator + decimalPart.toString();
+    }
+
+    priceStr += " " + currencySign;
+
+    return priceStr;
+  };
+
 
   return (
     <div className="tickets">
@@ -36,7 +56,7 @@ function Tickets(props) {
             && <Popup infoPopupText={infoPopupText} /> }
         </div>        
         
-        <div className="tickets__price">{ticketPrice}</div>
+        <div className="tickets__price">{getFormatedPrice(price, currency)}</div>
       </div> 
       
       { (ordinaryText.trim().length > 0) && <div className="tickets__text">
