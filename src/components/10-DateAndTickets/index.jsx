@@ -70,6 +70,8 @@ function DateAndTickets(props) {
     },
   ];  
 
+  const currencySign = ticketsData[0].currency || "₽";
+
    // eslint-disable-next-line
   const [total, setTotal] = useState(0);
   // const [isDateSelected, setIsDateSelected] = useState(false);
@@ -104,7 +106,7 @@ function DateAndTickets(props) {
 
         <div className="date-and-tickets__footer">
           <div className="date-and-tickets__total">
-            Итого: {total} ₽ 
+            Итого: {total} {currencySign}
           </div>
 
           <button className="date-and-tickets__go-to-payment">
