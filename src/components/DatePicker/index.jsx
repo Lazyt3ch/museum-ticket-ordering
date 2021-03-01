@@ -116,10 +116,27 @@ function DatePicker(props) {
     console.log("valid date");
   };
 
+  const firstDayOfWeek = {
+    "ru-ru": 1 // Monday
+  };
+
+  const weekdaysLong = {
+    "ru-ru": ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"]
+  };
+ 
+  const weekdaysShort = {
+    "ru-ru": ["пн", "вт", "ср", "чт", "пт", "сб", "вс"]
+  };
+
   const inputProps = {
     style: datePickerStyles, 
     readOnly: true, 
+    // firstDayOfWeek: firstDayOfWeek['ru-ru'],
+    // weekdaysShort: weekdaysShort['ru-ru'],
+    // weekdaysLong: weekdaysLong['ru-ru'],
+
   };
+
 
   return (
     <div className="date-picker" >
@@ -130,6 +147,16 @@ function DatePicker(props) {
             formatDate={formatDate}
             inputProps={inputProps}
             // months={MONTHS}
+            // firstDayOfWeek={ firstDayOfWeek['ru-ru'] }
+            // weekdaysShort={ weekdaysShort['ru-ru'] }
+            // weekdaysLong={ weekdaysLong['ru-ru'] }
+            dayPickerProps={{
+              // todayButton: 'Today',
+              firstDayOfWeek: firstDayOfWeek['ru-ru'],
+              weekdaysShort: weekdaysShort['ru-ru'],
+              weekdaysLong: weekdaysLong['ru-ru'],
+            }}
+
             onDayChange={(day) => handleDateChange(day)}
             
         />
