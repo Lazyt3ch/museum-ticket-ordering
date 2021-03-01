@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import "./index.css";
 
 import Tickets from "../Tickets";
@@ -72,10 +72,17 @@ function DateAndTickets(props) {
 
   const currencySign = ticketsData[0].currency || "₽";
 
-   // eslint-disable-next-line
+  const [subTotals, setSubTotals] = useState(new Array(ticketsData.length).fill(0));
+
   const [total, setTotal] = useState(0);
-  // const [isDateSelected, setIsDateSelected] = useState(false);
   const [selectedDate, setSelectedDate] = useState(null);
+
+  useEffect(
+    () => {
+      setTotal(() => subTotals.reduce( (acc, item) => acc + item, 0 ));
+    },
+    [subTotals, setTotal]
+  );  
 
   return (
     <>
@@ -87,8 +94,6 @@ function DateAndTickets(props) {
         <div className="date-and-tickets">
           <DatePicker 
             priceInfo={priceInfo}
-            // isDateSelected={isDateSelected}
-            // setIsDateSelected={setIsDateSelected}
             selectedDate={selectedDate}
             setSelectedDate={setSelectedDate}
           />
@@ -99,7 +104,8 @@ function DateAndTickets(props) {
                   key={idx} 
                   data={data} 
                   selectedDate={selectedDate}
-                  setTotal={setTotal}
+                  setSubTotals={setSubTotals}
+                  idx={idx}
                 /> 
               )
             }         

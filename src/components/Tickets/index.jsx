@@ -17,16 +17,21 @@ function Tickets(props) {
 
   const {
     selectedDate = null,
-    setTotal
+    setSubTotals,
+    idx
   } = props;
 
   const [numTickets, setNumTickets] = useState(0);
 
   useEffect(
     () => {
-      setTotal((prev) => prev + numTickets * price);
+      setSubTotals((prev) => {
+        const updatedSubTotals = prev.slice();
+        updatedSubTotals[idx] = numTickets * price;
+        return updatedSubTotals;
+      });
     },
-    [numTickets, price, setTotal]
+    [numTickets, price, setSubTotals, idx]
   );
 
   const getFormatedPrice = (price, currencySign, thousandSeparator = " ", decimalSeparator = ",") => {
