@@ -117,7 +117,11 @@ function DateAndTickets(props) {
             Итого: {total} {currencySign}
           </div>
 
-          <button className="date-and-tickets__go-to-payment">
+          <button 
+            className={`date-and-tickets__go-to-payment ${
+              total ? "date-and-tickets__go-to-payment_enabled" : ""}`}
+            disabled={!total}
+          >
             Перейти к оплате
           </button>
         </div>   

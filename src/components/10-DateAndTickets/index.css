@@ -4,11 +4,6 @@
 
   width: 1160px; /* To be adjusted */
   height: 800px; /* To be adjusted */
-
-  /* border: 1px solid black;  */
-  /* To be removed */
-
-
 }
 
 .date-and-tickets__header {
@@ -37,17 +32,12 @@
 
 .date-and-tickets__tickets {
   position: relative;
-
-  /* background-color: aquamarine; */ /* To be removed; */
+  padding-top: 40px;
 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* align-content: space-around; */
-
-  padding-top: 40px;
-
 }
 
 .date-and-tickets__footer {
@@ -60,7 +50,6 @@
 }
 
 .date-and-tickets__total {
-  /* float: left; */
   font-family: Roboto, sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -71,8 +60,6 @@
 }
 
 .date-and-tickets__go-to-payment {
-  /* float: right; */
-
   height: 61px;
   width: 312px;
   left: 1228px;
@@ -82,4 +69,12 @@
 
   background: #777C8B;
 } 
+
+.date-and-tickets__go-to-payment_enabled {
+  background-color: #BE005A;
+  color: #FFFFFF;
+
+  box-shadow: 0px 14px 37px 0px #BE005A 25%;
+}
+
 
