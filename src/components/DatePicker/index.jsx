@@ -156,6 +156,34 @@ function DatePicker(props) {
 
   };
 
+  function Navbar({
+    nextMonth,
+    previousMonth,
+    onPreviousClick,
+    onNextClick,
+    className,
+    localeUtils,
+  }) {
+    const months = localeUtils.getMonths();
+    const prev = months[previousMonth.getMonth()];
+    const next = months[nextMonth.getMonth()];
+    const styleLeft = {
+      float: 'left',
+    };
+    const styleRight = {
+      float: 'right',
+    };
+    return (
+      <div className={className}>
+        <button style={styleLeft} onClick={() => onPreviousClick()}>
+          ← {prev.slice(0, 3)}
+        </button>
+        <button style={styleRight} onClick={() => onNextClick()}>
+          {next.slice(0, 3)} →
+        </button>
+      </div>
+    );
+  }
 
   return (
     <div className="date-picker" >
@@ -165,16 +193,12 @@ function DatePicker(props) {
             format="DD.MM.YYYY"
             formatDate={formatDate}
             inputProps={inputProps}
-            // months={MONTHS}
-            // firstDayOfWeek={ firstDayOfWeek['ru-ru'] }
-            // weekdaysShort={ weekdaysShort['ru-ru'] }
-            // weekdaysLong={ weekdaysLong['ru-ru'] }
             dayPickerProps={{
-              // todayButton: 'Today',
               firstDayOfWeek: firstDayOfWeek['ru-ru'],
               weekdaysShort: weekdaysShort['ru-ru'],
               weekdaysLong: weekdaysLong['ru-ru'],
               months: months['ru-ru'],
+              navbarElement: <Navbar />,
             }}
 
             onDayChange={(day) => handleDateChange(day)}
