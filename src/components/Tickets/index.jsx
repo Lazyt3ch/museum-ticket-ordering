@@ -4,21 +4,18 @@ import Popup from "../Popup";
 import MultipleTickets from "../MultipleTickets";
 
 function Tickets(props) {
-  const { // TODO: Remove dummy values!!!
-    ticketTitle = "Семейный",
+  const { 
+    ticketTitle,
     price,
     currency = "₽",
-    ordinaryText = "2 взрослых 1 ребёнок",
+    ordinaryText,
     importantText = "",
     isInfoButton = false,
     infoPopupText = "",
     isAddButton = false,
-    // isDateSelected = false,
     selectedDate = null,
   } = props.data;
 
-  // eslint-disable-next-line
-  const [isInfoButtonHovered, setIsInfoButtonHovered] = useState(false);  
   const [numTickets, setNumTickets] = useState(0);
 
   const getFormatedPrice = (price, currencySign, thousandSeparator = " ", decimalSeparator = ",") => {
@@ -85,11 +82,6 @@ function Tickets(props) {
             /> 
         }      
       </div>
-
-      { isInfoButton && isInfoButtonHovered 
-          && <div className="tickets__info-popup tickets__info-popup_active">{infoPopupText}</div> 
-      }
-
     </div>
   )
 }
