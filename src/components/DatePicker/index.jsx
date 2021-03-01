@@ -116,16 +116,35 @@ function DatePicker(props) {
     console.log("valid date");
   };
 
-  const firstDayOfWeek = {
-    "ru-ru": 1 // Monday
+  // IMPORTANT: Start the list with Sunday
+  const weekdaysLong = {
+    "ru-ru": ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"]
+  };
+  
+  // IMPORTANT: Start the list with Sunday
+  const weekdaysShort = {
+    "ru-ru": ["вс", "пн", "вт", "ср", "чт", "пт", "сб"]
   };
 
-  const weekdaysLong = {
-    "ru-ru": ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"]
+  const firstDayOfWeek = {
+    "ru-ru": 1 // Week starts on Monday
   };
- 
-  const weekdaysShort = {
-    "ru-ru": ["пн", "вт", "ср", "чт", "пт", "сб", "вс"]
+
+  const months = {
+    "ru-ru": [
+      "Январь", 
+      "Февраль",
+      "Март",
+      "Апрель",
+      "Май",
+      "Июнь",
+      "Июль",
+      "Август",
+      "Октябрь",
+      "Сентябрь",
+      "Ноябрь",
+      "Декабрь"
+    ]
   };
 
   const inputProps = {
@@ -155,6 +174,7 @@ function DatePicker(props) {
               firstDayOfWeek: firstDayOfWeek['ru-ru'],
               weekdaysShort: weekdaysShort['ru-ru'],
               weekdaysLong: weekdaysLong['ru-ru'],
+              months: months['ru-ru'],
             }}
 
             onDayChange={(day) => handleDateChange(day)}
