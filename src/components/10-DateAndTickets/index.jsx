@@ -10,7 +10,8 @@ function DateAndTickets(props) {
   const ticketsData = [ // TODO: Implement data fetching
     {
       ticketTitle: "Взрослый",
-      ticketPrice: "1 150 ₽",
+      ticketPrice: 1150,
+      currency: "₽",
       ordinaryText: "",
       importantText: "",
       isInfoButton: false,
@@ -19,7 +20,8 @@ function DateAndTickets(props) {
     },
     {
       ticketTitle: "Семейный", // #1
-      ticketPrice: "2 800 ₽",
+      ticketPrice: 2800,
+      currency: "₽",
       ordinaryText: "2 взрослых 1 ребёнок",
       importantText: "",
       isInfoButton: false,
@@ -28,7 +30,8 @@ function DateAndTickets(props) {
     },
     {
       ticketTitle: "Семейный", // #2
-      ticketPrice: "3 600 ₽",
+      ticketPrice: 3600,
+      currency: "₽",
       ordinaryText: "2 взрослых 2 ребёнка",
       importantText: "",
       isInfoButton: false,
@@ -37,7 +40,8 @@ function DateAndTickets(props) {
     },
     {
       ticketTitle: "Групповой взрослый",
-      ticketPrice: "850 ₽",
+      ticketPrice: 850,
+      currency: "₽",
       ordinaryText: "от 10 человек",
       importantText: "",
       isInfoButton: false,
@@ -46,7 +50,8 @@ function DateAndTickets(props) {
     },
     {
       ticketTitle: "Групповой школьный 12+",
-      ticketPrice: "650 ₽",
+      ticketPrice: 650,
+      currency: "₽",
       ordinaryText: "От 10 человек Покупка билетов осуществляется только по предварительной записи.",
       importantText: "+7 (499) 643-82-38",
       isInfoButton: false,
@@ -55,7 +60,8 @@ function DateAndTickets(props) {
     },
     {
       ticketTitle: "Льготный",
-      ticketPrice: "800 ₽",
+      ticketPrice: 800,
+      currency: "₽",
       ordinaryText: "(Дети до 18 лет, студенты, пенсионеры, члены многодетных семей)",
       importantText: "",
       isInfoButton: true,
