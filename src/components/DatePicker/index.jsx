@@ -116,6 +116,10 @@ function DatePicker(props) {
     console.log("valid date");
   };
 
+  const inputProps = {
+    style: datePickerStyles, 
+    readOnly: true, 
+  };
 
   return (
     <div className="date-picker" >
@@ -124,9 +128,10 @@ function DatePicker(props) {
             placeholder="Выберите дату" 
             format="DD.MM.YYYY"
             formatDate={formatDate}
-            inputProps={{ style: datePickerStyles }}
+            inputProps={inputProps}
             // months={MONTHS}
             onDayChange={(day) => handleDateChange(day)}
+            
         />
       </div>
       
