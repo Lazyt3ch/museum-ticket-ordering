@@ -11,7 +11,7 @@ function MultipleTickets(props) {
     <div className="multiple-tickets">
       <div className="multiple-tickets__remove-wrapper">
         <button 
-          className={`multiple-tickets__remove-button`} 
+          className={`multiple-tickets__remove`} 
           disabled={!numTickets}
           onClick={() => setNumTickets(0)}
         >
@@ -21,7 +21,7 @@ function MultipleTickets(props) {
 
       <div className="multiple-tickets__increment-decrement-wrapper">
         <button 
-          className={`multiple-tickets__decrement-button`} 
+          className={`multiple-tickets__decrement`} 
           disabled={numTickets < 1}
           onClick={() => setNumTickets((prev) => prev - 1)}
         >
@@ -33,7 +33,7 @@ function MultipleTickets(props) {
         </div>
 
         <button 
-          className={`multiple-tickets__increment-button`} 
+          className={`multiple-tickets__increment`} 
           // disabled={!numTickets}
           onClick={() => setNumTickets((prev) => prev + 1)}
         >

@@ -1,4 +1,4 @@
-.multiple-tickets__remove-button {
+.multiple-tickets__remove {
   height: 37px;
   width: 107px;
 
@@ -11,9 +11,7 @@
   font-weight: 400;
   line-height: 21px;
   letter-spacing: 0em;
-  color: #BE005A;
-
-  
+  color: #BE005A;  
 }
 
 .multiple-tickets, .multiple-tickets__increment-decrement-wrapper {
@@ -32,12 +30,11 @@
   text-align: left;
 
   margin: 0 20px;
-
 }
 
 
-.multiple-tickets__decrement-button,
-.multiple-tickets__increment-button {
+.multiple-tickets__decrement,
+.multiple-tickets__increment {
   height: 29px;
   width: 29px;
   border-radius: 6px;
@@ -53,7 +50,4 @@
   font-weight: 400;
   line-height: 21px;
   color: #FFFFFF;
-
-  
-
 }
