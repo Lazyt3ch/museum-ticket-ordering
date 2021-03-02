@@ -3,13 +3,13 @@ import './App.css';
 
 import DateAndTickets from "./components/10-DateAndTickets";
 import Payment from './components/20-Payment';
-import ShowSuccess from './components/30-Success';
+import Success from './components/30-Success';
 
 function App() {
   const stages = [
     DateAndTickets, 
     Payment, 
-    ShowSuccess,
+    Success,
   ];
 
 
