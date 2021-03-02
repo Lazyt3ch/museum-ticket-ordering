@@ -193,6 +193,8 @@ function DatePicker(props) {
     );
   }
 
+  const today = new Date();
+
   return (
     <div className="date-picker" >
       <div className="date-picker__calendar_control">
@@ -209,6 +211,7 @@ function DatePicker(props) {
               months: months['ru-ru'],
               navbarElement: <Navbar />,
               showOutsideDays: true,
+              disabledDays: { before: today },
             }}
 
             onDayChange={(day) => handleDateChange(day)}
