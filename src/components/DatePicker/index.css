@@ -53,15 +53,21 @@
 
 
 
-.DayPicker-Caption {
-  font-family: "Open Sans", sans-serif;
-  font-size: 24px;
+div.DayPicker-Caption {
+  margin-top: 10px;
+
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 24px !important;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 24px !important;
   letter-spacing: 0.12px;
+  text-align: center !important;
 
-  text-align: center;
+  /* background-color: aqua;  */
+  /* To be removed */
+  
+  /* z-index: -1000 !important; */
 
 }
 
@@ -96,10 +102,12 @@
   letter-spacing: 0.22px;
   text-align: center;
 
-  z-index: 10;
+  /* z-index: 10; */
 }
 
 .date-picker__price-info { /* Remove later */
-  background-color: aqua; /* Checks if we got here */
+  background-color: white;
+  /* background-color: aqua;  */
+  /* Checks if we got here */
 }
 

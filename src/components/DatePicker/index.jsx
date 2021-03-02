@@ -131,45 +131,41 @@ function DatePicker(props) {
     className,
     localeUtils,
   }) {
+
+    const marginLeftRight = "16px";
+
     const styleLeft = {
       float: 'left',
-      marginLeft: "40px",
-      marginTop: "20px",
-      height: "18px",
-      width: "24px", /* Do not set width too big! */
+      marginLeft: marginLeftRight,
       backgroundImage: `url("data:image/svg+xml,%3Csvg width='10' height='18' viewBox='0 0 10 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.133 8.961L9.21313 16.0411L8.20888 17.0486L0.625 9.4615V8.45725L8.20888 0.875L9.21313 1.88087L2.133 8.961Z' fill='%23881B26'/%3E%3C/svg%3E%0A")`,
-      backgroundRepeat: "no-repeat",
-      backgroundSize: "contain",
-      backgroundPosition: "center",
-      backgroundColor: "yellow", /* To be removed */
-      zIndex: 10,
-
     };
 
     const styleRight = {
       float: 'right',
-      marginRight: "40px",
-      marginTop: "20px",
-      height: "18px",
-      width: "24px", /* Do not set width too big! */
+      marginRight: marginLeftRight,
       backgroundImage: `url("data:image/svg+xml,%3Csvg width='10' height='18' viewBox='0 0 10 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.867 9.039L0.786876 1.95887L1.79113 0.951373L9.375 8.5385L9.375 9.54275L1.79112 17.125L0.786875 16.1191L7.867 9.039Z' fill='%23881B26'/%3E%3C/svg%3E%0A")`,
-      backgroundRepeat: "no-repeat",
-      backgroundSize: "contain",
-      backgroundPosition: "center",
-      backgroundColor: "yellow", /* To be removed */
-      zIndex: 10,
-
     };
 
+    const styleLeftRight = {
+      marginTop: "20px",
+      height: "36px",
+      width: "36px", 
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "18px 18px",
+      backgroundPosition: "center",
+      // backgroundColor: "yellow", /* To be removed */
+      // zIndex: "1000 !important",
+    }
+  
     return (
       <div className={className} >
-        <div style={styleLeft} 
+        <div style={{...styleLeft, ...styleLeftRight}}
           onClick={() => {onPreviousClick(); console.log("prev month");}}
           // onClick={onPreviousClick}
         >           
         </div>
 
-        <div style={styleRight} 
+        <div style={{...styleRight, ...styleLeftRight}} 
           onClick={() => {onNextClick(); console.log("next month");}}
           // onClick={onNextClick}
         >          
