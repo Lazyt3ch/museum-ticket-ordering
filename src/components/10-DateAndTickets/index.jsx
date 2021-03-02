@@ -69,16 +69,16 @@ function DateAndTickets(props) {
       infoPopupText: "Покупка льготных билетов осуществляется только в кассе выставки при предъявлении документа, подтверждающего льготу",
       isAddButton: false,    
     },
-    {
-      ticketTitle: "Льготный",
-      price: 800,
-      currency: "₽",
-      ordinaryText: "(Дети до 18 лет, студенты, пенсионеры, члены многодетных семей)",
-      importantText: "",
-      isInfoButton: true,
-      infoPopupText: "Покупка льготных билетов осуществляется только в кассе выставки при предъявлении документа, подтверждающего льготу",
-      isAddButton: false,    
-    },
+    // {
+    //   ticketTitle: "Льготный",
+    //   price: 800,
+    //   currency: "₽",
+    //   ordinaryText: "(Дети до 18 лет, студенты, пенсионеры, члены многодетных семей)",
+    //   importantText: "",
+    //   isInfoButton: true,
+    //   infoPopupText: "Покупка льготных билетов осуществляется только в кассе выставки при предъявлении документа, подтверждающего льготу",
+    //   isAddButton: false,    
+    // },
   ];  
 
   const currencySign = ticketsData[0].currency || "₽";
@@ -98,6 +98,7 @@ function DateAndTickets(props) {
   return (
     <div className="date-and-tickets__container">
       <div className="date-and-tickets__header">
+        <div className="date-and-tickets__header-image"></div>    
         <div className="date-and-tickets__header-text">Покупка билета</div>
       </div>    
 
