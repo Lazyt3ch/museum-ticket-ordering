@@ -4,9 +4,11 @@ import "./index.css";
 function Payment(props) {
 
   return (
-    <div className="payment__container">
-      Payment: To be implemented
-    </div>
+    <>
+      <div className="payment__container">
+        Payment: To be implemented
+      </div>
+    </>
   )
 }
 
