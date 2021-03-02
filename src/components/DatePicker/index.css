@@ -20,11 +20,6 @@
   width: 360px;
 }
 
-.date-picker__price-info {
-  margin-left: 20px;
-  width: 470px;
-}
-
 
 .DayPicker-wrapper {
   width: 360px;
@@ -106,8 +101,20 @@
 }
 
 .date-picker__price-info { 
+  margin-left: 40px;
+  width: 470px;
+
   background-color: white;
   color: #AFB3BF;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+
 
 }
 
