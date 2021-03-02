@@ -12,6 +12,8 @@
   line-height: 21px;
   letter-spacing: 0em;
   color: #BE005A;  
+
+  cursor: pointer;
 }
 
 .multiple-tickets, .multiple-tickets__increment-decrement-wrapper {
@@ -50,4 +52,6 @@
   font-weight: 400;
   line-height: 21px;
   color: #FFFFFF;
+
+  cursor: pointer;
 }

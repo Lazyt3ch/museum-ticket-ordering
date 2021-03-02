@@ -81,6 +81,8 @@
 
   /* Otherwise Chrome and Firefox add pale border */
   /* border-color: transparent;  */
+
+  cursor: not-allowed;
 }
 
 /* Otherwise Chrome and Firefox add pale border */
@@ -91,6 +93,8 @@
 .tickets__add-button_enabled {
   background-color: #BE005A;
   color: #FFFFFF;
+
+  cursor: pointer;
 }
 
 .tickets__text {
