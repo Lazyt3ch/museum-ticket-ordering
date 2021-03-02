@@ -134,3 +134,16 @@ function DateAndTickets(props) {
 }
 
 export default DateAndTickets;
+
+/*
+Stage 1 -- Fonts
+
+Roboto: (all but DayPicker's calendar)
+400, 500, 700
+
+Open Sans: (DayPicker's calendar)
+400, 600
+
+IBM Plex Sans: (DayPicker's calendar)
+500
+*/
