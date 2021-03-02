@@ -2,7 +2,7 @@
 import React from 'react';
 import "./index.css";
 
-// import DayPicker from 'react-day-picker';
+// import DayPicker from 'react-day-picker'; // For development only
 import 'react-day-picker/lib/style.css';
 import DayPickerInput from "react-day-picker/DayPickerInput";
 
@@ -15,7 +15,7 @@ function DatePicker(props) {
   } = props;
 
   const formatDate = (dateStr) => {
-    console.log("dateStr =", dateStr);
+    // console.log("dateStr =", dateStr);
     const date = new Date(dateStr);
     const getPadded = (num) => num.toString().padStart(2, "0");
     return `${getPadded(date.getDate())}.${getPadded(date.getMonth() + 1)}.${date.getFullYear()}`;
@@ -151,24 +151,16 @@ function DatePicker(props) {
       // backgroundColor: "yellow", /* To be removed */
       position: "relative", /* Important: Otherwise both next-month and previous-month are unclickable! */
     };    
-
-    // const handleMouseOver = (evt) => {
-    //   console.log(evt.target);
-    //   console.log("hover");
-    //   evt.target.classList.add("day-picker-input_hover");
-    // };
   
     return (
       <div className={className} >
         <div style={{...styleLeft, ...styleBoth}}
-          // onMouseOver={handleMouseOver}
           onClick={() => {onPreviousClick(); console.log("prev month");}}
           // onClick={onPreviousClick}
         >           
         </div>
 
         <div style={{...styleRight, ...styleBoth}} 
-          // onMouseOver={handleMouseOver}
           onClick={() => {onNextClick(); console.log("next month");}}
           // onClick={onNextClick}
         >          
