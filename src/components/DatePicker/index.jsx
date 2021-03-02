@@ -98,12 +98,12 @@ function DatePicker(props) {
 
     if (date < new Date()) { // Date in the past
       setSelectedDate(null);
-      console.log("date in the past");
+      console.log("Date in the past!");
       return;
     }
 
     setSelectedDate(date);
-    console.log("valid date");
+    console.log("Valid date:", date);
   };
 
   // IMPORTANT: Start the list with Sunday
@@ -208,6 +208,7 @@ function DatePicker(props) {
               weekdaysLong: weekdaysLong['ru-ru'],
               months: months['ru-ru'],
               navbarElement: <Navbar />,
+              showOutsideDays: true,
             }}
 
             onDayChange={(day) => handleDateChange(day)}
