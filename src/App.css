@@ -1,6 +1,11 @@
-*, *:hover, *:focus {
+/* WARNING: The code below causes a bug in react-day-picker's calendar view and behavior!!! */
+/* *, *:hover, *:focus {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+} */
+
+* {
   box-sizing: border-box;
 }
 
@@ -13,7 +18,6 @@
 button, button:disabled {
   border-color: transparent; 
 }
-
 
 .app {
   height: 100vh;

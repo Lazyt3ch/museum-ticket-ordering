@@ -25,7 +25,7 @@ function DatePicker(props) {
     return (
       <div
         className={classNames.overlayWrapper}
-        style={{}}
+        // style={{}}
         {...props}
       >
         <div className={classNames.overlay}
@@ -50,7 +50,8 @@ function DatePicker(props) {
   const dayPickerInputStyles = {
     width: "360px",
     height: "81px",
-    padding: "24px",
+    // padding: "24px",
+    paddingLeft: "24px",
     
     // border: "1px solid #AFB3BF",
     border: getBorderStyle(),
