@@ -2,7 +2,7 @@
 import React from 'react';
 import "./index.css";
 
-// import DayPicker from 'react-day-picker';
+import DayPicker from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
 import DayPickerInput from "react-day-picker/DayPickerInput";
 
@@ -205,7 +205,14 @@ function DatePicker(props) {
         {priceInfo}
       </div>
 
-      {/* <DayPicker /> */}
+      {/* For development only */}
+      <DayPicker 
+          firstDayOfWeek={firstDayOfWeek['ru-ru']}
+          weekdaysShort={weekdaysShort['ru-ru']}
+          weekdaysLong={weekdaysLong['ru-ru']}
+          months={months['ru-ru']}
+          navbarElement={<Navbar />}
+      />
 
     </div>
   )
