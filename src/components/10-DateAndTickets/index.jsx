@@ -86,50 +86,48 @@ function DateAndTickets(props) {
   );  
 
   return (
-    <>
-      <div className="date-and-tickets__container">
-        <div className="date-and-tickets__header">
-          <div className="date-and-tickets__header-text">Покупка билета</div>
-        </div>    
+    <div className="date-and-tickets__container">
+      <div className="date-and-tickets__header">
+        <div className="date-and-tickets__header-text">Покупка билета</div>
+      </div>    
 
-        <div className="date-and-tickets">
-          <DatePicker 
-            priceInfo={priceInfo}
-            selectedDate={selectedDate}
-            setSelectedDate={setSelectedDate}
-          />
+      <div className="date-and-tickets">
+        <DatePicker 
+          priceInfo={priceInfo}
+          selectedDate={selectedDate}
+          setSelectedDate={setSelectedDate}
+        />
 
-          <div className="date-and-tickets__tickets">
-            { ticketsData.map((data, idx) => 
-                <Tickets 
-                  key={idx} 
-                  data={data} 
-                  selectedDate={selectedDate}
-                  setSubTotals={setSubTotals}
-                  idx={idx}
-                /> 
-              )
-            }         
-          </div>
+        <div className="date-and-tickets__tickets">
+          { ticketsData.map((data, idx) => 
+              <Tickets 
+                key={idx} 
+                data={data} 
+                selectedDate={selectedDate}
+                setSubTotals={setSubTotals}
+                idx={idx}
+              /> 
+            )
+          }         
+        </div>
+      </div>
+
+      <div className="date-and-tickets__footer">
+        <div className="date-and-tickets__total">
+          Итого: {total} {currencySign}
         </div>
 
-        <div className="date-and-tickets__footer">
-          <div className="date-and-tickets__total">
-            Итого: {total} {currencySign}
-          </div>
+        <button 
+          className={`date-and-tickets__go-to-payment ${
+            total ? "date-and-tickets__go-to-payment_enabled" : ""}`}
+          disabled={!total}
+          onClick={() => setStageIndex((prev) => prev + 1)}
+        >
+          Перейти к оплате
+        </button>
+      </div>   
 
-          <button 
-            className={`date-and-tickets__go-to-payment ${
-              total ? "date-and-tickets__go-to-payment_enabled" : ""}`}
-            disabled={!total}
-            onClick={() => setStageIndex((prev) => prev + 1)}
-          >
-            Перейти к оплате
-          </button>
-        </div>   
-
-      </div>
-    </>
+    </div>
   );
 }
 
