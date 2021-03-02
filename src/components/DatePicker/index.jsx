@@ -27,20 +27,16 @@ function DatePicker(props) {
     return (
       <div
         className={classNames.overlayWrapper}
-        style={{ marginLeft: -100 }}
+        style={{}}
         {...props}
       >
-        <div className={classNames.overlay}>
-          <h3>Hello day picker!</h3>
-          <p>
-            <input />
-            <button onClick={() => console.log('clicked!')}>button</button>
-          </p>
-          <p>
-            {selectedDay
-              ? `You picked: ${selectedDay.toLocaleDateString()}`
-              : 'Please pick a day'}
-          </p>
+        <div className={classNames.overlay}
+          style={{ 
+            boxShadow: "0px 0px 15px 0px #000000 25%",
+            backgroundColor: "#FFFFFF",
+            borderRadius: "20px",          
+          }}        
+        >
           {children}
         </div>
       </div>
@@ -140,12 +136,13 @@ function DatePicker(props) {
       marginLeft: "40px",
       marginTop: "20px",
       height: "18px",
-      width: "24px", /* Do not set width too big without setting background-position!!! */
+      width: "24px", /* Do not set width too big! */
       backgroundImage: `url("data:image/svg+xml,%3Csvg width='10' height='18' viewBox='0 0 10 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.133 8.961L9.21313 16.0411L8.20888 17.0486L0.625 9.4615V8.45725L8.20888 0.875L9.21313 1.88087L2.133 8.961Z' fill='%23881B26'/%3E%3C/svg%3E%0A")`,
       backgroundRepeat: "no-repeat",
       backgroundSize: "contain",
       backgroundPosition: "center",
-      // backgroundColor: "yellow",
+      backgroundColor: "yellow", /* To be removed */
+      zIndex: 10,
 
     };
 
@@ -154,12 +151,13 @@ function DatePicker(props) {
       marginRight: "40px",
       marginTop: "20px",
       height: "18px",
-      width: "24px", /* Do not set width too big without setting background-position!!! */
+      width: "24px", /* Do not set width too big! */
       backgroundImage: `url("data:image/svg+xml,%3Csvg width='10' height='18' viewBox='0 0 10 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.867 9.039L0.786876 1.95887L1.79113 0.951373L9.375 8.5385L9.375 9.54275L1.79112 17.125L0.786875 16.1191L7.867 9.039Z' fill='%23881B26'/%3E%3C/svg%3E%0A")`,
       backgroundRepeat: "no-repeat",
       backgroundSize: "contain",
       backgroundPosition: "center",
-      // backgroundColor: "yellow",
+      backgroundColor: "yellow", /* To be removed */
+      zIndex: 10,
 
     };
 
@@ -180,8 +178,6 @@ function DatePicker(props) {
     );
   }
 
-  console.log("got here");
-
   return (
     <div className="date-picker" >
       <div className="date-picker__calendar_control">
@@ -190,6 +186,7 @@ function DatePicker(props) {
             format="DD.MM.YYYY"
             formatDate={formatDate}
             inputProps={inputProps}
+            overlayComponent={CustomOverlay}
             dayPickerProps={{
               firstDayOfWeek: firstDayOfWeek['ru-ru'],
               weekdaysShort: weekdaysShort['ru-ru'],
