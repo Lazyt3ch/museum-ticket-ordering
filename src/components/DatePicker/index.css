@@ -1,8 +1,8 @@
-:root {
+/* :root {
   --day-padding-left-right: 15px;
   --day-padding-top: 15.4px;
   --day-padding: 15px;
-}
+} */
 
 .date-picker {
   display: flex;
@@ -67,9 +67,12 @@
 
 
 .DayPicker-Day {
-  padding-left: var(--day-padding-left-right) !important;
+  /* padding-left: var(--day-padding-left-right) !important;
   padding-right: var(--day-padding-left-right) !important;
-  padding-top: var(--day-padding-top) !important;
+  padding-top: var(--day-padding-top) !important; */
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  padding-top: 15.4px !important;
 
   font-family: "IBM Plex Sans", sans-serif !important;
   font-size: 16px !important;
