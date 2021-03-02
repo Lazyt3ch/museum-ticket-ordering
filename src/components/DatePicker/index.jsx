@@ -47,7 +47,7 @@ function DatePicker(props) {
       : "1px solid #AFB3BF";
   }
 
-  const datePickerStyles = {
+  const dayPickerInputStyles = {
     width: "360px",
     height: "81px",
     padding: "24px",
@@ -138,7 +138,7 @@ function DatePicker(props) {
   };
 
   const inputProps = {
-    style: datePickerStyles, 
+    style: dayPickerInputStyles, 
     readOnly: true, 
     // onFocus: handleOnFocus,
     // onBlur: handleOnBlur,
