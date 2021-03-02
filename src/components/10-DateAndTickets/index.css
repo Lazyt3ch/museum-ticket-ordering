@@ -39,6 +39,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-content: space-between;
+
+  border-bottom: 1px solid #C9C9C9;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .date-and-tickets__footer {
@@ -64,6 +70,8 @@
   height: 61px;
   width: 312px;
   left: 1228px;
+
+  margin-top: 32px;
 
   border-radius: 9px;
 
