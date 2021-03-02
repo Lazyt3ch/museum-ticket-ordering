@@ -33,7 +33,7 @@ function App() {
     <div className="app">
       { (stageIndex < stages.length - 1) && 
         (<div className="app__main-logo">
-          ! BODY WORLDS !
+          LOGO IMAGE
         </div>)     
       }
 
