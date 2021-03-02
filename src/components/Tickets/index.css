@@ -74,7 +74,7 @@
   background: #EFEFEF;
   color: #AFB3BF;
 
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -89,7 +89,7 @@
 .tickets__text {
   margin: 0 24px;
   
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;

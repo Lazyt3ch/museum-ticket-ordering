@@ -21,7 +21,7 @@
 }
 
 .multiple-tickets__subtotal {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 21px;
   font-style: normal;
   font-weight: 400;
@@ -44,7 +44,7 @@
   text-align: center;
   vertical-align: center;
 
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
