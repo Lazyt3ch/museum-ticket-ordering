@@ -124,12 +124,9 @@ function DatePicker(props) {
   };
 
   function Navbar({
-    nextMonth,
-    previousMonth,
     onPreviousClick,
     onNextClick,
     className,
-    localeUtils,
   }) {
 
     const marginLeftRight = "16px";
