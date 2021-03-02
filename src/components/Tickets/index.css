@@ -85,12 +85,14 @@
   font-style: normal;
   font-weight: 400;  
 
-  border-color: transparent; /* Otherwise Chrome and Firefox add pale border */
+  /* Otherwise Chrome and Firefox add pale border */
+  /* border-color: transparent;  */
 }
 
-.tickets__add-button:disabled {
-  border-color: transparent; /* Otherwise Chrome and Firefox add pale border */
-}
+/* Otherwise Chrome and Firefox add pale border */
+/* .tickets__add-button:disabled {
+  border-color: transparent; 
+} */
 
 .tickets__add-button_enabled {
   background-color: #BE005A;
