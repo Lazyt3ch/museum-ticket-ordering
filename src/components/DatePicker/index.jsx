@@ -203,7 +203,6 @@ function DatePicker(props) {
             format="DD.MM.YYYY"
             formatDate={formatDate}
             inputProps={inputProps}
-            overlayComponent={CustomOverlay}
             dayPickerProps={{
               firstDayOfWeek: firstDayOfWeek['ru-ru'],
               weekdaysShort: weekdaysShort['ru-ru'],
@@ -213,9 +212,8 @@ function DatePicker(props) {
               showOutsideDays: true,
               disabledDays: { before: today },
             }}
-
-            onDayChange={(day) => handleDateChange(day)}
-            
+            overlayComponent={CustomOverlay}
+            onDayChange={(day) => handleDateChange(day)}            
         />
       </div>
       
