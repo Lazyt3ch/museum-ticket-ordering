@@ -107,11 +107,17 @@
 
 .date-picker__price-info { 
   background-color: white;
+  color: #AFB3BF;
+
 }
 
 /* .day-picker-input_hover {
   opacity: .5;
 } */
+
+div.DayPickerInput input::placeholder {
+  color: #AFB3BF;
+}
 
 div.DayPickerInput input:focus {
   border: 2px solid #BE005A !important;

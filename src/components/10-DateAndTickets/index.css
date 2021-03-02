@@ -65,9 +65,15 @@
   left: 1228px;
 
   border-radius: 9px;
-  padding: 10px;
 
-  background: #777C8B;
+  background: #EFEFEF;
+  color: #777C8B;
+
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  
 } 
 
 .date-and-tickets__go-to-payment_enabled {
