@@ -66,6 +66,7 @@
   height: 37px; 
 }
 
+
 .tickets__add-button {
   /* position: absolute; */
   position: relative;
@@ -77,12 +78,18 @@
 
   background: #EFEFEF;
   color: #AFB3BF;
+  outline: 0px transparent !important;
 
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
-  
+  font-weight: 400;  
+
+  border-color: transparent; /* Otherwise Chrome and Firefox add pale border */
+}
+
+.tickets__add-button:disabled {
+  border-color: transparent; /* Otherwise Chrome and Firefox add pale border */
 }
 
 .tickets__add-button_enabled {

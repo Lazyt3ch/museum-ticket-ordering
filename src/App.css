@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+/* Otherwise Chrome might add a black border on focus */
+*, *:focus, *:hover {
+  outline: none;
+}
+
 .app {
   height: 100vh;
 }
