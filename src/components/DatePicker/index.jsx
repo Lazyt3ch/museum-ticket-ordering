@@ -149,8 +149,8 @@ function DatePicker(props) {
       backgroundSize: "18px 18px",
       backgroundPosition: "center",
       // backgroundColor: "yellow", /* To be removed */
-      // zIndex: "1000 !important",
-    };
+      position: "relative", /* Important: Otherwise both next-month and previous-month are unclickable! */
+    };    
 
     // const handleMouseOver = (evt) => {
     //   console.log(evt.target);
@@ -163,7 +163,6 @@ function DatePicker(props) {
         <div style={{...styleLeft, ...styleBoth}}
           // onMouseOver={handleMouseOver}
           onClick={() => {onPreviousClick(); console.log("prev month");}}
-          tabindex="0"
           // onClick={onPreviousClick}
         >           
         </div>
@@ -171,7 +170,6 @@ function DatePicker(props) {
         <div style={{...styleRight, ...styleBoth}} 
           // onMouseOver={handleMouseOver}
           onClick={() => {onNextClick(); console.log("next month");}}
-          tabindex="0"
           // onClick={onNextClick}
         >          
         </div>
