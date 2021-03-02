@@ -116,3 +116,7 @@
 div.DayPickerInput input:focus {
   border: 2px solid #BE005A !important;
 }
+
+.DayPickerInput_valid {
+  border: 2px solid #BE005A !important;
+}

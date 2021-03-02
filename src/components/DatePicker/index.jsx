@@ -66,15 +66,15 @@ function DatePicker(props) {
 
   // const borderOnFocus = "2px solid #BE005A";
 
-  const handleOnFocus = () => {
-    console.log("focus");
-    // datePickerStyles.border = borderOnFocus;
-  }
+  // const handleOnFocus = () => {
+  //   console.log("focus");
+  //   // datePickerStyles.border = borderOnFocus;
+  // }
 
-  const handleOnBlur = () => {
-    console.log("blur");
-    // datePickerStyles.border = borderOnFocus;
-  }  
+  // const handleOnBlur = () => {
+  //   console.log("blur");
+  //   // datePickerStyles.border = borderOnFocus;
+  // }  
 
   const handleDateChange = (dateStr) => {
     // console.log("date changed");
@@ -133,8 +133,8 @@ function DatePicker(props) {
   const inputProps = {
     style: datePickerStyles, 
     readOnly: true, 
-    onFocus: handleOnFocus,
-    onBlur: handleOnBlur,
+    // onFocus: handleOnFocus,
+    // onBlur: handleOnBlur,
 
   };
 
