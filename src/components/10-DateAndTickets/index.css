@@ -74,6 +74,8 @@
 }
 
 .date-and-tickets__total {
+  padding-top: 27px;
+
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-style: normal;
