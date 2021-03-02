@@ -69,6 +69,16 @@ function DateAndTickets(props) {
       infoPopupText: "Покупка льготных билетов осуществляется только в кассе выставки при предъявлении документа, подтверждающего льготу",
       isAddButton: false,    
     },
+    {
+      ticketTitle: "Льготный",
+      price: 800,
+      currency: "₽",
+      ordinaryText: "(Дети до 18 лет, студенты, пенсионеры, члены многодетных семей)",
+      importantText: "",
+      isInfoButton: true,
+      infoPopupText: "Покупка льготных билетов осуществляется только в кассе выставки при предъявлении документа, подтверждающего льготу",
+      isAddButton: false,    
+    },
   ];  
 
   const currencySign = ticketsData[0].currency || "₽";
