@@ -52,7 +52,9 @@
   position: relative;
 
   margin-bottom: 45px;
-  z-index: -1000 !important; /* Otherwise cannot click on "previous month" or "next month" */
+
+  /* z-index: -1000 !important;  */
+  /* Otherwise cannot click on "previous month" or "next month" */
 }
 
 .DayPicker-Caption {
@@ -80,6 +82,8 @@
   line-height: 32px; /* Adjusted */
   letter-spacing: 1.5px;
   text-align: center;
+
+  /* z-index: 1000 !important; */
 }
 
 
@@ -95,6 +99,8 @@
   line-height: 22px !important;
   letter-spacing: 0.22px;
   text-align: center;
+
+  /* z-index: 1000 !important; */
 }
 
 .date-picker__price-info { 
