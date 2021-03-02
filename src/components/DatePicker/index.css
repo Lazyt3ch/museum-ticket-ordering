@@ -49,39 +49,28 @@
 }
 
 .DayPicker-Month {
-  /* Otherwise cannot click on "previous month" or "next month" */
-  /* z-index: -10;  */
-
   position: relative;
 
   margin-bottom: 45px;
+  z-index: -1000 !important; /* Otherwise cannot click on "previous month" or "next month" */
 }
 
-
-
-div.DayPicker-Caption {
-  width: 66%;
+.DayPicker-Caption {
+  width: 64%;
   margin: 10px auto 30px auto;
+  padding: 0;
 
   font-family: "Open Sans", sans-serif !important;
-  font-size: 24px !important;
+  font-size: 22px !important;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 600 !important;
   line-height: 24px !important;
-  letter-spacing: 0.12px;
+  /* letter-spacing: 0.12px; */
   text-align: center !important;
 
-  background-color: aqua; 
+  /* background-color: aqua;  */
   /* To be removed */
-  
-  z-index: -1000 !important;
-
 }
-
-/* .DayPicker-Body {
-  table-layout: fixed;
-  width: 100%;
-} */
 
 .DayPicker-Weekdays {
   font-family: "Open Sans", sans-serif;

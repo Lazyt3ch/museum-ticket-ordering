@@ -121,7 +121,7 @@ function DatePicker(props) {
 
   };
 
-  function Navbar({
+  function Navbar({ 
     onPreviousClick,
     onNextClick,
     className,
@@ -148,7 +148,7 @@ function DatePicker(props) {
       backgroundRepeat: "no-repeat",
       backgroundSize: "18px 18px",
       backgroundPosition: "center",
-      backgroundColor: "yellow", /* To be removed */
+      // backgroundColor: "yellow", /* To be removed */
       // zIndex: "1000 !important",
     };
 
@@ -163,6 +163,7 @@ function DatePicker(props) {
         <div style={{...styleLeft, ...styleBoth}}
           // onMouseOver={handleMouseOver}
           onClick={() => {onPreviousClick(); console.log("prev month");}}
+          tabindex="0"
           // onClick={onPreviousClick}
         >           
         </div>
@@ -170,6 +171,7 @@ function DatePicker(props) {
         <div style={{...styleRight, ...styleBoth}} 
           // onMouseOver={handleMouseOver}
           onClick={() => {onNextClick(); console.log("next month");}}
+          tabindex="0"
           // onClick={onNextClick}
         >          
         </div>
