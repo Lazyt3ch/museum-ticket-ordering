@@ -26,7 +26,7 @@
   float: left;
 
   margin-left: 24px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
   /* margin-top: 26px; */
 
   font-family: Roboto;
@@ -50,6 +50,9 @@
   line-height: 21px;
   letter-spacing: 0em;
   text-align: right;  
+
+  color: #777C8B;
+
 }
 
 .tickets__handlers {
