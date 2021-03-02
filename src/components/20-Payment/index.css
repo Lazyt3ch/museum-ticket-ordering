@@ -7,3 +7,8 @@
 
   background: aqua; /* To be removed */
 }
+
+.payment__development-message {
+  text-align: center;
+  font-size: 50px;
+}
