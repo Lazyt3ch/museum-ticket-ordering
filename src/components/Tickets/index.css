@@ -103,5 +103,6 @@
 }
 
 .tickets__text_important {
-  color: red;
+  font-weight: 500;
+  color: #cc3399;
 }
