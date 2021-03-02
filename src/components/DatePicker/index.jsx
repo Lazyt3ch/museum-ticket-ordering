@@ -93,7 +93,7 @@ function DatePicker(props) {
   
   // IMPORTANT: Start the list with Sunday
   const weekdaysShort = {
-    "ru-ru": ["вс", "пн", "вт", "ср", "чт", "пт", "сб"]
+    "ru-ru": ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"]
   };
 
   const firstDayOfWeek = {
@@ -153,8 +153,8 @@ function DatePicker(props) {
       backgroundRepeat: "no-repeat",
       backgroundSize: "18px 18px",
       backgroundPosition: "center",
-      // backgroundColor: "yellow", /* To be removed */
-      // zIndex: "1000 !important",
+      backgroundColor: "yellow", /* To be removed */
+      zIndex: "1000 !important",
     }
   
     return (

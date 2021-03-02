@@ -1,5 +1,6 @@
 :root {
-  /* --day-padding-left-right: 15px; */
+  --day-padding-left-right: 15px;
+  --day-padding-top: 15.4px;
   --day-padding: 15px;
 }
 
@@ -59,7 +60,8 @@
 
 
 div.DayPicker-Caption {
-  margin-top: 10px;
+  width: 66%;
+  margin: 10px auto 30px auto;
 
   font-family: "Open Sans", sans-serif !important;
   font-size: 24px !important;
@@ -69,7 +71,7 @@ div.DayPicker-Caption {
   letter-spacing: 0.12px;
   text-align: center !important;
 
-  /* background-color: aqua;  */
+  background-color: aqua; 
   /* To be removed */
   
   /* z-index: -1000 !important; */
@@ -99,7 +101,12 @@ div.DayPicker-Caption {
   padding-top: var(--day-padding-left-right) !important;
   padding-bottom: var(--day-padding-left-right) !important; */
 
-  padding: var(--day-padding) !important;
+  padding-left: var(--day-padding-left-right) !important;
+  padding-right: var(--day-padding-left-right) !important;
+  padding-top: var(--day-padding-top) !important;
+
+  /* padding-top: var(--day-padding) !important;
+  padding-bottom: var(--day-padding) !important; */
 
   /* padding-left: 2em;
   padding-right: 2em; */
@@ -108,7 +115,7 @@ div.DayPicker-Caption {
   font-size: 16px !important;
   font-style: normal;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 22px !important;
   letter-spacing: 0.22px;
   text-align: center;
 
