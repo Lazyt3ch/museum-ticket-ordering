@@ -23,33 +23,23 @@
 
 .DayPicker-wrapper {
   width: 360px;
-  /* height: 374px;  */
 
   box-shadow: 0px 0px 15px 0px #000000 25%;
 
   border-radius: 20px;
   padding: 16px;
-
 }
 
 
 .DayPicker {
   position: relative;
   display: block;
-
-  /* box-shadow: 0px 0px 15px 0px #000000 25%;
-
-  border-radius: 20px; */
-  /* padding: 16px;   */
 }
 
 .DayPicker-Month {
   position: relative;
 
   margin-bottom: 45px;
-
-  /* z-index: -1000 !important;  */
-  /* Otherwise cannot click on "previous month" or "next month" */
 }
 
 .DayPicker-Caption {
@@ -62,11 +52,7 @@
   font-style: normal;
   font-weight: 600 !important;
   line-height: 24px !important;
-  /* letter-spacing: 0.12px; */
   text-align: center !important;
-
-  /* background-color: aqua;  */
-  /* To be removed */
 }
 
 .DayPicker-Weekdays {
@@ -114,13 +100,7 @@
   line-height: 25px;
   letter-spacing: 0em;
   text-align: left;
-
-
 }
-
-/* .day-picker-input_hover {
-  opacity: .5;
-} */
 
 div.DayPickerInput input::placeholder {
   color: #AFB3BF;

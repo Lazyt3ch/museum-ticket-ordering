@@ -9,12 +9,9 @@
   outline: none;
 }
 
-button {
-  border-color: transparent; /* Otherwise Chrome and Firefox add pale border */
-}
-
-button:disabled {
-  border-color: transparent; /* Otherwise Chrome and Firefox add pale border */
+/* Otherwise Chrome and Firefox add pale border */
+button, button:disabled {
+  border-color: transparent; 
 }
 
 

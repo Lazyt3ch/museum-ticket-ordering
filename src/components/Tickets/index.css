@@ -1,12 +1,8 @@
 .tickets {
   position: relative;
-  /* position: absolute;
-  left: 380px;
-  top: 398px; */
 
   width: 360px;
   height: 166px;
-  /* margin-top: 40px; */
   margin-bottom: 40px;
 
   border: 1px solid #AFB3BF;
@@ -41,8 +37,6 @@
 
 .tickets__price {
   margin-right: 24px;
-  /* margin-left: 40px; */
-  /* margin-top: 26px; */
 
   font-family: Roboto;
   font-size: 18px;
