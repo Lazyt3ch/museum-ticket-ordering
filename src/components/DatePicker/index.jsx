@@ -64,7 +64,7 @@ function DatePicker(props) {
 
   };
 
-  const borderOnFocus = "2px solid #BE005A";
+  // const borderOnFocus = "2px solid #BE005A";
 
   const handleOnFocus = () => {
     console.log("focus");
