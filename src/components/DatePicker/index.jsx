@@ -21,8 +21,6 @@ function DatePicker(props) {
     return `${getPadded(date.getDate())}.${getPadded(date.getMonth() + 1)}.${date.getFullYear()}`;
   }
 
-
-  // eslint-disable-next-line
   function CustomOverlay({ classNames, selectedDay, children, ...props }) {
     return (
       <div
@@ -143,7 +141,7 @@ function DatePicker(props) {
       backgroundImage: `url("data:image/svg+xml,%3Csvg width='10' height='18' viewBox='0 0 10 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.867 9.039L0.786876 1.95887L1.79113 0.951373L9.375 8.5385L9.375 9.54275L1.79112 17.125L0.786875 16.1191L7.867 9.039Z' fill='%23881B26'/%3E%3C/svg%3E%0A")`,
     };
 
-    const styleLeftRight = {
+    const styleBoth = {
       marginTop: "20px",
       height: "36px",
       width: "36px", 
@@ -151,18 +149,26 @@ function DatePicker(props) {
       backgroundSize: "18px 18px",
       backgroundPosition: "center",
       backgroundColor: "yellow", /* To be removed */
-      zIndex: "1000 !important",
-    }
+      // zIndex: "1000 !important",
+    };
+
+    // const handleMouseOver = (evt) => {
+    //   console.log(evt.target);
+    //   console.log("hover");
+    //   evt.target.classList.add("day-picker-input_hover");
+    // };
   
     return (
       <div className={className} >
-        <div style={{...styleLeft, ...styleLeftRight}}
+        <div style={{...styleLeft, ...styleBoth}}
+          // onMouseOver={handleMouseOver}
           onClick={() => {onPreviousClick(); console.log("prev month");}}
           // onClick={onPreviousClick}
         >           
         </div>
 
-        <div style={{...styleRight, ...styleLeftRight}} 
+        <div style={{...styleRight, ...styleBoth}} 
+          // onMouseOver={handleMouseOver}
           onClick={() => {onNextClick(); console.log("next month");}}
           // onClick={onNextClick}
         >          
