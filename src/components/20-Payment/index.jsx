@@ -62,7 +62,7 @@ function Payment(props) {
       <Footer 
         total={total}
         currencySign={currencySign} 
-        buttonText={"Перейти к оплате"}
+        buttonText={`Оплатить - 1 150  ₽`}
         stageIndex={stageIndex}
         setStageIndex={setStageIndex}      
       />      
