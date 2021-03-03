@@ -1,4 +1,6 @@
 .date-and-tickets__footer {
+  padding-top: 24px;
+
   height: 93px;
 
   display: flex;
@@ -43,7 +45,8 @@
   background-color: #BE005A;
   color: #FFFFFF;
 
-  box-shadow: 0px 14px 37px 0px #BE005A 25%;
+  /* box-shadow: 0px 14px 37px 0px #BE005A 25%; */
+  box-shadow: 0px 14px 37px 0px rgba(190, 0, 90, 0.25);
 
   cursor: pointer;
 }
