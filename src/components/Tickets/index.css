@@ -111,5 +111,6 @@
 
 .tickets__text_important {
   font-weight: 500;
-  color: #cc3399;
+  /* color: #cc3399; */
+  color: #BE005A;
 }
