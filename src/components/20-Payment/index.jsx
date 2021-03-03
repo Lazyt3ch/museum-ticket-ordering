@@ -85,6 +85,11 @@ function Payment(props) {
         setStageIndex={setStageIndex}      
         nextStageDisabled={!email || !termsAccepted}
       />
+
+      <div className="payment__processor-logos">
+
+        
+      </div>
     </div>
   )
 }

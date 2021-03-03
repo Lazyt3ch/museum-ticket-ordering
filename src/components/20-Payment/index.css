@@ -135,6 +135,13 @@ input.payment__email-input::placeholder {
   color: blue;
 }
 
+.payment__processor-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 
 
 /* .payment__development-message {
