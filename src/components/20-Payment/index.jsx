@@ -1,8 +1,9 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import "./index.css";
 import Checkbox from "../Checkbox";
 import Footer from "../Footer";
 import getFormatedPrice from "../../utils/getFormatedPrice";
+import validateEmail from "../../utils/validateEmail";
 
 function Payment(props) {
   const {
@@ -13,6 +14,7 @@ function Payment(props) {
     stageIndex,
     setStageIndex,
     email,
+    setEmail,
   } = props;
 
   // eslint-disable-next-line
@@ -20,6 +22,29 @@ function Payment(props) {
 
   const emailInputOne = useRef(null);
   const emailInputTwo = useRef(null);
+
+  // useEffect(
+  //   () => {
+
+
+  //   },
+  //   []
+  // )
+
+  const verifyEmails = () => {
+    const emailOne = emailInputOne.current.trim();
+    const emailTwo = emailInputTwo.current.trim();
+
+    if (emailOne !== emailTwo) {
+      return;
+    }
+
+    if (validateEmail(emailOne) || validateEmail(emailTwo)) {
+      return;
+    }
+
+    setEmail(emailOne);
+  }
 
   return (
     <div className="payment__container">
@@ -39,11 +64,13 @@ function Payment(props) {
           ref={emailInputOne} 
           className="payment__email-input" 
           placeholder="E-mail" 
+          onBlur={verifyEmails}
         />
         <input type="text" 
           ref={emailInputTwo} 
           className="payment__email-input" 
           placeholder="Повторите e-mail" 
+          onBlur={verifyEmails}
         />
         <div className="payment__email-input__description">
           Внимательно проверьте ваш e-mail адрес. Билеты на него придут сразу после оплаты
