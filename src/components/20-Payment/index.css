@@ -46,7 +46,61 @@
 
 .payment__provide-email-and-accept-terms {
   margin-top: 24px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
+
+.payment__email-input {
+  display: inline-block;
+  
+  height: 81px;
+  width: 360px;
+  
+  border-radius: 17px;
+
+  border: 1px solid #AFB3BF;
+
+  padding-left: 24px;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: #000000;
+  
+}
+
+.payment__email-input::placeholder {
+  /* font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left; */
+
+  color: #AFB3BF;  
+}
+
+.payment__email-input__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: #E90017;
+}
+
 
 .payment__accept-terms {
   display: flex;

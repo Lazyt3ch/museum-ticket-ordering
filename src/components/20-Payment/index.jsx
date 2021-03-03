@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useRef} from 'react';
 import "./index.css";
 import Checkbox from "../Checkbox";
 
@@ -7,6 +7,11 @@ function Payment(props) {
     termsAccepted,
     setTermsAccepted,
   } = props;
+
+  const [email, setEmail] = useState("");
+
+  const emailInputOne = useRef(null);
+  const emailInputTwo = useRef(null);
 
   return (
     <div className="payment__container">
@@ -23,7 +28,19 @@ function Payment(props) {
 
       <div className="payment__provide-email-and-accept-terms">
         <div className="payment__provide-email">
-
+          <input type="text" 
+            ref={emailInputOne} 
+            className="payment__email-input" 
+            placeholder="E-mail" 
+          />
+          <input type="text" 
+            ref={emailInputTwo} 
+            className="payment__email-input" 
+            placeholder="Повторите e-mail" 
+          />
+          <div className="payment__email-input__description">
+            Внимательно проверьте ваш e-mail адрес. Билеты на него придут сразу после оплаты
+          </div>
         </div>
 
         <div className="payment__accept-terms">
