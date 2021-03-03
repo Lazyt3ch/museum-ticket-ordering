@@ -74,6 +74,8 @@ function DatePicker(props) {
 
   };
 
+  const today = new Date();
+
   // const borderOnFocus = "2px solid #BE005A";
 
   // const handleOnFocus = () => {
@@ -99,11 +101,11 @@ function DatePicker(props) {
     const date = new Date(dateStr);
     // console.log("date =", date);
 
-    if (date < new Date()) { // Date in the past
-      setSelectedDate(null);
-      // console.log("Date in the past!");
-      return;
-    }
+    // if (date < new Date()) { // Date in the past
+    //   setSelectedDate(null);
+    //   // console.log("Date in the past!");
+    //   return;
+    // }
 
     setSelectedDate(date);
     // console.log("Valid date:", date);
@@ -145,15 +147,9 @@ function DatePicker(props) {
     readOnly: true, 
     // onFocus: handleOnFocus,
     // onBlur: handleOnBlur,
-
   };
 
-  function Navbar({ 
-    onPreviousClick,
-    onNextClick,
-    className,
-  }) {
-
+  function Navbar({ onPreviousClick, onNextClick, className, }) {
     const marginLeftRight = "16px";
 
     const styleLeft = {
@@ -182,21 +178,19 @@ function DatePicker(props) {
     return (
       <div className={className} >
         <div style={{...styleLeft, ...styleBoth}}
-          onClick={() => {onPreviousClick(); console.log("prev month");}}
-          // onClick={onPreviousClick}
+          // onClick={() => {onPreviousClick(); console.log("prev month");}}
+          onClick={() => onPreviousClick()}
         >           
         </div>
 
         <div style={{...styleRight, ...styleBoth}} 
-          onClick={() => {onNextClick(); console.log("next month");}}
-          // onClick={onNextClick}
+          // onClick={() => {onNextClick(); console.log("next month");}}
+          onClick={() => onNextClick()}
         >          
         </div>
       </div>
     );
   }
-
-  const today = new Date();
 
   const handleDayClick = (day, {selected}) => {
     if (day < today) {
