@@ -140,6 +140,19 @@ input.payment__email-input::placeholder {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+
+  background-color: aqua;
+}
+
+.payment__processor-logo {
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.payment__processor-logo__visa {
+  width: 125px;
+  height: 57px;  
 }
 
 
