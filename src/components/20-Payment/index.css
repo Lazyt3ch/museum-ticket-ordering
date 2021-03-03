@@ -57,8 +57,10 @@
 input.payment__email-input {
   display: inline-block !important;
 
+  flex-shrink: 0;
+
   height: 81px;
-  width: 360px !important;
+  /* width: 360px !important; */
   box-sizing: border-box;
   
   border-radius: 17px;
@@ -81,9 +83,15 @@ input.payment__email-input::placeholder {
   color: #AFB3BF;  
 }
 
+.payment__provide-email :first-child {
+  width: 360px;
+}
+
 .payment__provide-email :nth-child(2) {
   margin-left: 40px;
   margin-right: 24px;
+
+  width: 360px;
 }
 
 .payment__email-input__description {
