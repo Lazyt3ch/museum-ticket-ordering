@@ -9,8 +9,9 @@
 }
 
 .payment__header {
-  height: 70px; /* To be adjusted */
   width: 100%;
+
+  padding-bottom: 32px;
 
   border-bottom: 1px solid #C9C9C9;
 }
@@ -41,7 +42,6 @@
   color: #AFB3BF;  
 
   margin-top: 0;
-  margin-bottom: 32px;
 }
 
 
