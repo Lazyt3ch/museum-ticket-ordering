@@ -54,14 +54,14 @@
   align-items: center;
 }
 
-.payment__email-input {
-  display: inline-block;
+input.payment__email-input {
+  display: inline-block !important;
 
   height: 81px;
-  width: 360px;
+  width: 360px !important;
+  box-sizing: border-box;
   
   border-radius: 17px;
-
   border: 1px solid #AFB3BF;
 
   padding-left: 24px;
@@ -77,7 +77,7 @@
   color: #000000;  
 }
 
-.payment__email-input::placeholder {
+input.payment__email-input::placeholder {
   color: #AFB3BF;  
 }
 
@@ -104,8 +104,8 @@
   flex-direction: row;
   justify-items: left;
   align-items: center;
-
-  margin-bottom: 32px;
+  
+  padding-bottom: 32px;
   border-bottom: 1px solid #C9C9C9;
 }
 
