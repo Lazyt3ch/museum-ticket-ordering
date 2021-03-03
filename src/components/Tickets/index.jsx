@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import "./index.css";
 import Popup from "../Popup";
 import MultipleTickets from "../MultipleTickets";
+import getFormatedPrice from "../../utils/getFormatedPrice";
 
 function Tickets(props) {
   const { 
@@ -34,30 +35,30 @@ function Tickets(props) {
     [numTickets, price, setSubTotals, idx]
   );
 
-  const getFormatedPrice = (price, currencySign, thousandSeparator = " ", decimalSeparator = ",") => {
-    const wholePart = Math.floor(price);
-    const decimalPart = price - wholePart;
-    const thousandRegExp = /(-?[0-9]+)([0-9]{3})/;
+  // const getFormatedPrice = (price, currencySign, thousandSeparator = " ", decimalSeparator = ",") => {
+  //   const wholePart = Math.floor(price);
+  //   const decimalPart = price - wholePart;
+  //   const thousandRegExp = /(-?[0-9]+)([0-9]{3})/;
 
-    let priceStr = "";
-    let wholeStr = wholePart.toString();
+  //   let priceStr = "";
+  //   let wholeStr = wholePart.toString();
 
-    if (wholePart >= 1000) {
-      while(thousandRegExp.test(wholeStr)) {
-        wholeStr = wholeStr.replace(thousandRegExp, '$1' + thousandSeparator + '$2');
-      }
-    }
+  //   if (wholePart >= 1000) {
+  //     while(thousandRegExp.test(wholeStr)) {
+  //       wholeStr = wholeStr.replace(thousandRegExp, '$1' + thousandSeparator + '$2');
+  //     }
+  //   }
 
-    priceStr += wholeStr;
+  //   priceStr += wholeStr;
 
-    if (decimalPart) {
-      priceStr += decimalSeparator + decimalPart.toString();
-    }
+  //   if (decimalPart) {
+  //     priceStr += decimalSeparator + decimalPart.toString();
+  //   }
 
-    priceStr += " " + currencySign;
+  //   priceStr += " " + currencySign;
 
-    return priceStr;
-  };
+  //   return priceStr;
+  // };
 
 
   return (
