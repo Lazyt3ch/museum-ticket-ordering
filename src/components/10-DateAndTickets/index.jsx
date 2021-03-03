@@ -3,9 +3,10 @@ import "./index.css";
 
 import Tickets from "../Tickets";
 import DatePicker from "../DatePicker";
+import Footer from "../Footer";
 
 function DateAndTickets(props) {
-  const {setStageIndex} = props;
+  const {stageIndex, setStageIndex} = props;
   const priceInfo = "Стоимость билета в праздничные дни рассчитывается по тарифу выходного дня";
 
   const ticketsData = [ // TODO: Implement data fetching
@@ -123,7 +124,15 @@ function DateAndTickets(props) {
         </div>
       </div>
 
-      <div className="date-and-tickets__footer">
+      <Footer 
+        total={total}
+        currencySign={currencySign} 
+        buttonText={"Перейти к оплате"}
+        stageIndex={stageIndex}
+        setStageIndex={setStageIndex}      
+      />
+
+      {/* <div className="date-and-tickets__footer">
         <div className="date-and-tickets__total">
           Итого: {total} {currencySign}
         </div>
@@ -136,7 +145,7 @@ function DateAndTickets(props) {
         >
           Перейти к оплате
         </button>
-      </div>   
+      </div>    */}
 
     </div>
   );

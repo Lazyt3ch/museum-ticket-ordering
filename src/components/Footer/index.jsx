@@ -6,6 +6,7 @@ function Footer(props) {
     total, 
     currencySign, 
     buttonText,
+    setStageIndex,
   } = props;       
 
   return (
@@ -20,7 +21,7 @@ function Footer(props) {
         disabled={!total}
         onClick={() => setStageIndex((prev) => prev + 1)}
       >
-        Перейти к оплате
+        {buttonText}
       </button>
     </div>   
   );

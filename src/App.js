@@ -39,6 +39,7 @@ function App() {
       }
 
       <CurrentStage 
+        stageIndex={stageIndex}
         setStageIndex={setStageIndex}
         termsAccepted={termsAccepted}
         setTermsAccepted={setTermsAccepted}
