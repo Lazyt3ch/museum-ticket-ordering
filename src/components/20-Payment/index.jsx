@@ -66,6 +66,7 @@ function Payment(props) {
         buttonText={`Оплатить - ${getFormatedPrice(total, currencySign)} ₽`}
         stageIndex={stageIndex}
         setStageIndex={setStageIndex}      
+        nextStageDisabled={!termsAccepted}
       />      
 
 

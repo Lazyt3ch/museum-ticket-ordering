@@ -147,7 +147,8 @@ function DateAndTickets(props) {
         currencySign={currencySign} 
         buttonText={"Перейти к оплате"}
         stageIndex={stageIndex}
-        setStageIndex={setStageIndex}      
+        setStageIndex={setStageIndex}     
+        nextStageDisabled={!total}
       />
 
       {/* <div className="date-and-tickets__footer">
