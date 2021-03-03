@@ -12,10 +12,11 @@ function Payment(props) {
     currencySign,
     stageIndex,
     setStageIndex,
+    email,
   } = props;
 
   // eslint-disable-next-line
-  const [email, setEmail] = useState("");
+  // const [email, setEmail] = useState("");
 
   const emailInputOne = useRef(null);
   const emailInputTwo = useRef(null);
@@ -63,13 +64,11 @@ function Payment(props) {
       <Footer 
         total={total}
         currencySign={currencySign} 
-        buttonText={`Оплатить - ${getFormatedPrice(total, currencySign)} ₽`}
+        buttonText={`Оплатить - ${getFormatedPrice(total, currencySign)}`}
         stageIndex={stageIndex}
         setStageIndex={setStageIndex}      
         nextStageDisabled={!termsAccepted}
-      />      
-
-
+      />
     </div>
   )
 }

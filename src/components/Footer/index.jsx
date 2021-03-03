@@ -7,8 +7,6 @@ function Footer(props) {
     currencySign, 
     buttonText,
     setStageIndex,
-    stageIndex,
-    termsAccepted,
     nextStageDisabled,
   } = props;       
 
@@ -20,7 +18,7 @@ function Footer(props) {
 
       <button 
         className={`date-and-tickets__next-stage ${
-          total ? "date-and-tickets__next-stage_enabled" : ""}`}
+          nextStageDisabled ? "" : "date-and-tickets__next-stage_enabled"}`}
         disabled={nextStageDisabled}
         onClick={() => setStageIndex((prev) => prev + 1)}
       >

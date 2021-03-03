@@ -18,7 +18,9 @@ function App() {
 
   // eslint-disable-next-line
   const [stageIndex, setStageIndex] = useState(0);
+  const [email, setEmail] = useState("");
   const [termsAccepted, setTermsAccepted] = useState(false);
+
 
   // /* Test components 20 and 30 */
   // useEffect( () => {
@@ -50,6 +52,8 @@ function App() {
         setTotal={setTotal}
         currencySign={currencySign}
         setCurrencySign={setCurrencySign}
+        email={email}
+        setEmail={setEmail}
       />
   
     </div>
