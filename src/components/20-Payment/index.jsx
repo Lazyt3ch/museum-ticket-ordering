@@ -32,17 +32,20 @@ function Payment(props) {
   // )
 
   const verifyEmails = () => {
-    const emailOne = emailInputOne.current.trim();
-    const emailTwo = emailInputTwo.current.trim();
+    // console.log("verify emails");
+    const emailOne = emailInputOne.current.value.trim();
+    const emailTwo = emailInputTwo.current.value.trim();
+    // console.log("emailOne, emailTwo =", emailOne, emailTwo);
 
     if (emailOne !== emailTwo) {
       return;
     }
 
-    if (validateEmail(emailOne) || validateEmail(emailTwo)) {
+    if (!validateEmail(emailOne) || !validateEmail(emailTwo)) {
       return;
     }
-
+    
+    // console.log("set email");
     setEmail(emailOne);
   }
 
@@ -94,7 +97,7 @@ function Payment(props) {
         buttonText={`Оплатить - ${getFormatedPrice(total, currencySign)}`}
         stageIndex={stageIndex}
         setStageIndex={setStageIndex}      
-        nextStageDisabled={!termsAccepted}
+        nextStageDisabled={!email || !termsAccepted}
       />
     </div>
   )
