@@ -136,23 +136,17 @@ input.payment__email-input::placeholder {
 }
 
 .payment__processor-logos {
-  padding-top: 85px;
+  min-height: 150px;
+
+  padding: 85px 40px 0 30px;
 
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-
-  background-color: aqua;
 }
 
-/* .payment__processor-logo {
-  background-repeat: no-repeat;
-  background-position: center;
-
-} */
-
-.payment__processor-logo__visa {
+/* .payment__processor-logo__visa {
   width: 125px;
   height: 57px;    
 }
@@ -180,7 +174,7 @@ input.payment__email-input::placeholder {
 .payment__processor-logo__mir {
   width: 115px;
   height: 32px;
-}
+} */
 
 
 

@@ -87,16 +87,12 @@ function Payment(props) {
       />
 
       <div className="payment__processor-logos">
-        <div className="payment__processor-logo__visa">
-          {/* <img alt="Visa" src={require('../../assets/images/visa.svg')}/> */}
-          <img src={require('../../assets/images/visa.svg').default} alt='Visa' />
-          <img src={require('../../assets/images/mastercard.svg').default} alt='MasterCard' />
-          <img src={require('../../assets/images/apple-pay.svg').default} alt='Apple Pay' />
-          <img src={require('../../assets/images/google-pay.svg').default} alt='Google Pay' />
-          <img src={require('../../assets/images/tinkoff.svg').default} alt='Тинькофф' />
-          <img src={require('../../assets/images/mir.svg').default} alt='МИР' />
-        </div>
-
+        <img src={require('../../assets/images/visa.svg').default} alt='Visa' />      
+        <img src={require('../../assets/images/mastercard.svg').default} alt='MasterCard' />
+        <img src={require('../../assets/images/apple-pay.svg').default} alt='Apple Pay' />
+        <img src={require('../../assets/images/google-pay.svg').default} alt='Google Pay' />
+        <img src={require('../../assets/images/tinkoff.svg').default} alt='Тинькофф' />
+        <img src={require('../../assets/images/mir.svg').default} alt='МИР' />
       </div>
     </div>
   )
