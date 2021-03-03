@@ -31,6 +31,8 @@
 }
 
 .payment__header-description {  
+  width: 300px;
+
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-style: normal;
