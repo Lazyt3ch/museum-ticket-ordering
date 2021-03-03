@@ -87,8 +87,11 @@ function Payment(props) {
       />
 
       <div className="payment__processor-logos">
+        <div className="payment__processor-logo__visa">
+          {/* <img alt="Visa" src={require('../../assets/images/visa.svg')}/> */}
+          <img src={require('../../assets/images/visa.svg').default} alt='Visa' />
+        </div>
 
-        
       </div>
     </div>
   )

@@ -136,6 +136,8 @@ input.payment__email-input::placeholder {
 }
 
 .payment__processor-logos {
+  padding-top: 85px;
+
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -144,16 +146,46 @@ input.payment__email-input::placeholder {
   background-color: aqua;
 }
 
-.payment__processor-logo {
+/* .payment__processor-logo {
   background-repeat: no-repeat;
   background-position: center;
 
-}
+} */
 
 .payment__processor-logo__visa {
   width: 125px;
-  height: 57px;  
+  height: 57px;    
 }
+
+.payment__processor-logo__mastercard {
+  width: 97px;
+  height: 67px;
+}
+
+.payment__processor-logo__apple-pay {
+  width: 85px;
+  height: 35px;
+}
+
+.payment__processor-logo__google-pay {
+  width: 73px;
+  height: 29px;
+}
+
+.payment__processor-logo__tinkoff {
+  width: 79px;
+  height: 58px;
+}
+
+.payment__processor-logo__mir {
+  width: 115px;
+  height: 32px;
+}
+
+
+
+
+
 
 
 
