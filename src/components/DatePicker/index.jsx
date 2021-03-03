@@ -88,25 +88,25 @@ function DatePicker(props) {
 
   const handleDateChange = (dateStr) => {
     // console.log("date changed");
-    console.log("dateStr =", dateStr);
+    // console.log("dateStr =", dateStr);
 
     if (dateStr === undefined) { // Invalid date
       setSelectedDate(null);
-      console.log("invalid date");
+      // console.log("invalid date");
       return;
     }
 
     const date = new Date(dateStr);
-    console.log("date =", date);
+    // console.log("date =", date);
 
     if (date < new Date()) { // Date in the past
       setSelectedDate(null);
-      console.log("Date in the past!");
+      // console.log("Date in the past!");
       return;
     }
 
     setSelectedDate(date);
-    console.log("Valid date:", date);
+    // console.log("Valid date:", date);
   };
 
   // IMPORTANT: Start the list with Sunday
@@ -199,9 +199,9 @@ function DatePicker(props) {
   const today = new Date();
 
   const handleDayClick = (day, {selected}) => {
-    console.log("day click");
-    console.log("day =", day);
-    console.log("selected =", selected);
+    // console.log("day click");
+    // console.log("day =", day);
+    // console.log("selected =", selected);
     setSelectedDay(selected ? undefined : day);
   };
 
@@ -226,8 +226,6 @@ function DatePicker(props) {
             }}
             overlayComponent={CustomOverlay}
             onDayChange={(day) => handleDateChange(day)}            
-            // onDayClick={handleDayClick}
-            // selectedDays={selectedDay}
         />
       </div>
       
