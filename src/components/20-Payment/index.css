@@ -3,12 +3,50 @@
   margin: 170px auto 0 auto;
 
   width: 1160px; /* To be adjusted */
-  height: 800px; /* To be adjusted */
+  /* height: 800px; */ /* To be adjusted */
 
-  background: aqua; /* To be removed */
+  /* background: aqua; */ /* To be removed */
 }
 
-.payment__development-message {
+.payment__header {
+  height: 70px; /* To be adjusted */
+  width: 100%;
+
+  border-bottom: 1px solid #C9C9C9;
+}
+
+.payment__header-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: #000000;  
+
+  margin-bottom: 8px;
+}
+
+.payment__header-description {  
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: #AFB3BF;  
+
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+
+
+/* .payment__development-message {
   position: absolute;
   top: 10%;
   left: 50%;
@@ -17,4 +55,4 @@
 
   font-size: 50px;
   text-align: center;
-}
+} */
