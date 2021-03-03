@@ -57,13 +57,10 @@
 }
 
 
-.DayPicker-Day {
+div.DayPicker-Day {
   padding-left: var(--day-padding-left-right) !important;
   padding-right: var(--day-padding-left-right) !important;
   padding-top: var(--day-padding-top) !important;
-  /* padding-left: 15px !important;
-  padding-right: 15px !important;
-  padding-top: 15.4px !important; */
 
   font-family: "IBM Plex Sans", sans-serif !important;
   font-size: 16px !important;
@@ -72,18 +69,25 @@
   line-height: 22px !important;
   letter-spacing: 0.22px;
   text-align: center;
+  /* vertical-align: text-bottom !important; */
 }
 
-.DayPicker-Day .DayPicker-Day--selected {
-  width: 44px;
-  height: 44px;
+div.DayPicker-Day:hover {
+  border-radius: 13px !important;
+}
+
+div.DayPicker-Day--selected {
+  /* width: 44px;
+  height: 44px; */
 
   border-radius: 13px !important;
 
   background-color: #BE005A !important;
   color: #FFFFFF !important;
+}
 
-
+div.DayPicker-Day--disabled {
+  cursor: not-allowed !important;
 }
 
 

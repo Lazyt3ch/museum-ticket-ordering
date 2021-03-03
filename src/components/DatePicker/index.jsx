@@ -199,6 +199,9 @@ function DatePicker(props) {
   const today = new Date();
 
   const handleDayClick = (day, {selected}) => {
+    if (day < today) {
+      return;
+    }
     // console.log("day click");
     // console.log("day =", day);
     // console.log("selected =", selected);
