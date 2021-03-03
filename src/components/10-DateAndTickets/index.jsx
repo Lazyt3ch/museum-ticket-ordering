@@ -6,7 +6,15 @@ import DatePicker from "../DatePicker";
 import Footer from "../Footer";
 
 function DateAndTickets(props) {
-  const {stageIndex, setStageIndex} = props;
+  const {
+    stageIndex, 
+    setStageIndex,
+    total,
+    setTotal,
+    currencySign,
+    setCurrencySign,
+  } = props;
+
   const priceInfo = "Стоимость билета в праздничные дни рассчитывается по тарифу выходного дня";
 
   const ticketsData = [ // TODO: Implement data fetching
@@ -82,11 +90,12 @@ function DateAndTickets(props) {
     // },
   ];  
 
-  const currencySign = ticketsData[0].currency || "₽";
+  // const currencySign = ticketsData[0].currency || "₽";
+  setCurrencySign(ticketsData[0].currency || "₽");
 
   const [subTotals, setSubTotals] = useState(new Array(ticketsData.length).fill(0));
 
-  const [total, setTotal] = useState(0);
+  // const [total, setTotal] = useState(0);
   const [selectedDate, setSelectedDate] = useState(null);
 
   useEffect(

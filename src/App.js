@@ -12,6 +12,9 @@ function App() {
     Success,
   ];
 
+  const [total, setTotal] = useState(0);
+  const [currencySign, setCurrencySign] = useState("");
+
 
   // eslint-disable-next-line
   const [stageIndex, setStageIndex] = useState(0);
@@ -43,6 +46,10 @@ function App() {
         setStageIndex={setStageIndex}
         termsAccepted={termsAccepted}
         setTermsAccepted={setTermsAccepted}
+        total={total}
+        setTotal={setTotal}
+        currencySign={currencySign}
+        setCurrencySign={setCurrencySign}
       />
   
     </div>

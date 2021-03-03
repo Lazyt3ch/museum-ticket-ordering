@@ -20,6 +20,8 @@ const getFormatedPrice = (price, currencySign, thousandSeparator = " ", decimalS
 
   priceStr += " " + currencySign;
 
+  console.log("priceStr =", priceStr)
+
   return priceStr;
 };
 

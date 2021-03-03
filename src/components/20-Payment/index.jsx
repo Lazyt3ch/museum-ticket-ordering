@@ -63,7 +63,7 @@ function Payment(props) {
       <Footer 
         total={total}
         currencySign={currencySign} 
-        buttonText={`Оплатить - ${getFormatedPrice(total)} ₽`}
+        buttonText={`Оплатить - ${getFormatedPrice(total, currencySign)} ₽`}
         stageIndex={stageIndex}
         setStageIndex={setStageIndex}      
       />      
