@@ -44,7 +44,7 @@
   margin-top: 0;
 }
 
-.payment__provide-email-and-accept-terms {
+.payment__provide-email {
   margin-top: 24px;
 
   display: flex;
@@ -55,7 +55,7 @@
 
 .payment__email-input {
   display: inline-block;
-  
+
   height: 81px;
   width: 360px;
   

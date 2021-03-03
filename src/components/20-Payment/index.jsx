@@ -26,34 +26,32 @@ function Payment(props) {
         </div>
       </div>    
 
-      <div className="payment__provide-email-and-accept-terms">
-        <div className="payment__provide-email">
-          <input type="text" 
-            ref={emailInputOne} 
-            className="payment__email-input" 
-            placeholder="E-mail" 
-          />
-          <input type="text" 
-            ref={emailInputTwo} 
-            className="payment__email-input" 
-            placeholder="Повторите e-mail" 
-          />
-          <div className="payment__email-input__description">
-            Внимательно проверьте ваш e-mail адрес. Билеты на него придут сразу после оплаты
-          </div>
+      <div className="payment__provide-email">
+        <input type="text" 
+          ref={emailInputOne} 
+          className="payment__email-input" 
+          placeholder="E-mail" 
+        />
+        <input type="text" 
+          ref={emailInputTwo} 
+          className="payment__email-input" 
+          placeholder="Повторите e-mail" 
+        />
+        <div className="payment__email-input__description">
+          Внимательно проверьте ваш e-mail адрес. Билеты на него придут сразу после оплаты
         </div>
+      </div>
 
-        <div className="payment__accept-terms">
-          <Checkbox 
-            termsAccepted={termsAccepted}
-            setTermsAccepted={setTermsAccepted}
-          />
+      <div className="payment__accept-terms">
+        <Checkbox 
+          termsAccepted={termsAccepted}
+          setTermsAccepted={setTermsAccepted}
+        />
 
-          <div className="payment__accept-terms__text">
-            Я соглашаюсь с <a className="payment__accept-terms__link" href="ticket-change-or-return-terms">Правилами обмена и возврата билетов</a> и <a className="payment__accept-terms__link" href="exhibition-visiting-terms">Правилами посещения Выставки</a>
-          </div>
+        <div className="payment__accept-terms__text">
+          Я соглашаюсь с <a className="payment__accept-terms__link" href="ticket-change-or-return-terms">Правилами обмена и возврата билетов</a> и <a className="payment__accept-terms__link" href="exhibition-visiting-terms">Правилами посещения Выставки</a>
         </div>
-      </div>    
+      </div>
 
 
     </div>
