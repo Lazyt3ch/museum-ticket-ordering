@@ -1,5 +1,5 @@
 // import React, {useState, useRef, useEffect} from 'react';
-import React from 'react';
+import React, {useState} from 'react';
 import "./index.css";
 
 // import DayPicker from 'react-day-picker'; // For development only
@@ -13,6 +13,8 @@ function DatePicker(props) {
     selectedDate, 
     setSelectedDate,
   } = props;
+
+  const [selectedDay, setSelectedDay] = useState(null);
 
   const formatDate = (dateStr) => {
     // console.log("dateStr =", dateStr);
@@ -196,6 +198,13 @@ function DatePicker(props) {
 
   const today = new Date();
 
+  const handleDayClick = (day, {selected}) => {
+    console.log("day click");
+    console.log("day =", day);
+    console.log("selected =", selected);
+    setSelectedDay(selected ? undefined : day);
+  };
+
   return (
     <div className="date-picker" >
       <div className="date-picker__calendar_control">
@@ -212,9 +221,13 @@ function DatePicker(props) {
               navbarElement: <Navbar />,
               showOutsideDays: true,
               disabledDays: { before: today },
+              onDayClick: handleDayClick,
+              selectedDays: [selectedDay],
             }}
             overlayComponent={CustomOverlay}
             onDayChange={(day) => handleDateChange(day)}            
+            // onDayClick={handleDayClick}
+            // selectedDays={selectedDay}
         />
       </div>
       

@@ -74,6 +74,18 @@
   text-align: center;
 }
 
+.DayPicker-Day .DayPicker-Day--selected {
+  width: 44px;
+  height: 44px;
+
+  border-radius: 13px !important;
+
+  background-color: #BE005A !important;
+  color: #FFFFFF !important;
+
+
+}
+
 
 /* Otherwise next-month and previous-month are unclickable! */
 .DayPicker-NavBar div {
