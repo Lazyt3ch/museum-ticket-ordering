@@ -2,6 +2,7 @@ import React, {useState, useRef} from 'react';
 import "./index.css";
 import Checkbox from "../Checkbox";
 import Footer from "../Footer";
+import getFormatedPrice from "../../utils/getFormatedPrice";
 
 function Payment(props) {
   const {
@@ -62,7 +63,7 @@ function Payment(props) {
       <Footer 
         total={total}
         currencySign={currencySign} 
-        buttonText={`Оплатить - 1 150  ₽`}
+        buttonText={`Оплатить - ${getFormatedPrice(total)} ₽`}
         stageIndex={stageIndex}
         setStageIndex={setStageIndex}      
       />      
