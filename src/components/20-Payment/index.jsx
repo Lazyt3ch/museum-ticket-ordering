@@ -1,5 +1,6 @@
 import React from 'react';
 import "./index.css";
+import Checkbox from "../Checkbox";
 
 function Payment(props) {
 
@@ -20,8 +21,9 @@ function Payment(props) {
         <div className="payment__email">
 
         </div>
+
         <div className="payment__confirm">
-          Укажите вашу электронную почту для получения билета и чека
+          <Checkbox />
         </div>
       </div>    
 

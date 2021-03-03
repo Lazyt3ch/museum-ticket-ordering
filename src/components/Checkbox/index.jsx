@@ -2,12 +2,13 @@ import React from 'react';
 import "./index.css";
 
 function Checkbox(props) {
-  const {termsAccepted, setTermsAccepted, tabIndex} = props;     
+  // const {termsAccepted, setTermsAccepted, tabIndex} = props;     
+  const {termsAccepted, setTermsAccepted} = props;     
   
   const getCheckboxClasses = () => 
-    `registration-form__checkbox ${termsAccepted 
-      ? "registration-form__checkbox_checked"
-      : "registration-form__checkbox_unchecked"}`;
+    `terms-checkbox ${termsAccepted 
+      ? "terms-checkbox_checked"
+      : "terms-checkbox_unchecked"}`;
 
   const handleKeyUp = (e) => {
     if (e.code === "Space") {
@@ -16,11 +17,11 @@ function Checkbox(props) {
   }
   
   return (
-    <div className="registration-form__checkbox__wrapper">
+    <div className="terms-checkbox__wrapper">
       <div className={getCheckboxClasses()}
         onClick={() => setTermsAccepted(prevState => !prevState)}
         onKeyUp={handleKeyUp}
-        tabIndex={tabIndex}
+        // tabIndex={tabIndex}
       >
         <svg style={{display: (termsAccepted ? "block" : "none")}}
           width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">

@@ -15,6 +15,7 @@ function App() {
 
   // eslint-disable-next-line
   const [stageIndex, setStageIndex] = useState(0);
+  const [termsAccepted, setTermsAccepted] = useState(false);
 
   // /* Test components 20 and 30 */
   // useEffect( () => {
@@ -39,6 +40,8 @@ function App() {
 
       <CurrentStage 
         setStageIndex={setStageIndex}
+        termsAccepted={termsAccepted}
+        setTermsAccepted={setTermsAccepted}
       />
   
     </div>

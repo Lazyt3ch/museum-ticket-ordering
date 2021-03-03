@@ -1,10 +1,10 @@
-.registration-form__checkbox__wrapper {
+.terms-checkbox__wrapper {
   /* Prevents visible shifting of the text located at the right of Checkbox */
   height: 28px;
   width: 28px;
 }
 
-.registration-form__checkbox {
+.terms-checkbox {
   display: inline-block;
   background: #FFFFFF;
   border-radius: 4px;
@@ -12,16 +12,16 @@
   border: 1px solid #DBE2EA;
 }
 
-.registration-form__checkbox:focus {
+.terms-checkbox:focus {
   border: 2px solid #0880AE;
 }
 
-.registration-form__checkbox_unchecked {
+.terms-checkbox_unchecked {
   height: 28px;
   width: 28px;
 }
 
-.registration-form__checkbox_checked {
+.terms-checkbox_checked {
   height: 26px;
   width: 26px;
 }
