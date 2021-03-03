@@ -5,6 +5,8 @@ import Tickets from "../Tickets";
 import DatePicker from "../DatePicker";
 import Footer from "../Footer";
 
+import getFormatedPrice from "../../utils/getFormatedPrice";
+
 function DateAndTickets(props) {
   const {
     stageIndex, 
@@ -143,8 +145,9 @@ function DateAndTickets(props) {
       </div>
 
       <Footer 
-        total={total}
-        currencySign={currencySign} 
+        // total={total}
+        // currencySign={currencySign} 
+        totalText={getFormatedPrice(total, currencySign)}
         buttonText={"Перейти к оплате"}
         stageIndex={stageIndex}
         setStageIndex={setStageIndex}     

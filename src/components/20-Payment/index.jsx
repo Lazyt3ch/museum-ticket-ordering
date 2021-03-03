@@ -78,8 +78,9 @@ function Payment(props) {
       </div>
 
       <Footer 
-        total={total}
-        currencySign={currencySign} 
+        // total={total}
+        // currencySign={currencySign} 
+        totalText={getFormatedPrice(total, currencySign)}
         buttonText={`Оплатить - ${getFormatedPrice(total, currencySign)}`}
         stageIndex={stageIndex}
         setStageIndex={setStageIndex}      

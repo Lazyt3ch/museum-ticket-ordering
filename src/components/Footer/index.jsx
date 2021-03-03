@@ -3,8 +3,9 @@ import "./index.css";
 
 function Footer(props) {
   const {
-    total, 
-    currencySign, 
+    // total, 
+    // currencySign, 
+    totalText,
     buttonText,
     setStageIndex,
     nextStageDisabled,
@@ -13,7 +14,7 @@ function Footer(props) {
   return (
     <div className="date-and-tickets__footer">
       <div className="date-and-tickets__total">
-        Итого: {total} {currencySign}
+        Итого: {totalText}
       </div>
 
       <button 
