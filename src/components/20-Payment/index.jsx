@@ -8,6 +8,7 @@ function Payment(props) {
     setTermsAccepted,
   } = props;
 
+  // eslint-disable-next-line
   const [email, setEmail] = useState("");
 
   const emailInputOne = useRef(null);
