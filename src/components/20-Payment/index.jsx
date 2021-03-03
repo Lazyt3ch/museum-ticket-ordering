@@ -1,11 +1,16 @@
 import React, {useState, useRef} from 'react';
 import "./index.css";
 import Checkbox from "../Checkbox";
+import Footer from "../Footer";
 
 function Payment(props) {
   const {
     termsAccepted,
     setTermsAccepted,
+    total,
+    currencySign,
+    stageIndex,
+    setStageIndex,
   } = props;
 
   // eslint-disable-next-line
@@ -53,6 +58,14 @@ function Payment(props) {
           Я соглашаюсь с <a className="payment__accept-terms__link" href="ticket-change-or-return-terms">Правилами обмена и возврата билетов</a> и <a className="payment__accept-terms__link" href="exhibition-visiting-terms">Правилами посещения Выставки</a>
         </div>
       </div>
+
+      <Footer 
+        total={total}
+        currencySign={currencySign} 
+        buttonText={"Перейти к оплате"}
+        stageIndex={stageIndex}
+        setStageIndex={setStageIndex}      
+      />      
 
 
     </div>
