@@ -3,6 +3,10 @@ import "./index.css";
 import Checkbox from "../Checkbox";
 
 function Payment(props) {
+  const {
+    termsAccepted,
+    setTermsAccepted,
+  } = props;
 
   return (
     <div className="payment__container">
@@ -23,7 +27,10 @@ function Payment(props) {
         </div>
 
         <div className="payment__confirm">
-          <Checkbox />
+          <Checkbox 
+            termsAccepted={termsAccepted}
+            setTermsAccepted={setTermsAccepted}
+          />
         </div>
       </div>    
 
