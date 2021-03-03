@@ -31,6 +31,10 @@ function Payment(props) {
             termsAccepted={termsAccepted}
             setTermsAccepted={setTermsAccepted}
           />
+
+          <div className="payment__confirm-text">
+            Я соглашаюсь с <a className="payment__confirm-link" href="ticket-change-or-return-terms">Правилами обмена и возврата билетов</a> и <a className="payment__confirm-link" href="exhibition-visiting-terms">Правилами посещения Выставки</a>
+          </div>
         </div>
       </div>    
 
