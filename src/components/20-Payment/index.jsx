@@ -21,19 +21,19 @@ function Payment(props) {
         </div>
       </div>    
 
-      <div className="payment__email-and-confirm">
-        <div className="payment__email">
+      <div className="payment__provide-email-and-accept-terms">
+        <div className="payment__provide-email">
 
         </div>
 
-        <div className="payment__confirm">
+        <div className="payment__accept-terms">
           <Checkbox 
             termsAccepted={termsAccepted}
             setTermsAccepted={setTermsAccepted}
           />
 
-          <div className="payment__confirm-text">
-            Я соглашаюсь с <a className="payment__confirm-link" href="ticket-change-or-return-terms">Правилами обмена и возврата билетов</a> и <a className="payment__confirm-link" href="exhibition-visiting-terms">Правилами посещения Выставки</a>
+          <div className="payment__accept-terms__text">
+            Я соглашаюсь с <a className="payment__accept-terms__link" href="ticket-change-or-return-terms">Правилами обмена и возврата билетов</a> и <a className="payment__accept-terms__link" href="exhibition-visiting-terms">Правилами посещения Выставки</a>
           </div>
         </div>
       </div>    
