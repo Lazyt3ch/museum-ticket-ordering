@@ -1,12 +1,24 @@
 import React from 'react';
 import "./index.css";
 
+import getFormatedPrice from "../../utils/getFormatedPrice";
+
 function Success(props) {
+  const {
+    total,
+    currencySign,
+  } = props;
+
+  const goBack = () => {
+    /* TODO: Implement go-back function */
+  };
 
   return (
     <div className="success__container">
       <div className="success__nav">        
-        <div className="success__nav__arrow">
+        <div className="success__nav__arrow"
+          onClick={goBack}
+        >
           <div className="success__nav__arrow__background-color"></div>
         </div>
         <div className="success__nav__text">
@@ -49,7 +61,7 @@ function Success(props) {
           </p>
           <div className="success__info-card__footer__payment-details">
             <span className="success__info-card__footer__order-details__payment-total">
-              1150 ₽
+              {getFormatedPrice(total, currencySign)}
             </span>
             <span className="success__info-card__footer__order-details__payment-method">
               Картой онлайн
@@ -73,7 +85,6 @@ function Success(props) {
           </p>          
         </div>
       </div>
-
       
       <div className="success__contact-info">
         <p className="success__contact-info__title">
@@ -89,15 +100,8 @@ function Success(props) {
           <span className="success__contact-info__details__text">
             info@bodyworlds.moscow          
           </span>          
-        </div>
-          
-
+        </div>         
       </div>
-
-
-      
-
-      
     </div>
   )
 }
