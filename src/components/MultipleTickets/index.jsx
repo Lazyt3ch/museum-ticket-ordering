@@ -8,7 +8,9 @@ function MultipleTickets(props) {
   } = props;
 
 
-  const removeTickets = () => setNumTickets(0);
+  const removeTickets = () => {
+    setNumTickets(0);
+  };
 
   const handleRemoveKeyUp = (e) => {
     if (e.code === "Space") {
@@ -17,22 +19,29 @@ function MultipleTickets(props) {
   };
 
 
-  const decrementTickets = () => setNumTickets((prev) => prev - 1);
+  const decrementTickets = () => {
+    setNumTickets((prev) => prev - 1);
+    console.log("decrement");
+  };
 
   const handleDecrementKeyUp = (e) => {
     if (e.code === "Space") {
-      decrementTickets();
+      decrementTickets();      
     }
   };
 
 
-  const incrementTickets = () => setNumTickets((prev) => prev + 1);
+  const incrementTickets = () => {
+    setNumTickets((prev) => prev + 1);
+    console.log("increment");
+  };
 
   const handleIncrementKeyUp = (e) => {
     if (e.code === "Space") {
       incrementTickets();      
     }
   }; 
+  
 
   return (
     <div className="multiple-tickets">
