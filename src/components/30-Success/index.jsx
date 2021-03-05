@@ -68,6 +68,26 @@ function Success(props) {
         </div>
       </div>
 
+      
+      <div className="success__contact-info">
+        <p className="success__contact-info__title">
+          Отдел технической поддержки по электронным билетам
+        </p>
+
+        <div className="success__contact-info__details">
+          <span className="success__contact-info__details__phone-icon"></span>
+          <span className="success__contact-info__details__text">
+            +7(499)643-82-38
+          </span>          
+          <span className="success__contact-info__details__mail-icon"></span>
+          <span className="success__contact-info__details__text">
+            info@bodyworlds.moscow          
+          </span>          
+        </div>
+          
+
+      </div>
+
 
       
 
