@@ -42,10 +42,10 @@ function Success(props) {
             Оплачено
           </p>
           <div className="success__info-card__footer__payment-details">
-            <span success__info-card__footer__order-details__payment-total>
+            <span className="success__info-card__footer__order-details__payment-total">
               1150 ₽
             </span>
-            <span success__info-card__footer__order-details__payment-method>
+            <span className="success__info-card__footer__order-details__payment-method">
               Картой онлайн
             </span>
           </div>

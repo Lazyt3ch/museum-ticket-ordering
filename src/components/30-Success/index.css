@@ -77,7 +77,7 @@
 
 .success__info-card {
   /* background-color: aquamarine; */
-  height: 494px;
+  /* height: 494px; */
   width: 576px;
 
   padding: 32px;
@@ -184,9 +184,9 @@
 
 }
 
-.success__info-card__footer {
-  margin: 0 24px;  
-}
+/* .success__info-card__footer {
+
+} */
 
 .success__info-card__footer__payment-details {
   height: 75px;
@@ -201,11 +201,38 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 14.5px;
+}
+
+.success__info-card__footer__order-details__payment-total {
+  color: #000000;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
   
 }
 
+.success__info-card__footer__order-details__payment-method {
+  color: #777C8B;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+
+
+}
+
 .success__info-card__footer__payment-info {
+  margin-bottom: 0;
+
   color: #AFB3BF;
 
   font-family: "Roboto", sans-serif;
