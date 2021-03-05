@@ -5,6 +5,12 @@
   width: 576px; /* To be adjusted */
   background-color: #FFFFFF;
   background-color: aqua; /* To be removed */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;  
 }
 
 .success__nav {
