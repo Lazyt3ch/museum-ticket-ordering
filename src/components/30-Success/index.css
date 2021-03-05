@@ -285,9 +285,30 @@
 }
 
 .success__exhibition-rules__title {
+  text-transform: uppercase;
+
+  color: #000000;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  
 
 }
 
 .success__exhibition-rules__details {
+  color: #AFB3BF;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
 
 }

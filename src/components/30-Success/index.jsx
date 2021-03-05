@@ -57,13 +57,13 @@ function Success(props) {
 
       <div className="success__exhibition-rules">
         <div className="success__exhibition-rules__image"></div>
-        
+
         <div className="success__exhibition-rules__text">
           <p className="success__exhibition-rules__title">
-            ТРЕБОВАНИЯ ПО ПОСЕЩЕНИЮ ВЫСТАВКИ
+            требования по посещению выставки
           </p>
           <p className="success__exhibition-rules__details">
-            Необходимо использовать индивидуальные средства защиты маски, перчатки, соблюдение дистанции 1,5 - 2 метра
+            Необходимо использовать индивидуальные средства защиты (маски, перчатки) и соблюдать дистанцию 1,5 &mdash; 2 метра
           </p>          
         </div>
       </div>
