@@ -60,7 +60,10 @@ function Payment(props) {
           placeholder="Повторите e-mail" 
           onBlur={verifyEmails}
         />
-        <div className="payment__email-input__description">
+        <div className={`payment__email-input__description ${
+          email ? "" : "payment__email-input__description_warning"}`}
+        
+        >
           Внимательно проверьте ваш e-mail адрес. Билеты на него придут сразу после оплаты
         </div>
       </div>
@@ -78,8 +81,6 @@ function Payment(props) {
       </div>
 
       <Footer 
-        // total={total}
-        // currencySign={currencySign} 
         totalText={getFormatedPrice(total, currencySign)}
         buttonText={`Оплатить - ${getFormatedPrice(total, currencySign)}`}
         stageIndex={stageIndex}
