@@ -1,0 +1,7 @@
+.success__container {
+  position: relative;
+  margin: 90px auto 0 auto;
+
+  width: 576px; /* To be adjusted */
+  background-color: aqua; /* To be removed */
+}
