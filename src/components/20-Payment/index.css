@@ -127,7 +127,6 @@ input.payment__email-input::placeholder {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  /* line-height: 21px; */
 }
 
 .payment__accept-terms__link {
@@ -145,51 +144,3 @@ input.payment__email-input::placeholder {
   justify-content: space-between;
   align-items: center;
 }
-
-/* .payment__processor-logo__visa {
-  width: 125px;
-  height: 57px;    
-}
-
-.payment__processor-logo__mastercard {
-  width: 97px;
-  height: 67px;
-}
-
-.payment__processor-logo__apple-pay {
-  width: 85px;
-  height: 35px;
-}
-
-.payment__processor-logo__google-pay {
-  width: 73px;
-  height: 29px;
-}
-
-.payment__processor-logo__tinkoff {
-  width: 79px;
-  height: 58px;
-}
-
-.payment__processor-logo__mir {
-  width: 115px;
-  height: 32px;
-} */
-
-
-
-
-
-
-
-
-/* .payment__development-message {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-
-  transform: translateX(-50%);
-
-  font-size: 50px;
-  text-align: center;
-} */
