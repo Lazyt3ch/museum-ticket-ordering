@@ -32,6 +32,7 @@
 
 .success__nav {
   box-sizing: border-box;
+  
   height: 68px;
   width: 264px;
 
@@ -57,7 +58,7 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  margin-left: 0px;
+  margin-left: 4px;
   margin-right: 20px;  
 }
 
@@ -94,7 +95,7 @@
   margin-bottom: 24px;
 
   padding: 32px;
-  padding-top: 40px;
+  padding-top: 44px;
 
   border-radius: 19px;
 
@@ -103,7 +104,8 @@
 }
 
 .success__info-card__header {
-  height: 104px;
+  /* height: 104px; */
+  height: 90px;
   margin-top: -32px;
 
   display: flex;
@@ -126,8 +128,8 @@
 .success__info-card__header__checkmark {
   box-sizing: border-box;
 
-  height: 44px;
-  width: 44px;
+  height: 42px;
+  width: 42px;
 
   margin-left: -8px;
   margin-right: 24px;
@@ -152,12 +154,14 @@
 
 .success__info-card__main {
   padding-top: 10px;
+  padding-bottom: 24px;
 
 }
 
 .success__info-card__main__info-type {
   /* margin-top: 8px; */
   /* margin-bottom: 8px; */
+  margin-bottom: 6px;
 
   color: #777C8B;
 
@@ -165,7 +169,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 19px;
+  /* line-height: 19px; */
   letter-spacing: 0em;
   text-align: left;
   
@@ -173,6 +177,7 @@
 
 .success__info-card__main__info-details {
   margin-top: 0px;
+  margin-bottom: 0px;
 
   color: #000000;
 
@@ -180,10 +185,15 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px;
+  /* line-height: 28px; */
   letter-spacing: 0em;
   text-align: left;
     
+}
+
+
+.success__info-card__footer {
+  padding-top: 8px;
 }
 
 .success__info-card__footer__payment-title {
@@ -197,6 +207,8 @@
   letter-spacing: 0em;
   text-align: left;
 
+  margin-bottom: 6px;
+
 }
 
 /* .success__info-card__footer {
@@ -207,7 +219,7 @@
   height: 75px;
   width: 512px;
 
-  padding: 15px;
+  padding: 13px;
 
   border-radius: 13px;
   border: 1px solid #D6DAE5;
@@ -269,14 +281,11 @@
   border: 1px solid #D6DAE5;
   border-radius: 13px;
 
-
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
-
-
 
 .success__exhibition-rules__image {
   width: 75px;
@@ -289,7 +298,7 @@
 }
 
 .success__exhibition-rules__text {
-  width: 360px;
+  width: 350px;
 }
 
 .success__exhibition-rules__title {
