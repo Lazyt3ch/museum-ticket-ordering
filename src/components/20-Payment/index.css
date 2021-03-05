@@ -3,9 +3,6 @@
   margin: 170px auto 0 auto;
 
   width: 1160px; /* To be adjusted */
-  /* height: 800px; */ /* To be adjusted */
-
-  /* background: aqua; */ /* To be removed */
 }
 
 .payment__header {
@@ -47,7 +44,6 @@
 }
 
 .payment__provide-email {
-  /* margin-top: 24px; */
   margin-top: 32px;
   margin-bottom: 24px;
 
@@ -63,7 +59,6 @@ input.payment__email-input {
   flex-shrink: 0;
 
   height: 81px;
-  /* width: 360px !important; */
   box-sizing: border-box;
   
   border-radius: 17px;
@@ -106,7 +101,6 @@ input.payment__email-input::placeholder {
   letter-spacing: 0em;
   text-align: left;
 
-  /* color: #E90017; */
   color: #AFB3BF;
 }
 
