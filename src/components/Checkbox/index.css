@@ -10,7 +10,7 @@
 }
 
 .terms-checkbox:focus {
-  border: 2px solid #0880AE;
+  box-shadow: 0px 14px 37px 0px rgba(190, 0, 90, 0.25);
 }
 
 .terms-checkbox_unchecked {
