@@ -72,6 +72,7 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  margin-left: 20px;
   margin-right: 20px;  
 }
 
@@ -135,13 +136,12 @@
 
 
 .success__info-card__main {
-  /* margin-left: 24px;   */
+  padding-top: 32px;
 
-  /* padding: 24px 0; */
-  /* padding-top: 8px; */
 }
 
 .success__info-card__main__info-type {
+  /* margin-top: 8px; */
   /* margin-bottom: 8px; */
 
   color: #777C8B;
