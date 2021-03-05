@@ -5,9 +5,13 @@ function Success(props) {
 
   return (
     <div className="success__container">
-      <div className="success__nav">
-        <div className="success__nav__arrow"></div>
-        Вернуться на сайт
+      <div className="success__nav">        
+        <div className="success__nav__arrow">
+          <div className="success__nav__arrow__background-color"></div>
+        </div>
+        <p>
+          Вернуться на сайт
+        </p>
       </div>
 
       <div className="success__info-card">
@@ -15,7 +19,9 @@ function Success(props) {
           <div className="success__info-card__header__checkmark">
             <div className="success__info-card__header__checkmark__background-color"></div>
           </div>
-          Покупка билетов прошла успешно
+          <p>
+            Покупка билетов прошла успешно
+          </p>
         </div>
 
         <div className="success__info-card__divider"></div>
