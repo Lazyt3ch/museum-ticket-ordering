@@ -36,13 +36,18 @@ function Success(props) {
         <div className="success__info-card__divider"></div>
 
         <div className="success__info-card__footer">
-          <p className="success__info-card__footer__order-title">
+          <p className="success__info-card__footer__payment-title">
             Оплачено
           </p>
-          <div className="success__info-card__footer__order-details">
-            Оплачено
+          <div className="success__info-card__footer__payment-details">
+            <span success__info-card__footer__order-details__payment-total>
+              1150 ₽
+            </span>
+            <span success__info-card__footer__order-details__payment-method>
+              Картой онлайн
+            </span>
           </div>
-          <p className="success__info-card__footer__order-info">
+          <p className="success__info-card__footer__payment-info">
             Электронный билет и чек были отправлены на указанную Вами электронную почту
           </p>          
 
