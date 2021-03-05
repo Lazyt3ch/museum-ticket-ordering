@@ -12,7 +12,9 @@ function Success(props) {
 
       <div className="success__info-card">
         <div className="success__info-card__header">
-          <div className="success__info-card__header__checkmark"></div>
+          <div className="success__info-card__header__checkmark">
+            <div className="success__info-card__header__checkmark__background-color"></div>
+          </div>
           Покупка билетов прошла успешно
         </div>
 
