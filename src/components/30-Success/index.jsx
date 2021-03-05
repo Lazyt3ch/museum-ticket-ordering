@@ -51,11 +51,23 @@ function Success(props) {
           </div>
           <p className="success__info-card__footer__payment-info">
             Электронный билет и чек были отправлены на указанную Вами электронную почту
-          </p>          
-
-        </div>        
-
+          </p>         
+        </div>     
       </div>
+
+      <div className="success__exhibition-rules">
+        <div className="success__exhibition-rules__image"></div>
+        
+        <div className="success__exhibition-rules__text">
+          <p className="success__exhibition-rules__title">
+            ТРЕБОВАНИЯ ПО ПОСЕЩЕНИЮ ВЫСТАВКИ
+          </p>
+          <p className="success__exhibition-rules__details">
+            Необходимо использовать индивидуальные средства защиты маски, перчатки, соблюдение дистанции 1,5 - 2 метра
+          </p>          
+        </div>
+      </div>
+
 
       
 
