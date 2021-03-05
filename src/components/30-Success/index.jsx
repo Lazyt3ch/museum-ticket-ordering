@@ -9,9 +9,9 @@ function Success(props) {
         <div className="success__nav__arrow">
           <div className="success__nav__arrow__background-color"></div>
         </div>
-        <p>
+        <div className="success__nav__text">
           Вернуться на сайт
-        </p>
+        </div>
       </div>
 
       <div className="success__info-card">
