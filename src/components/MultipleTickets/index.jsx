@@ -35,6 +35,7 @@ function MultipleTickets(props) {
         <button 
           className={`multiple-tickets__increment`} 
           onClick={() => setNumTickets((prev) => prev + 1)}
+          autoFocus 
         >
           +
         </button> 
