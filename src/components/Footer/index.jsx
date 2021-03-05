@@ -22,6 +22,7 @@ function Footer(props) {
           nextStageDisabled ? "" : "date-and-tickets__next-stage_enabled"}`}
         disabled={nextStageDisabled}
         onClick={() => setStageIndex((prev) => prev + 1)}
+        tabIndex={0}
       >
         {buttonText}
       </button>
