@@ -36,7 +36,7 @@ function Tickets(props) {
   );
 
   const handleKeyUp = (e) => {
-    if (e.code === "Space") {
+    if (e.keyCode === 32) { // "Space"
       setNumTickets(1);
     }
   }
