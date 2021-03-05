@@ -3,14 +3,18 @@
   margin: 90px auto 0 auto;
 
   width: 576px; /* To be adjusted */
+  height: 494px;
+
+  border-radius: 19px;
+
   background-color: #FFFFFF;
   background-color: aqua; /* To be removed */
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
-  padding: 0px;  
+  
 }
 
 .success__nav {
@@ -24,7 +28,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px;
+  
+  padding-top: 10px;  
 
   border-radius: 16px;
   border: 1px solid #D6DAE5;
@@ -36,7 +41,7 @@
   line-height: 21px;
   letter-spacing: 0em;
   text-align: left;
-
+  
   
 }
 
@@ -64,7 +69,8 @@
 
   border-radius: 19px;
 
-  box-shadow: 0px 24px 80px 0px #000000 20%;
+  /* box-shadow: 0px 24px 80px 0px #000000 20%; */
+  box-shadow: 0px 24px 80px 0px rgba(0, 0, 0, 0.2);
 }
 
 .success__info-card__header {
@@ -75,17 +81,27 @@
   justify-content: flex-start;
   align-items: center;
   padding: 0px;  
+
+  color: #21E900;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+
+
 }
 
-/* .success__info-card__header::after {
-  content: "";
-
-  height: 0;
+.success__info-card__divider {
+  height: 1px;
   width: calc(100% - 2 * 32px);
   margin: 0 auto;
 
   border-bottom: 1px solid #D6DAE5;
-} */
+}
 
 .success__info-card__header__checkmark {
   box-sizing: border-box;
@@ -99,6 +115,44 @@
 
   /* background-color: #21E900 35%; */
   background-color: rgba(33, 233, 0, 0.35);
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='16' viewBox='0 0 20 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.42806 15.0371C6.94273 15.0371 6.4574 14.8529 6.0869 14.4824L0.945398 9.34095C0.204398 8.59995 0.204398 7.39962 0.945398 6.66078C1.6864 5.91978 2.88456 5.91761 3.62556 6.65861L7.42806 10.4611L16.3721 1.51711C17.1131 0.776115 18.3112 0.776115 19.0522 1.51711C19.7932 2.25811 19.7932 3.45845 19.0522 4.19945L8.76923 14.4824C8.39873 14.8529 7.9134 15.0371 7.42806 15.0371Z' fill='%2321E900'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center; 
+}
 
- 
+.success__info-card__main {
+  margin-left: 24px;  
+
+  /* padding: 24px 0; */
+  padding-top: 8px;
+}
+
+.success__info-card__main__info-type {
+  /* margin-bottom: 8px; */
+
+  color: #777C8B;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+
+.success__info-card__main__info-details {
+  margin-top: 0px;
+
+  color: #000000;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+    
 }

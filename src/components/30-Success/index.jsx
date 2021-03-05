@@ -15,7 +15,42 @@ function Success(props) {
           <div className="success__info-card__header__checkmark"></div>
           Покупка билетов прошла успешно
         </div>
+
+        <div className="success__info-card__divider"></div>
+
+        <div className="success__info-card__main">
+          <p className="success__info-card__main__info-type">
+            ID: 000000001
+          </p>
+          <p className="success__info-card__main__info-details">
+            Выставка “Body Worlds”
+          </p>
+          <p className="success__info-card__main__info-type">
+            Дата посещения
+          </p>
+          <p className="success__info-card__main__info-details">
+            25 февраля 2021
+          </p>
+        </div>        
+
+        <div className="success__info-card__divider"></div>
+
+        <div className="success__info-card__footer">
+          <p className="success__info-card__footer__order-title">
+            Оплачено
+          </p>
+          <div className="success__info-card__footer__order-details">
+            Оплачено
+          </div>
+          <p className="success__info-card__footer__order-info">
+            Электронный билет и чек были отправлены на указанную Вами электронную почту
+          </p>          
+
+        </div>        
+
       </div>
+
+      
 
       
     </div>
