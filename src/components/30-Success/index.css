@@ -3,22 +3,15 @@
   margin: 90px auto 0 auto;
 
   width: 576px; /* To be adjusted */
-  /* height: 494px; */
 
   border-radius: 19px;
 
   background-color: #FFFFFF;
   
-  /* background-color: aqua;  */
-  /* To be removed */
-
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
-  /* padding-left: 32px; */
-  
 }
 
 .success__info-card__divider {
@@ -45,8 +38,6 @@
   
   border-radius: 16px;
   border: 1px solid #D6DAE5;
-
-
 }
 
 .success__nav__arrow {
@@ -87,8 +78,6 @@
 
 
 .success__info-card {
-  /* background-color: aquamarine; */
-  /* height: 494px; */
   width: 576px;
 
   margin-top: 24px;
@@ -104,8 +93,7 @@
 }
 
 .success__info-card__header {
-  /* height: 104px; */
-  height: 90px;
+  height: 90px; /* Adjusted */
   margin-top: -32px;
 
   display: flex;
@@ -159,8 +147,6 @@
 }
 
 .success__info-card__main__info-type {
-  /* margin-top: 8px; */
-  /* margin-bottom: 8px; */
   margin-bottom: 6px;
 
   color: #777C8B;
