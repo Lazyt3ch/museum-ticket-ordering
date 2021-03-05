@@ -24,7 +24,10 @@ function Popup(props) {
             ? "tickets__info-popup-arrow_show" : ""}`}
         >
         </div>     
-        <div className="tickets__info-button" onClick={togglePopup}></div>
+        <div className="tickets__info-button" 
+          onClick={togglePopup}
+          tabIndex={0}
+        ></div>
       </div>   
     </>
   )

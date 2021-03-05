@@ -21,6 +21,7 @@ function Checkbox(props) {
       onClick={() => setTermsAccepted(prevState => !prevState)}
       onKeyUp={handleKeyUp}
       // tabIndex={tabIndex}
+      tabIndex={0}
     >
 
     </div>
