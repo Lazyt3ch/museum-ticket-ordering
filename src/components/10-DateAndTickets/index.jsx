@@ -15,6 +15,8 @@ function DateAndTickets(props) {
     setTotal,
     currencySign,
     setCurrencySign,
+    selectedDate, 
+    setSelectedDate,
   } = props;
 
   const priceInfo = "Стоимость билета в праздничные дни рассчитывается по тарифу выходного дня";
@@ -107,7 +109,7 @@ function DateAndTickets(props) {
   const [subTotals, setSubTotals] = useState(new Array(ticketsData.length).fill(0));
 
   // const [total, setTotal] = useState(0);
-  const [selectedDate, setSelectedDate] = useState(null);
+  // const [selectedDate, setSelectedDate] = useState(null);
 
   useEffect(
     () => {

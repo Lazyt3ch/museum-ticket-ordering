@@ -7,6 +7,7 @@ function Success(props) {
   const {
     total,
     currencySign,
+    selectedDate,
   } = props;
 
   const goBack = () => {

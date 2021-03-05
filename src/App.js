@@ -15,8 +15,8 @@ function App() {
   const [total, setTotal] = useState(0);
   const [currencySign, setCurrencySign] = useState("");
 
+  const [selectedDate, setSelectedDate] = useState(null);
 
-  // eslint-disable-next-line
   const [stageIndex, setStageIndex] = useState(0);
   const [email, setEmail] = useState("");
   const [termsAccepted, setTermsAccepted] = useState(false);
@@ -54,6 +54,8 @@ function App() {
         setCurrencySign={setCurrencySign}
         email={email}
         setEmail={setEmail}
+        selectedDate={selectedDate}
+        setSelectedDate={setSelectedDate}
       />
   
     </div>
