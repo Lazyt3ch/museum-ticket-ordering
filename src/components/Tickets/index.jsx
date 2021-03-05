@@ -62,6 +62,7 @@ function Tickets(props) {
               disabled={!selectedDate}
               onClick={() => setNumTickets(1)}
               tabIndex={0}
+              autoFocus
             >
               Добавить
             </button> 
