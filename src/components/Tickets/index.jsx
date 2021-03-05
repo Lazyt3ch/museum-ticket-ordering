@@ -35,12 +35,6 @@ function Tickets(props) {
     [numTickets, price, setSubTotals, idx]
   );
 
-  const handleKeyUp = (e) => {
-    if (e.keyCode === 32) { // "Space"
-      setNumTickets(1);
-    }
-  }
-
   return (
     <div className="tickets">
       <div className="tickets__header">
@@ -67,7 +61,6 @@ function Tickets(props) {
               className={`tickets__add-button ${selectedDate ? "tickets__add-button_enabled" : ""}`} 
               disabled={!selectedDate}
               onClick={() => setNumTickets(1)}
-              onKeyUp={handleKeyUp}
               tabIndex={0}
             >
               Добавить
