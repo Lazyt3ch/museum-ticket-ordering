@@ -97,6 +97,10 @@
   cursor: pointer;
 }
 
+.tickets__add-button_enabled:focus {
+  box-shadow: 0px 14px 37px 0px rgba(190, 0, 90, 0.25);
+}
+
 .tickets__text {
   margin: 0 24px;
   
