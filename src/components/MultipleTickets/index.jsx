@@ -13,7 +13,7 @@ function MultipleTickets(props) {
   };
 
   const handleRemoveKeyUp = (e) => {
-    if (e.code === "Space") {
+    if (e.keyCode === 32) { // "Space"
       removeTickets();
     }
   };
@@ -25,7 +25,7 @@ function MultipleTickets(props) {
   };
 
   const handleDecrementKeyUp = (e) => {
-    if (e.code === "Space") {
+    if (e.keyCode === 32) { // "Space"
       decrementTickets();      
     }
   };
@@ -37,7 +37,7 @@ function MultipleTickets(props) {
   };
 
   const handleIncrementKeyUp = (e) => {
-    if (e.code === "Space") {
+    if (e.keyCode === 32) { // "Space"
       incrementTickets();      
     }
   }; 
