@@ -2,6 +2,7 @@ import React from 'react';
 import "./index.css";
 
 import getFormatedPrice from "../../utils/getFormatedPrice";
+import getFormatedDate from "../../utils/getFormatedDate";
 
 function Success(props) {
   const {
@@ -50,7 +51,7 @@ function Success(props) {
             Дата посещения
           </p>
           <p className="success__info-card__main__info-details">
-            25 февраля 2021
+            {getFormatedDate(selectedDate)}
           </p>
         </div>        
 
