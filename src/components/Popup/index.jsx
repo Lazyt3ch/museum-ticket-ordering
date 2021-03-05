@@ -11,6 +11,12 @@ function Popup(props) {
     setIsInfoPopupVisible((prev) => !prev);
   };
 
+  const handleKeyUp = (e) => {
+    if (e.code === "Space") {
+      togglePopup();
+    }
+  }
+
   return (
     <>
       <div className="tickets__info-popup">
@@ -26,6 +32,7 @@ function Popup(props) {
         </div>     
         <div className="tickets__info-button" 
           onClick={togglePopup}
+          onKeyUp={handleKeyUp}
           tabIndex={0}
         ></div>
       </div>   
