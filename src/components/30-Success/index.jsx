@@ -20,6 +20,7 @@ function Success(props) {
       <div className="success__nav">        
         <div className="success__nav__arrow"
           onClick={goBack}
+          tabIndex={0}
         >
           <div className="success__nav__arrow__background-color"></div>
         </div>
