@@ -7,50 +7,13 @@ function MultipleTickets(props) {
     setNumTickets,
   } = props;
 
-
-  const removeTickets = () => {
-    setNumTickets(0);
-  };
-
-  const handleRemoveKeyUp = (e) => {
-    if (e.keyCode === 32) { // "Space"
-      removeTickets();
-    }
-  };
-
-
-  const decrementTickets = () => {
-    setNumTickets((prev) => prev - 1);
-    console.log("decrement");
-  };
-
-  const handleDecrementKeyUp = (e) => {
-    if (e.keyCode === 32) { // "Space"
-      decrementTickets();      
-    }
-  };
-
-
-  const incrementTickets = () => {
-    setNumTickets((prev) => prev + 1);
-    console.log("increment");
-  };
-
-  const handleIncrementKeyUp = (e) => {
-    if (e.keyCode === 32) { // "Space"
-      incrementTickets();      
-    }
-  }; 
-  
-
   return (
     <div className="multiple-tickets">
       <div className="multiple-tickets__remove-wrapper">
         <button 
           className={`multiple-tickets__remove`} 
           disabled={!numTickets}
-          onClick={removeTickets}
-          onKeyUp={handleRemoveKeyUp}
+          onClick={() => setNumTickets(0)}
         >
           Удалить
         </button> 
@@ -60,8 +23,7 @@ function MultipleTickets(props) {
         <button 
           className={`multiple-tickets__decrement`} 
           disabled={numTickets < 1}
-          onClick={decrementTickets}
-          onKeyUp={handleDecrementKeyUp}
+          onClick={() => setNumTickets((prev) => prev - 1)}
         >
           &ndash;
         </button>      
@@ -72,8 +34,7 @@ function MultipleTickets(props) {
 
         <button 
           className={`multiple-tickets__increment`} 
-          onClick={incrementTickets}
-          onKeyUp={handleIncrementKeyUp}
+          onClick={() => setNumTickets((prev) => prev + 1)}
         >
           +
         </button> 
