@@ -1,12 +1,11 @@
-.date-and-tickets__container {
+.select {
   position: relative;
   margin: 150px auto 0 auto;
 
   width: 1160px; /* To be adjusted */
-  /* height: 800px; */ /* To be adjusted */
 }
 
-.date-and-tickets__header {
+.select-header {
   height: 70px; /* To be adjusted */
   width: 100%;
 
@@ -14,7 +13,7 @@
   align-items: center;
 }
 
-.date-and-tickets__header-image {
+.select-header__tickets-image {
   display: inline-block;
 
   height: 48px;
@@ -28,7 +27,7 @@
   background-position: center;
 }
 
-.date-and-tickets__header-text {
+.select-header__title {
   margin-left: 14px;
 
   font-family: "Roboto", sans-serif;
@@ -39,6 +38,7 @@
   letter-spacing: 0em;
   text-align: left;  
 }
+
 
 .date-and-tickets__tickets {
   position: relative;
@@ -61,56 +61,3 @@
   border-top: 1px solid #C9C9C9;
 
 }
-
-/* 
-.date-and-tickets__footer {
-  height: 93px;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.date-and-tickets__total {
-  padding-top: 27px;
-
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 28px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-
-.date-and-tickets__go-to-payment {
-  height: 61px;
-  width: 312px;
-
-  margin-top: 10px;
-
-  border: 1px solid #C9C9C9;
-  border-radius: 9px;
-
-  background: #EFEFEF;
-  color: #AFB3BF;
-
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;  
-
-  cursor: not-allowed;
-} 
-
-.date-and-tickets__go-to-payment_enabled {
-  background-color: #BE005A;
-  color: #FFFFFF;
-
-  box-shadow: 0px 14px 37px 0px #BE005A 25%;
-
-  cursor: pointer;
-}
- */
-

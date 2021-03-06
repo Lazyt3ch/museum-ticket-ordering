@@ -97,7 +97,6 @@ function DateAndTickets(props) {
     []
   );
 
-  // const currencySign = ticketsData[0].currency || "₽";
   useEffect(
     () => {
       setCurrencySign(ticketsData[0].currency || "₽");
@@ -108,9 +107,6 @@ function DateAndTickets(props) {
 
   const [subTotals, setSubTotals] = useState(new Array(ticketsData.length).fill(0));
 
-  // const [total, setTotal] = useState(0);
-  // const [selectedDate, setSelectedDate] = useState(null);
-
   useEffect(
     () => {
       setTotal(() => subTotals.reduce( (acc, item) => acc + item, 0 ));
@@ -119,11 +115,11 @@ function DateAndTickets(props) {
   );  
 
   return (
-    <div className="date-and-tickets__container">
-      <div className="date-and-tickets__header">
-        <div className="date-and-tickets__header-image"></div>    
-        <div className="date-and-tickets__header-text">Покупка билета</div>
-      </div>    
+    <div className="select">
+      <div className="select-header">
+        <div className="select-header__tickets-image"></div>    
+        <div className="select-header__title">Покупка билета</div>
+      </div>
 
       <div className="date-and-tickets">
         <DatePicker 
