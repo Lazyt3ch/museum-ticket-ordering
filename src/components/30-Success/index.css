@@ -1,4 +1,4 @@
-.success__container {
+.success {
   position: relative;
   margin: 90px auto 0 auto;
 
@@ -14,16 +14,7 @@
   align-items: center;
 }
 
-.success__info-card__divider {
-  height: 1px;
-  width: 100%;
-  margin: 0 auto;
-
-  border-bottom: 1px solid #D6DAE5;
-}
-
-
-.success__nav {
+.success-nav {
   box-sizing: border-box;
   
   height: 68px;
@@ -40,7 +31,7 @@
   border: 1px solid #D6DAE5;
 }
 
-.success__nav__arrow {
+.success-nav__arrow-background-image {
   height: 44px;
   width: 44px;
   box-sizing: border-box;
@@ -53,7 +44,7 @@
   margin-right: 20px;  
 }
 
-.success__nav__arrow__background-color {
+.success-nav__arrow-background-color {
   height: 44px;
   width: 44px;
 
@@ -64,20 +55,18 @@
   opacity: 0.4;  
 }
 
-.success__nav__text {
+.success-nav__text {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
   letter-spacing: 0em;
-  text-align: left;
-    
+  text-align: left;    
 }
 
 
-
-.success__info-card {
+.success-card {
   width: 576px;
 
   margin-top: 24px;
@@ -92,7 +81,15 @@
   box-shadow: 0px 24px 80px 0px rgba(0, 0, 0, 0.2);
 }
 
-.success__info-card__header {
+.success-card__divider {
+  height: 1px;
+  width: 100%;
+  margin: 0 auto;
+
+  border-bottom: 1px solid #D6DAE5;
+}
+
+.success-card__header {
   height: 90px; /* Adjusted */
   margin-top: -32px;
 
@@ -112,8 +109,7 @@
   text-align: left;
 }
 
-
-.success__info-card__header__checkmark {
+.success-card__checkmark-background-image {
   box-sizing: border-box;
 
   height: 42px;
@@ -129,7 +125,7 @@
   background-position: center; 
 }
 
-.success__info-card__header__checkmark__background-color {
+.success-card__checkmark-background-color {
   background-color: rgba(33, 233, 0, 0.35);
   mix-blend-mode: normal;
   opacity: 0.4;
@@ -140,13 +136,13 @@
 }
 
 
-.success__info-card__main {
+.success-card__main {
   padding-top: 10px;
   padding-bottom: 24px;
 
 }
 
-.success__info-card__main__info-type {
+.success-card__info-type {
   margin-bottom: 6px;
 
   color: #777C8B;
@@ -161,7 +157,7 @@
   
 }
 
-.success__info-card__main__info-details {
+.success-card__info-details {
   margin-top: 0px;
   margin-bottom: 0px;
 
@@ -178,11 +174,11 @@
 }
 
 
-.success__info-card__footer {
+.success-card__footer {
   padding-top: 8px;
 }
 
-.success__info-card__footer__payment-title {
+.success-card__payment-title {
   color: #777C8B;
 
   font-family: "Roboto", sans-serif;
@@ -197,11 +193,11 @@
 
 }
 
-/* .success__info-card__footer {
+/* .success-card__footer {
 
 } */
 
-.success__info-card__footer__payment-details {
+.success-card__payment-details {
   height: 75px;
   width: 512px;
 
@@ -216,7 +212,7 @@
   align-items: center;
 }
 
-.success__info-card__footer__order-details__payment-total {
+.success-card__payment-total {
   color: #000000;
 
   font-family: "Roboto", sans-serif;
@@ -229,7 +225,7 @@
   
 }
 
-.success__info-card__footer__order-details__payment-method {
+.success-card__payment-method {
   color: #777C8B;
 
   font-family: "Roboto", sans-serif;
@@ -243,7 +239,7 @@
 
 }
 
-.success__info-card__footer__payment-info {
+.success-card__payment-info {
   margin-bottom: 0;
 
   color: #AFB3BF;
@@ -259,7 +255,7 @@
 }
 
 
-.success__exhibition-rules {
+.success-rules {
   height: 205px;
   width: 560px;
 
@@ -273,7 +269,7 @@
   align-items: center;
 }
 
-.success__exhibition-rules__image {
+.success-rules__mask-image {
   width: 75px;
   height: 55px;
 
@@ -283,13 +279,13 @@
   background-position: center;
 }
 
-.success__exhibition-rules__text {
+.success-rules__text {
   width: 360px;
 
   /* margin: 0; */
 }
 
-.success__exhibition-rules__title {
+.success-rules__title {
   text-transform: uppercase;
 
   color: #000000;
@@ -306,7 +302,7 @@
 
 }
 
-.success__exhibition-rules__details {
+.success-rules__details {
   /* margin-top: 7px; */
 
   color: #AFB3BF;
@@ -322,13 +318,12 @@
 }
 
 
-.success__contact-info {
+.success-contact {
   width: 560px;
   text-align: left;
-
 }
 
-.success__contact-info__title {
+.success-contact__title {
   color: #AFB3BF;
 
   font-family: "Roboto", sans-serif;
@@ -341,14 +336,14 @@
 
 }
 
-.success__contact-info__details {
+.success-contact__details {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
 
-.success__contact-info__details__phone-icon {
+.success-contact__phone-icon {
   display: inline-block;
 
   width: 21px;
@@ -360,7 +355,7 @@
 
 }
 
-.success__contact-info__details__mail-icon {
+.success-contact__mail-icon {
   display: inline-block;
 
   width: 24px;
@@ -372,7 +367,7 @@
 
 }
 
-.success__contact-info__details__text {
+.success-contact__text {
   display: inline-block;
 
   margin: 0 26px 0 8px;
