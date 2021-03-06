@@ -26,11 +26,8 @@ function Payment(props) {
     const emailTwo = emailInputTwo.current.value.trim();
     // console.log("emailOne, emailTwo =", emailOne, emailTwo);
 
-    if (emailOne !== emailTwo) {
-      return;
-    }
-
-    if (!validateEmail(emailOne) || !validateEmail(emailTwo)) {
+    if (emailOne !== emailTwo || !validateEmail(emailOne) || !validateEmail(emailTwo)) {
+      setEmail(null);
       return;
     }
     
