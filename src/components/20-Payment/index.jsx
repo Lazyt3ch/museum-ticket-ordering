@@ -39,44 +39,44 @@ function Payment(props) {
   }
 
   return (
-    <div className="payment__container">
-      <div className="payment__header">
-        <div className="payment__header-text">Покупка билета</div>
-        <div className="payment__header-description">
+    <div className="payment">
+      <div className="payment-header">
+        <div className="payment-title">Покупка билета</div>
+        <div className="payment-description">
           Укажите вашу электронную почту для получения билета и чека
         </div>
       </div>    
 
-      <div className="payment__provide-email">
+      <div className="payment-email">
         <input type="text" 
           ref={emailInputOne} 
-          className="payment__email-input" 
+          className="payment-email__input" 
           placeholder="E-mail" 
           onBlur={verifyEmails}
         />
         <input type="text" 
           ref={emailInputTwo} 
-          className="payment__email-input" 
+          className="payment-email__input" 
           placeholder="Повторите e-mail" 
           onBlur={verifyEmails}
         />
-        <div className={`payment__email-input__description ${
-          email ? "" : "payment__email-input__description_warning"}`}
+        <div className={`payment-email__description ${
+          email ? "" : "payment-email__warning"}`}
         
         >
           Внимательно проверьте ваш e-mail адрес. Билеты на него придут сразу после оплаты
         </div>
       </div>
 
-      <div className="payment__accept-terms">
+      <div className="payment-terms">
         <Checkbox 
           termsAccepted={termsAccepted}
           setTermsAccepted={setTermsAccepted}
         />
         
         {/* TODO: Replace both dummy links */}
-        <div className="payment__accept-terms__text">
-          Я соглашаюсь с <a className="payment__accept-terms__link" href="ticket-change-or-return-terms">Правилами обмена и возврата билетов</a> и <a className="payment__accept-terms__link" href="exhibition-visiting-terms">Правилами посещения Выставки</a>
+        <div className="payment-terms__acceptance">
+          Я соглашаюсь с <a className="payment-terms__link" href="ticket-change-or-refund">Правилами обмена и возврата билетов</a> и <a className="payment-terms__link" href="exhibition-visiting">Правилами посещения Выставки</a>
         </div>
       </div>
 
@@ -88,13 +88,13 @@ function Payment(props) {
         nextStageDisabled={!email || !termsAccepted}
       />
 
-      <div className="payment__processor-logos">
+      <div className="payment-processors">
         <img src={require('../../assets/images/visa.svg').default} alt='Visa' />      
-        <img src={require('../../assets/images/mastercard.svg').default} alt='MasterCard' />
+        <img src={require('../../assets/images/mastercard.svg').default} alt='Mastercard' />
         <img src={require('../../assets/images/apple-pay.svg').default} alt='Apple Pay' />
         <img src={require('../../assets/images/google-pay.svg').default} alt='Google Pay' />
         <img src={require('../../assets/images/tinkoff.svg').default} alt='Тинькофф' />
-        <img src={require('../../assets/images/mir.svg').default} alt='МИР' />
+        <img src={require('../../assets/images/mir.svg').default} alt='Мир' />
       </div>
     </div>
   )

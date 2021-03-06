@@ -1,11 +1,11 @@
-.payment__container {
+.payment {
   position: relative;
   margin: 170px auto 0 auto;
 
   width: 1160px; /* To be adjusted */
 }
 
-.payment__header {
+.payment-header {
   width: 100%;
 
   padding-bottom: 32px;
@@ -13,7 +13,7 @@
   border-bottom: 1px solid #C9C9C9;
 }
 
-.payment__header-text {
+.payment-title {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -27,7 +27,7 @@
   margin-bottom: 8px;
 }
 
-.payment__header-description {  
+.payment-description {  
   width: 300px;
 
   font-family: "Roboto", sans-serif;
@@ -43,7 +43,7 @@
   margin-top: 0;
 }
 
-.payment__provide-email {
+.payment-email {
   margin-top: 32px;
   margin-bottom: 24px;
 
@@ -53,7 +53,7 @@
   align-items: center;
 }
 
-input.payment__email-input {
+input.payment-email__input {
   display: inline-block !important;
 
   flex-shrink: 0;
@@ -77,22 +77,22 @@ input.payment__email-input {
   color: #000000;  
 }
 
-input.payment__email-input::placeholder {
+input.payment-email__input::placeholder {
   color: #AFB3BF;  
 }
 
-.payment__provide-email :first-child {
+.payment-email :first-child {
   width: 360px;
 }
 
-.payment__provide-email :nth-child(2) {
+.payment-email :nth-child(2) {
   margin-left: 40px;
   margin-right: 24px;
 
   width: 360px;
 }
 
-.payment__email-input__description {
+.payment-email__description {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -104,12 +104,12 @@ input.payment__email-input::placeholder {
   color: #AFB3BF;
 }
 
-.payment__email-input__description_warning {
+.payment-email__warning {
   color: #E90017;
 }
 
 
-.payment__accept-terms {
+.payment-terms {
   display: flex;
   flex-direction: row;
   justify-items: left;
@@ -119,7 +119,7 @@ input.payment__email-input::placeholder {
   border-bottom: 1px solid #C9C9C9;
 }
 
-.payment__accept-terms__text {
+.payment-terms__acceptance {
   margin-left: 16px;
 
   font-family: "Roboto", sans-serif;
@@ -128,12 +128,12 @@ input.payment__email-input::placeholder {
   font-size: 18px;
 }
 
-.payment__accept-terms__link {
+.payment-terms__link {
   text-decoration: none;
   color: blue;
 }
 
-.payment__processor-logos {
+.payment-processors {
   min-height: 150px;
 
   padding: 85px 40px 0 30px;
