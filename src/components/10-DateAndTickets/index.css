@@ -40,7 +40,7 @@
 }
 
 
-.date-and-tickets__tickets {
+.select-tickets {
   position: relative;
   padding-top: 32px;
 
@@ -52,7 +52,7 @@
 
 }
 
-.date-and-tickets__tickets::after {
+.select-tickets::after {
   position: absolute;
   bottom: 0;
   width: 100%;

@@ -121,14 +121,14 @@ function DateAndTickets(props) {
         <div className="select-header__title">Покупка билета</div>
       </div>
 
-      <div className="date-and-tickets">
+      <div className="select-main">
         <DatePicker 
           priceInfo={priceInfo}
           selectedDate={selectedDate}
           setSelectedDate={setSelectedDate}
         />
 
-        <div className="date-and-tickets__tickets">
+        <div className="select-tickets">
           { ticketsData.map((data, idx) => 
               <Tickets 
                 key={idx} 
@@ -143,30 +143,12 @@ function DateAndTickets(props) {
       </div>
 
       <Footer 
-        // total={total}
-        // currencySign={currencySign} 
         totalText={getFormatedPrice(total, currencySign)}
         buttonText={"Перейти к оплате"}
         stageIndex={stageIndex}
         setStageIndex={setStageIndex}     
         nextStageDisabled={!total}
       />
-
-      {/* <div className="date-and-tickets__footer">
-        <div className="date-and-tickets__total">
-          Итого: {total} {currencySign}
-        </div>
-
-        <button 
-          className={`date-and-tickets__go-to-payment ${
-            total ? "date-and-tickets__go-to-payment_enabled" : ""}`}
-          disabled={!total}
-          onClick={() => setStageIndex((prev) => prev + 1)}
-        >
-          Перейти к оплате
-        </button>
-      </div>    */}
-
     </div>
   );
 }
@@ -174,7 +156,7 @@ function DateAndTickets(props) {
 export default DateAndTickets;
 
 /*
-Stage 1 -- Fonts
+Fonts
 
 Roboto: (all but DayPicker's calendar)
 400, 500, 700
