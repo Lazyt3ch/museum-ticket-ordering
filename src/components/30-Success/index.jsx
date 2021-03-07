@@ -40,6 +40,7 @@ function Success(props) {
         </div>
 
         <div className="success-card__divider"></div>
+        <hr className="success-card__hidden-divider" />        
 
         <div className="success-card__main">
           <p className="success-card__info-type">
@@ -57,6 +58,7 @@ function Success(props) {
         </div>        
 
         <div className="success-card__divider"></div>
+        <hr className="success-card__hidden-divider" />
 
         <div className="success-card__footer">
           <p className="success-card__payment-title">

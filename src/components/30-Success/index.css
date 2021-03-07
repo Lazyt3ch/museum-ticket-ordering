@@ -81,6 +81,7 @@
   box-shadow: 0px 24px 80px 0px rgba(0, 0, 0, 0.2);
 }
 
+
 .success-card__divider {
   height: 1px;
   width: 100%;
@@ -88,6 +89,11 @@
 
   border-bottom: 1px solid #D6DAE5;
 }
+
+.success-card__hidden-divider {
+  display: none;
+}
+
 
 .success-card__header {
   height: 90px; /* Adjusted */
