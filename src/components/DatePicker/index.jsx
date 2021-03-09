@@ -72,6 +72,8 @@ function DatePicker(props) {
     letterSpacing: "0em",
     textAlign: "left",
 
+    cursor: "pointer",
+
   };
 
   const today = new Date();
