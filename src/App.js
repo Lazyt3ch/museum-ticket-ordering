@@ -6,12 +6,6 @@ import Payment from './components/20-Payment';
 import Success from './components/30-Success';
 
 function App() {
-  const stages = [
-    Select, 
-    Payment, 
-    Success,
-  ];
-
   const [total, setTotal] = useState(0);
   const [currencySign, setCurrencySign] = useState("");
 
@@ -32,32 +26,42 @@ function App() {
   // }, 
   // []);
 
-
-  const CurrentStage = stages[stageIndex];
-
   return (
     <div className="app">
-      { (stageIndex < stages.length - 1) && 
-        (<div className="app__main-logo">
-          
-        </div>)     
+      { (stageIndex < 2) && 
+        <div className="app__main-logo"></div>
       }
 
-      <CurrentStage 
-        stageIndex={stageIndex}
-        setStageIndex={setStageIndex}
-        termsAccepted={termsAccepted}
-        setTermsAccepted={setTermsAccepted}
-        total={total}
-        setTotal={setTotal}
-        currencySign={currencySign}
-        setCurrencySign={setCurrencySign}
-        email={email}
-        setEmail={setEmail}
-        selectedDate={selectedDate}
-        setSelectedDate={setSelectedDate}
-      />
-  
+      { stageIndex === 0
+          ? <Select 
+              stageIndex={stageIndex}
+              setStageIndex={setStageIndex}
+              total={total}
+              setTotal={setTotal}
+              currencySign={currencySign}
+              setCurrencySign={setCurrencySign}
+              selectedDate={selectedDate}
+              setSelectedDate={setSelectedDate}
+            />
+          : stageIndex === 1
+            ? <Payment 
+                stageIndex={stageIndex}
+                setStageIndex={setStageIndex}
+                termsAccepted={termsAccepted}
+                setTermsAccepted={setTermsAccepted}
+                total={total}
+                currencySign={currencySign}
+                email={email}
+                setEmail={setEmail}
+              />
+            : stageIndex === 2
+              ? <Success 
+                  total={total}
+                  currencySign={currencySign}
+                  selectedDate={selectedDate}
+                />
+              : null
+      } 
     </div>
   );
 }
