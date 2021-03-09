@@ -42,6 +42,8 @@
 
   margin-left: 4px;
   margin-right: 20px;  
+
+  cursor: pointer;
 }
 
 .success-nav__arrow-background-color {
