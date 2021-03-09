@@ -7,7 +7,7 @@ import Footer from "../Footer";
 
 import getFormatedPrice from "../../utils/getFormatedPrice";
 
-function DateAndTickets(props) {
+function Select(props) {
   const {
     stageIndex, 
     setStageIndex,
@@ -153,7 +153,7 @@ function DateAndTickets(props) {
   );
 }
 
-export default DateAndTickets;
+export default Select;
 
 /*
 Fonts

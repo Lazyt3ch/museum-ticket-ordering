@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import './App.css';
 
-import DateAndTickets from "./components/10-DateAndTickets";
+import Select from "./components/10-Select";
 import Payment from './components/20-Payment';
 import Success from './components/30-Success';
 
 function App() {
   const stages = [
-    DateAndTickets, 
+    Select, 
     Payment, 
     Success,
   ];
