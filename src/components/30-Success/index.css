@@ -329,6 +329,8 @@
 .success-contact {
   width: 560px;
   text-align: left;
+
+  padding-bottom: 20px;
 }
 
 .success-contact__title {
