@@ -73,7 +73,7 @@ function Payment(props) {
         
         {/* TODO: Replace both dummy links */}
         <div className="payment-terms__acceptance">
-          Я соглашаюсь с <a className="payment-terms__link" href="ticket-change-or-refund">Правилами обмена и возврата билетов</a> и <a className="payment-terms__link" href="exhibition-visiting">Правилами посещения Выставки</a>
+          Я соглашаюсь с <a className="payment-terms__link" href="ticket-change-or-refund" tabIndex={0}>Правилами обмена и возврата билетов</a> и <a className="payment-terms__link" href="exhibition-visiting" tabIndex={0}>Правилами посещения Выставки</a>
         </div>
       </div>
 

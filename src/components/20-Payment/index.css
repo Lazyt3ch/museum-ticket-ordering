@@ -133,6 +133,11 @@ input.payment-email__input::placeholder {
   color: blue;
 }
 
+.payment-terms__link:focus {
+  box-shadow: 0px 14px 37px 0px rgba(190, 0, 90, 0.25);
+}
+
+
 .payment-processors {
   min-height: 150px;
 
