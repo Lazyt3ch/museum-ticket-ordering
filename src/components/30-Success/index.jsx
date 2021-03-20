@@ -16,16 +16,24 @@ function Success(props) {
     alert("На этом работа приложения завершена.\nПереход на сайт не реализован.");
   };
 
+  const handleKeyDown = (e) => { // Must be key down, not key up (otherwise page scrolls down)
+    if (e.keyCode === 32 || e.keyCode === 13) { // "Space" or "Enter"
+      e.preventDefault();
+      goBack();
+    }
+  }  
+
   return (
     <div className="success">
       <div className="success-nav">        
         <div className="success-nav__arrow-background-image"
           onClick={goBack}
+          onKeyDown={handleKeyDown}
           tabIndex={0}
         >
           <div className="success-nav__arrow-background-color"></div>
         </div>
-        
+
         <div className="success-nav__text">
           Вернуться на сайт
         </div>
