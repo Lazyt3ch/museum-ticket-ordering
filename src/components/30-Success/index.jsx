@@ -25,6 +25,7 @@ function Success(props) {
         >
           <div className="success-nav__arrow-background-color"></div>
         </div>
+        
         <div className="success-nav__text">
           Вернуться на сайт
         </div>
