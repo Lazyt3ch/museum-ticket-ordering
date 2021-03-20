@@ -13,7 +13,7 @@ function Success(props) {
 
   const goBack = () => {
     /* TODO: Implement go-back function */
-    alert("На этом работа приложения завершена. Переход на сайт не реализован.");
+    alert("На этом работа приложения завершена.\nПереход на сайт не реализован.");
   };
 
   return (
