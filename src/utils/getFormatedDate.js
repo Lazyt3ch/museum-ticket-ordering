@@ -16,7 +16,7 @@ const months = {
 };
 
 const getFormatedDate = (date, language = "ru-ru") => {
-  return `${date.getDay()} ${months[language][date.getMonth()]} ${date.getFullYear()}`;
+  return `${date.getDate()} ${months[language][date.getMonth()]} ${date.getFullYear()}`;
 };
 
 export default getFormatedDate;
