@@ -1,6 +1,5 @@
-// import React, {useState, useRef, useEffect} from 'react';
-// import React, {useState} from 'react';
-import {useState} from 'preact-compat';
+import React, {useState} from 'react';
+// import {useState} from 'preact-compat';
 import "./index.css";
 
 // import DayPicker from 'react-day-picker'; // For development only

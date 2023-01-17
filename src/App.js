@@ -1,5 +1,5 @@
-// import React, {useState} from 'react';
-import {useState} from 'preact-compat';
+import React, {useState} from 'react';
+// import {useState} from 'preact-compat';
 import './App.css';
 
 import Select from "./components/10-Select";

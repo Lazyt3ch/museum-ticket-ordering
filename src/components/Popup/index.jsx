@@ -1,5 +1,5 @@
-// import React, {useState} from 'react';
-import {useState} from 'preact-compat';
+import React, {useState} from 'react';
+// import {useState} from 'preact-compat';
 import "./index.css";
 // Reference: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup
 
