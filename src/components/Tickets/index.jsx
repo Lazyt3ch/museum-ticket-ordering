@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from 'react';
+// import React, {useState, useEffect} from 'react';
+import {useState, useEffect} from 'preact-compat';
 import "./index.css";
 import Popup from "../Popup";
 import MultipleTickets from "../MultipleTickets";

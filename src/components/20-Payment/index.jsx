@@ -1,4 +1,5 @@
-import React, {useRef} from 'react';
+// import React, {useRef} from 'react';
+import {useRef} from 'preact-compat';
 import "./index.css";
 import Checkbox from "../Checkbox";
 import Footer from "../Footer";
